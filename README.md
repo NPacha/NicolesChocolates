@@ -1,8 +1,4 @@
-![ga](ga_cog.png) <br>
-
-# BIG CHANGE!!!!
-# Software Engineering Immersive Remote Flex - MAE
-
+# Software Engineering Immersive Remote Flex - Ruth
 * Course Meeting Details
 * Instructor Team
 * Communication
@@ -15,17 +11,25 @@
 * [Lesson Schedule, Quick Links & Recordings](#class-lessons-recordings)
 
 ## Course Meeting Details
-* **Course Dates**: February 11, 2020 -  August 8, 2020
+* **Course Dates**: October 13, 2020 -  April 14, 2020
 ### Class Meetings
 * Tuesdays & Wednesdays, 6:30 - 10:45 PM Eastern time
 * Saturdays, 10:00 AM - 6:00PM Eastern time
-### Outcomes
-* Every other Thursday 6:30 - 8:30 PM Eastern time for Outcomes Sessions starting on 2/20 with Tosin
+### Outcomes w/ Resa
+* Every other Thursday 6:30 - 8:30 PM Eastern time 
 ### Structured Homework
-* Tuesday and Wednesdays, 10:00 - 10:45 PM Eastern time for Structured Homework Time
+* Tuesday and Wednesdays, 10:00 - 10:45 PM Eastern
 ### Holidays
-* Saturday, May 23, 2020
-* Saturday, July 4, 2020
+* Tuesday, November 3rd
+* Wednesday, November 11th
+* Wednesday, November 25th
+* Saturday, November 28th
+* Wednesday, December 23rd
+* Saturday, December 26th
+* Tuesday, December 29th
+* Wednesday, December 30th
+* Thursday, December 31st
+* Saturday, January 2nd
 
 ## In Class
 * Before class:
@@ -42,7 +46,7 @@
 
 ## Instructor Team
 * Lead Instructor: Madeline O'Moore
-* Instructional Assistant: Magnardo Tavarez
+* Lead Instructor: Magnardo Tavarez
 * Instructional Assistant: Arthur Bernier, Jr.
 * Instructional Assistant: Bruno Leonardo DaSilva
 
@@ -50,8 +54,8 @@
 ## Office Hours
 Your IA will send a zoom link for their office hours into the main Slack channel 5 minutes prior to their hours. This process is subject to change as the course evolves :)
 
-#### Arthur
-Mondays 8:30pm est - 10:30pm est
+#### Arthur/Madeline
+Structured Homework Time
 
 #### Nando
 Thursdays 8:30pm est - 10:00pm est
@@ -59,7 +63,7 @@ Thursdays 8:30pm est - 10:00pm est
 
 
 ## Communication
-##### Send Madeline and IA's message if:
+##### Send IL's and IA's a group message if:
 * You know in advance that you will be missing a class or multiple classes
 * You're sick, overloaded at work, or something comes up and you can't make it to class last minute
 * You will be 15 or more minutes late to class
@@ -91,26 +95,30 @@ Sheets (CSS), and JavaScript.
 #### Unit Structure
 | Unit | Content | 
 |:---:|:-----------:|
-| Unit 1 | Front End Web Development 
-| Unit 2 | Full-Stack Development 
-| Unit 3 | Front-End Frameworks 
-| Unit 4 | APIs and Full-Stack Development
-| Unit 5 | Final Project 
+| Unit 1 | Front End Web Development | HTML/CSS/JS
+| Unit 2 | Full-Stack Development - Databases/Apis | Mongo/Mongoose/Express/Node
+| Unit 3 | Front-End Frameworks | React
+| Unit 4 | APIs and Full-Stack Development | Ruby/Rails/React
+| Unit 5 | Final Project
 
-
-#### Unit Breakdown
+<!-- 
+#### Unit 1 Breakdown
 
 | Unit      | Week      | Content |
 |:-----------:|:-----------:|:-----------:|
-| Unit 4 | Week 18 • June 9 - 13 | Ruby Basics 
-| Unit 4 | Week 19 • June 16 - 20 | Sql & Ruby on Rails 
+| Unit 1 | Week 1 | HTML/CSS/JS Basics
+| Unit 1 | Week 2 | Conditionals/Arrays/Loops/Functions
+| Unit 1 | Week 3 | Conditionals/Arrays/Loops/Functions
+ -->
+
+<!-- | Unit 4 | Week 19 • June 16 - 20 | Sql & Ruby on Rails 
 | Unit 4 | Week 20 • June 23 - 27 | Ruby on Rails (Con't)
 | Unit 4 | Week 21 • June 30 - July 4 (off) | Create React App + Full Stack Backend 
 | Unit 4 | Week 22 • July 7 - July 11 | Create React App + Full Stack Backend (Con't)
 | Unit 5 | Week 23 • July 14 - July 18 | React Portfolio (React Hooks , Styled Components) + Backend
 | Unit 5 | Week 24 • July 21 - July 25 | Capstone Project + Student Choice Lecture 
 | Unit 5 | Week 25 • July 28 - August 1 | Capstone Project + Student Choice Lecture (Mock Interviews)
-| Unit 5 | Week 26 • August 4 - August 8 | Capstone Project + (Mock Interviews), Presentations and Celebration!
+| Unit 5 | Week 26 • August 4 - August 8 | Capstone Project + (Mock Interviews), Presentations and Celebration! -->
 
 
 <br>
@@ -178,7 +186,9 @@ All course recordings will be linked below as well as quick links to that days m
 
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
-| w01d1 |[](./unit_1/w01d1/warm_up_exercise)| [Expectations, Culture, Success, Intro to Terminal](./unit_1/w01d1/instructor_notes)| [](./unit_1/w01d1/student_labs)|[](./unit_1/w01d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/vZ0vJrz6rDs3GoHHtwSDVqN4W43ueq6shycd_fZbmhvmUSFRMAKlYOcaN-PmvRg90lFBYtXMNSMM6fF6?continueMode=true)
+| w01d1 |[](./unit_1/w01d1/warm_up_exercise)| [Expectations, Culture, Success, Intro to Terminal](./unit_1/w01d1/instructor_notes)| [](./unit_1/w01d1/student_labs)|[](./unit_1/w01d1/homework)| [Recording]()
+
+<!--
 | w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)| [Recording](https://generalassembly.zoom.us/rec/play/v5YqJe_7rjk3HoGVtASDU_EsW9W1KaOs0XAdr_QPz020WyZWMAGnb-ZHYdeFAtJKlP1tzoLwrugnA4g?continueMode=true)
 | w01d3 |[Setting Up For Success](./unit_1/w01d3/warm_up_exercise)| [Git and Github, CSS Lesson](./unit_1/w01d3/instructor_notes)| [Problem Solving](./unit_1/w01d3/student_labs)|[Github Practice and Resume Page](./unit_1/w01d3/homework)| [Morning Recording](https://generalassembly.zoom.us/rec/share/u9ZbCK_17UJJc6f1wkzUcZYNOq_lX6a81iIa_vMEmRvsLmAKZolzCFhOvyWWpqHN) [Afternoon Recording](https://generalassembly.zoom.us/rec/play/75wvcrj9rzI3G9KcswSDU_N-W9S5ffms0HNM-fAKxR62W3EBNgCvb-YbMbQf6_NEv7vFjHXH-x9titul?continueMode=true)
 | w02d1 |[Git Pull Upstream Master](./unit_1/w02d1/warm_up_exercise)| [Intro to Conditionals & Loops](./unit_1/w02d1/instructor_notes)| [Loops & Conditionals](./unit_1/w02d1/student_labs)|[](./unit_1/w02d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/7pYqd-2r-D43GNWX5QSDUaIsW9TvJ6mshnQb-KYEmUq0W3ULNwKgMLtDarMrQQxvNo_SlVx188soghCV?continueMode=true)
@@ -266,10 +276,10 @@ All course recordings will be linked below as well as quick links to that days m
 | w25d3 | **Shopify Walkthrough && Final Project Lab** | [Morning Recording](https://generalassembly.zoom.us/rec/play/6ZQrc-Ghqj03HYXHtQSDAfV4W467KP-shHUd_6IMmhqzW3BXMVSiZLsXY-t6FH4rfjhhQii9VW7GunTS?continueMode=true&_x_zm_rtaid=LlAItVm9QOi3J0exyQnMhA.1596492669294.24401ea8e5341d69191b8a988acbba6a&_x_zm_rhtaid=953) [Algo Recording](https://generalassembly.zoom.us/rec/play/vpN8Jumhpjk3TtzBuASDVvJ7W43vK_-s1iJI-KAMmUe2AiRXN1HwYuASZ7Eut-thGT6k4NVM8Ugz37da?continueMode=true&_x_zm_rtaid=LlAItVm9QOi3J0exyQnMhA.1596492669294.24401ea8e5341d69191b8a988acbba6a&_x_zm_rhtaid=953)
 
 
-<!--
+
 | w24d3 || **Final Project Presentations & Graduation ** ||
 
-
+-->
 <br>
 <hr>
 
