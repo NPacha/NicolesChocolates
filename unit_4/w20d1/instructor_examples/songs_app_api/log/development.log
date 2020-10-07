@@ -1,0 +1,2245 @@
+  [1m[35m (209.7ms)[0m  [1m[35mCREATE DATABASE "songs_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (78.0ms)[0m  [1m[35mCREATE DATABASE "songs_app_api_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2020-06-23 16:48:33 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.8ms | Allocations: 488)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-23 16:48:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-23 17:18:15 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 315)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 1596)
+
+
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5838994508422185915)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSongs (20200624002253)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist_name" character varying, "artwork" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200624002253"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-24 00:25:08.431976"], ["updated_at", "2020-06-24 00:25:08.431976"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5838994508422185915)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (1.1ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Neutra squid mixtape swag church-key hella."], ["artist_name", "Maine banshees"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Quinoa muggle magic raw denim kogi brunch slow-carb selfies kitsch scenester."], ["artist_name", "Oregon ghosts"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Seitan wolf typewriter asymmetrical brooklyn cold-pressed put a bird on it."], ["artist_name", "Maryland enchanters"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Whatever single-origin coffee phlogiston crucifix vinyl."], ["artist_name", "Connecticut worshipers"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Green juice cred vinegar vegan normcore celiac williamsburg selfies kickstarter."], ["artist_name", "West Virginia black cats"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Thundercats drinking tote bag yr."], ["artist_name", "Connecticut bees"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Gentrify beard artisan synth hashtag retro master."], ["artist_name", "Nebraska penguins"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Selvage tumblr butcher dreamcatcher chillwave twee retro skateboard organic."], ["artist_name", "Iowa rabbits"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Schlitz taxidermy letterpress disrupt whatever kinfolk photo booth."], ["artist_name", "Illinois wolves"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Lomo taxidermy hammock occupy vinegar offal mustache knausgaard."], ["artist_name", "Tennessee enchanters"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/songs" for ::1 at 2020-06-23 18:18:30 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started GET "/songs" for ::1 at 2020-06-23 18:19:39 -0700
+Processing by SongsController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 63)
+
+
+Started GET "/songs" for ::1 at 2020-06-23 18:24:04 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 5.9ms | Allocations: 4995)
+
+
+Started GET "/songs" for ::1 at 2020-06-23 18:24:14 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 1749)
+
+
+Started GET "/songs" for ::1 at 2020-06-23 18:29:40 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 2.2ms | Allocations: 4590)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-23 18:36:44 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:9:in `show'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 7.0ms | Allocations: 4471)
+
+
+Started POST "/songs" for ::1 at 2020-06-24 08:21:24 -0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"Peaks", "artist_name"=>"Dictaphone", "artwork"=>"None"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[36mSong Create (2.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Peaks"], ["artist_name", "Dictaphone"], ["artwork", "None"]]
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+Completed 201 Created in 24ms (Views: 0.3ms | ActiveRecord: 15.2ms | Allocations: 5866)
+
+
+Started PUT "/songs/13" for ::1 at 2020-06-24 08:21:50 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Dem Bones"}, "id"=>"13"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 11ms (ActiveRecord: 3.1ms | Allocations: 1745)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/13" for ::1 at 2020-06-24 08:22:05 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Dem Bones"}, "id"=>"13"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 6ms (ActiveRecord: 3.4ms | Allocations: 1414)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started DELETE "/songs/13" for ::1 at 2020-06-24 08:22:11 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:31:in `destroy'
+Started DELETE "/songs/13" for ::1 at 2020-06-24 08:22:31 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 404 Not Found in 8ms (ActiveRecord: 4.2ms | Allocations: 1883)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:31:in `destroy'
+Started DELETE "/songs/13" for ::1 at 2020-06-24 08:22:32 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 660)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:31:in `destroy'
+Started DELETE "/songs/12" for ::1 at 2020-06-24 08:22:44 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 404 Not Found in 5ms (ActiveRecord: 3.0ms | Allocations: 1416)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=12):
+  
+app/controllers/songs_controller.rb:31:in `destroy'
+Started GET "/songs" for ::1 at 2020-06-24 08:23:16 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 4385)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-24 08:23:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/songs/13" for ::1 at 2020-06-24 08:23:20 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 676)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:31:in `destroy'
+Started DELETE "/songs/1" for ::1 at 2020-06-24 08:23:24 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 204 No Content in 4ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 2547)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 08:23:25 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1813)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-24 08:23:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (27.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "songs_app_api_development"[0m
+  [1m[35m (30.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "songs_app_api_test"[0m
+  [1m[35m (151.9ms)[0m  [1m[35mCREATE DATABASE "songs_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (68.6ms)[0m  [1m[35mCREATE DATABASE "songs_app_api_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist_name" character varying, "artwork" character varying)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200624002253)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-24 15:23:40.150040"], ["updated_at", "2020-06-24 15:23:40.150040"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "628927faeb9a87a30c2ffb41c71b411fbc070d1a"], ["created_at", "2020-06-24 15:23:40.159583"], ["updated_at", "2020-06-24 15:23:40.159583"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist_name" character varying, "artwork" character varying)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200624002253)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-24 15:23:40.219558"], ["updated_at", "2020-06-24 15:23:40.219558"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-06-24 15:23:40.225113"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "628927faeb9a87a30c2ffb41c71b411fbc070d1a"], ["created_at", "2020-06-24 15:23:40.230006"], ["updated_at", "2020-06-24 15:23:40.230006"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Cleanse thundercats distillery meh xoxo actually cred."], ["artist_name", "South Carolina giants"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Church-key tattooed synth fanny pack quinoa jean shorts."], ["artist_name", "Mississippi enchanters"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Green juice gluten-free skateboard bicycle rights offal vinyl."], ["artist_name", "West Virginia dragons"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Neutra authentic fixie helvetica bespoke ugh aesthetic."], ["artist_name", "New Mexico people"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Chicharrones shoreditch microdosing forage."], ["artist_name", "Oregon penguins"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Forage helvetica yolo cleanse marfa authentic artisan tilde ennui."], ["artist_name", "Alaska dolphins"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Wayfarers paleo flannel occupy 3 wolf moon kitsch."], ["artist_name", "Alabama tigers"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Photo booth gluten-free green juice kickstarter kale chips xoxo offal mixtape."], ["artist_name", "California bats"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Sustainable schlitz yolo marfa kinfolk chartreuse everyday next level."], ["artist_name", "North Dakota sheep"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Cardigan whatever occupy sartorial knausgaard tilde raw denim."], ["artist_name", "Connecticut witches"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/songs" for ::1 at 2020-06-24 08:23:45 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 4.0ms | Allocations: 5082)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-24 08:23:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2020-06-24 08:23:46 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1840)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-24 08:23:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2020-06-24 17:39:28 -0700
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 4.5ms | Allocations: 5082)
+
+
+Started POST "/songs" for ::1 at 2020-06-24 17:54:16 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"California", "artist_name"=>"Joni Mitchell", "artwork"=>"None"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[36mSong Create (1.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "California"], ["artist_name", "Joni Mitchell"], ["artwork", "None"]]
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+Completed 201 Created in 11ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 5403)
+
+
+Started POST "/songs" for ::1 at 2020-06-24 18:04:46 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"Carey", "zartist_name"=>"Joni Mitchell", "artwork"=>"None"}}
+[31mUnpermitted parameter: :zartist_name[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[36mSong Create (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artwork") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Carey"], ["artwork", "None"]]
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+Completed 201 Created in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 2465)
+
+
+Started POST "/songs" for ::1 at 2020-06-24 18:08:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"Carey", "zartist_name"=>"Joni Mitchell", "artwork"=>"None"}}
+[31mUnpermitted parameter: :zartist_name[0m
+Completed 422 Unprocessable Entity in 153ms (Views: 0.3ms | ActiveRecord: 6.8ms | Allocations: 195306)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 18:37:07 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.9ms | Allocations: 4824)
+
+
+Started PUT "/songs/6" for ::1 at 2020-06-24 18:38:24 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"6"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "Fade Into You"], ["id", 6]]
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 4604)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 18:38:32 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1955)
+
+
+Started DELETE "/songs/6" for ::1 at 2020-06-24 18:42:59 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"6"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:31:in `destroy'
+Completed 204 No Content in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 2504)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 18:43:12 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1864)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 19:08:00 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1905)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 19:08:12 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"12"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1324)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 19:08:18 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 19:08:19 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1864)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 19:15:13 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"12"}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 4277)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:15:25 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "Fade Into You"], ["id", 11]]
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[35m (78.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 79.6ms | Allocations: 3029)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:16:54 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 5.8ms | Allocations: 4030)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:16:59 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 907)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:17:13 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 907)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:17:14 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 907)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:17:15 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 907)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:37:03 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:27)
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4152)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 19:38:47 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 6.8ms | Allocations: 3973)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:38:56 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[36mSong Update (0.5ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "Fade Into You"], ["id", 10]]
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 6099)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:38:58 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 846)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:05 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:05 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:09 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 3945)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:19 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:26 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:39:46 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:01 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:02 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:03 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 848)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:13 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:21 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 33)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:24 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.0ms | Allocations: 71833)
+
+
+  
+NameError (undefined local variable or method `song' for #<SongsController:0x00007fe80da67028>):
+  
+app/controllers/songs_controller.rb:27:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:32 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 13ms (ActiveRecord: 5.5ms | Allocations: 4677)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:41 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 10ms (ActiveRecord: 2.9ms | Allocations: 3945)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:42 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 794)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:44 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 1ms (ActiveRecord: 0.3ms | Allocations: 807)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:46 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 806)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:47 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 2ms (ActiveRecord: 0.9ms | Allocations: 792)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:52 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 4153)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:40:53 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:41:07 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 4131)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:41:08 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:42:53 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 186)
+
+
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...tist_name, presence: true, on :create
+...                              ^
+/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/models/song.rb:3: syntax error, unexpected '}', expecting =>
+...resence: {"please add a title"}, on :update
+...                              ^):
+  
+app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/song.rb:3: syntax error, unexpected '}', expecting =>
+app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/song.rb:3: syntax error, unexpected '}', expecting =>
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:43:07 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...tist_name, presence: true, on :create
+...                              ^
+/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/models/song.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "please add a title"}, on :update
+...                              ^):
+  
+app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/song.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/song.rb:2: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/song.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:43:21 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 10ms (ActiveRecord: 2.4ms | Allocations: 4079)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:43:25 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 799)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:43:33 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[36mSong Update (0.5ms)[0m  [1m[33mUPDATE "songs" SET "artist_name" = $1 WHERE "songs"."id" = $2[0m  [["artist_name", "Fade Into You"], ["id", 10]]
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms | Allocations: 2959)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:43:56 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 15ms (ActiveRecord: 5.3ms | Allocations: 4785)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:44:06 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 10ms (ActiveRecord: 3.4ms | Allocations: 4000)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:44:07 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 814)
+
+
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "Mad"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:54:34 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 16ms (ActiveRecord: 5.6ms | Allocations: 4784)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:55:03 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 12ms (ActiveRecord: 4.1ms | Allocations: 4022)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:55:18 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"artist_name"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 10ms (ActiveRecord: 3.6ms | Allocations: 3713)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:55:34 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 620)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:55:49 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 9ms (ActiveRecord: 0.2ms | Allocations: 606)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:56:31 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 15ms (ActiveRecord: 5.2ms | Allocations: 4491)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:56:54 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 9ms (ActiveRecord: 2.9ms | Allocations: 4104)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:57:03 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 9ms (ActiveRecord: 2.6ms | Allocations: 4032)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:57:07 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"agag"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :agag[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.3ms | Allocations: 796)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:57:18 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"agag"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :agag[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.3ms | Allocations: 810)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:57:19 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"agag"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :agag[0m
+Completed 204 No Content in 4ms (ActiveRecord: 0.4ms | Allocations: 810)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:57:51 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:58:02 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:58:20 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:58:32 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:58:39 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:45: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 19:58:45 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"agag"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :agag[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 4097)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 20:03:55 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"agag"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :agag[0m
+Completed 204 No Content in 8ms (ActiveRecord: 2.5ms | Allocations: 3974)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 20:04:01 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 798)
+
+
+Started PUT "/songs/16" for ::1 at 2020-06-24 20:04:12 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"16"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 647)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=16):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/16" for ::1 at 2020-06-24 20:05:03 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"16"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 6ms (ActiveRecord: 3.0ms | Allocations: 1515)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=16):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:05:25 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3163)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:09:53 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 4003)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:10:14 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 818)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:10:24 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"Fade Into You"}, "id"=>"11"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 401 Unauthorized in 10ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 4046)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:10:30 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsg"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "sgsg"], ["id", 11]]
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 2977)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 20:10:35 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 20:10:43 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsghelll"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "sgsghelll"], ["id", 11]]
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2931)
+
+
+Started GET "/songs" for ::1 at 2020-06-24 20:10:46 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 20:10:52 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsghelll"}, "id"=>"12"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "sgsghelll"], ["id", 12]]
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:27:in `update'
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 2929)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 20:11:02 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsghelll"}, "id"=>"12"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 814)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 20:11:24 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsghelll"}, "id"=>"12"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 401 Unauthorized in 9ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 4001)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 20:11:34 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"sgsghelll"}, "id"=>"12"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 4001)
+
+
+Started GET "/" for ::1 at 2020-06-24 21:24:47 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 315)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 1597)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-24 21:24:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2020-06-24 21:24:53 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 4.3ms | Allocations: 5367)
+
+
+Started PUT "/songs/1" for ::1 at 2020-06-24 21:25:04 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"1"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "new"], ["id", 1]]
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 3678)
+
+
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:25:18 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms | Allocations: 659)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:26:28 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.8ms | Allocations: 1535)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:26:39 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.8ms | Allocations: 1511)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:26:56 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 6ms (ActiveRecord: 3.2ms | Allocations: 1521)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:27:48 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 8ms (ActiveRecord: 4.1ms | Allocations: 1511)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/14" for ::1 at 2020-06-24 21:28:04 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"14"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.8ms | Allocations: 1511)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:28:09 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 3261)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:28:11 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 918)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:28:26 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:26)
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 4219)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:29:31 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 4106)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:29:46 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 4104)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 21:32:29 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"11"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 4933)
+
+
+Started PUT "/songs/11" for ::1 at 2020-06-24 21:32:30 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 21:32:33 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"12"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 927)
+
+
+Started PUT "/songs/12" for ::1 at 2020-06-24 21:32:34 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"12"}
+  [1m[36mSong Load (2.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 927)
+
+
+Started PUT "/songs/15" for ::1 at 2020-06-24 21:32:37 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"15"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 663)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=15):
+  
+app/controllers/songs_controller.rb:25:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:32:40 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 916)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:32:48 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 4140)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:35:09 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 4.7ms | Allocations: 3921)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:35:26 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 3.0ms | Allocations: 75540)
+
+
+  
+NameError (undefined local variable or method `songs' for #<SongsController:0x00007fc2ec22d628>
+Did you mean?  song):
+  
+app/controllers/songs_controller.rb:26:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:35:36 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"tiatle"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :tiatle[0m
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 4162)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:35:48 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "new"], ["id", 10]]
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:26:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 3100)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:37:12 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 3.7ms | Allocations: 75614)
+
+
+  
+NameError (undefined local variable or method `song' for #<SongsController:0x00007fc2bd198368>):
+  
+app/controllers/songs_controller.rb:27:in `update'
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:37:28 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"new"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 3925)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:37:33 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"agag"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "agag"], ["id", 10]]
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 2982)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:37:40 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"title"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+  [1m[36mSong Update (0.5ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1 WHERE "songs"."id" = $2[0m  [["title", "HellO!!"], ["id", 10]]
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:28:in `update'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 2936)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:37:42 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 746)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:38:24 -0700
+  
+SyntaxError (/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:31: syntax error, unexpected '}', expecting =>
+...error: "did save", song_params})
+...                              ^
+/Users/madelineomoore/Desktop/GA-SEIR-FLEX/seir-mae/student-repo/SEIR-MAE/unit_4/w20d1/instructor_examples/songs_app_api/app/controllers/songs_controller.rb:48: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/songs_controller.rb:31: syntax error, unexpected '}', expecting =>
+app/controllers/songs_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+app/controllers/songs_controller.rb:31: syntax error, unexpected '}', expecting =>
+app/controllers/songs_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:38:36 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 4019)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:38:44 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 840)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:39:00 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 3.6ms | Allocations: 4063)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:39:25 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 4054)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:39:35 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 4.1ms | Allocations: 4035)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:39:43 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 4000)
+
+
+Started PUT "/songs/10" for ::1 at 2020-06-24 21:39:51 -0700
+Processing by SongsController#update as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:25:in `update'
+[31mUnpermitted parameter: :titsgsgle[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 3917)
+
+
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:42:29 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.9ms | Allocations: 5193)
+
+
+  
+NoMethodError (undefined method `destroy?' for #<Song:0x00007fc2ec31a9c8>
+Did you mean?  destroy
+               destroyed?
+               destroy!
+               _destroy):
+  
+app/controllers/songs_controller.rb:38:in `destroy'
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:42:51 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.7ms | Allocations: 5218)
+
+
+  
+NoMethodError (undefined method `destroy?' for #<Song:0x00007fc2dc34c668>
+Did you mean?  destroy
+               destroyed?
+               destroy!
+               _destroy):
+  
+app/controllers/songs_controller.rb:38:in `destroy'
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:43:18 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 4.9ms | Allocations: 3790)
+
+
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:43:29 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[36mSong Destroy (0.6ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 4.3ms | Allocations: 77369)
+
+
+  
+NameError (undefined local variable or method `song' for #<SongsController:0x00007fc2dcd4cb90>):
+  
+app/controllers/songs_controller.rb:38:in `destroy'
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:43:35 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 9ms (ActiveRecord: 3.7ms | Allocations: 1513)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=10):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:43:40 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 639)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=10):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/10" for ::1 at 2020-06-24 21:43:41 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"10"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 639)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=10):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/11" for ::1 at 2020-06-24 21:43:44 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 204 No Content in 10ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 4765)
+
+
+Started DELETE "/songs/11" for ::1 at 2020-06-24 21:44:00 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"11"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.6ms | Allocations: 1516)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=11):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/13" for ::1 at 2020-06-24 21:44:04 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"13"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 639)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=13):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/14" for ::1 at 2020-06-24 21:44:08 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"14"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 639)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=14):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/8" for ::1 at 2020-06-24 21:44:11 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"8"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 204 No Content in 9ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 4864)
+
+
+Started DELETE "/songs/8" for ::1 at 2020-06-24 21:44:28 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"8"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.6ms | Allocations: 1512)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=8):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/5" for ::1 at 2020-06-24 21:44:31 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"5"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 13ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 4864)
+
+
+Started DELETE "/songs/5" for ::1 at 2020-06-24 21:44:45 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"5"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 6ms (ActiveRecord: 2.6ms | Allocations: 1514)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=5):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/4" for ::1 at 2020-06-24 21:44:48 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"4"}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 10ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 4755)
+
+
+Started DELETE "/songs/3" for ::1 at 2020-06-24 21:45:10 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 14ms (Views: 0.1ms | ActiveRecord: 4.6ms | Allocations: 5628)
+
+
+Started DELETE "/songs/3" for ::1 at 2020-06-24 21:45:30 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.0ms | Allocations: 1514)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=3):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/2" for ::1 at 2020-06-24 21:45:36 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"2"}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 4.2ms | Allocations: 5657)
+
+
+Started DELETE "/songs/2" for ::1 at 2020-06-24 21:45:52 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 7ms (ActiveRecord: 3.1ms | Allocations: 1512)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=2):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/1" for ::1 at 2020-06-24 21:45:57 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 4753)
+
+
+Started DELETE "/songs/1" for ::1 at 2020-06-24 21:46:09 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"1"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 6ms (ActiveRecord: 2.5ms | Allocations: 1514)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=1):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Meditation bicycle rights neutra try-hard."], ["artist_name", "Virginia cats"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Hashtag tousled aesthetic hoodie gluten-free iphone locavore."], ["artist_name", "Colorado banshees"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Loko typewriter banjo meditation freegan fingerstache viral marfa."], ["artist_name", "New York conspirators"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Jean shorts venmo listicle chambray."], ["artist_name", "Tennessee geese"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Blog brunch chia kogi ramps lo-fi blue bottle tote bag."], ["artist_name", "Maine frogs"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Vinyl pug selfies before they sold out."], ["artist_name", "Colorado buffalo"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Actually pinterest you probably haven't heard of them authentic."], ["artist_name", "Oregon chickens"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Roof neutra normcore loko chicharrones cliche."], ["artist_name", "Texas sons"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Literally williamsburg single-origin coffee taxidermy."], ["artist_name", "West Virginia spirits"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Readymade church-key keytar celiac pug mustache brooklyn truffaut."], ["artist_name", "Rhode Island goblins"], ["artwork", "https://placehold.it/300x300.png"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/songs/1" for ::1 at 2020-06-24 21:46:37 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"1"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 11ms (ActiveRecord: 5.3ms | Allocations: 2010)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=1):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/2" for ::1 at 2020-06-24 21:46:43 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 655)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=2):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started GET "/songs" for ::1 at 2020-06-24 21:46:47 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 4578)
+
+
+Started DELETE "/songs/27" for ::1 at 2020-06-24 21:46:56 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"27"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 640)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=27):
+  
+app/controllers/songs_controller.rb:37:in `destroy'
+Started DELETE "/songs/20" for ::1 at 2020-06-24 21:46:59 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"20"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.6ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 7ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 2530)
+
+
+Started DELETE "/songs/19" for ::1 at 2020-06-24 21:47:08 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"song"=>{"titsgsgle"=>"HellO!!"}, "id"=>"19"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:37:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.8ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 5.6ms | Allocations: 5683)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:46:47 -0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/madelineomoore/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 315)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 1596)
+
+
+Started GET "/songs" for ::1 at 2020-07-30 14:47:19 -0700
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 34.3ms | ActiveRecord: 13.9ms | Allocations: 5310)
+
+
+Started POST "/?title=hallelujah&artist_name=joel&artwork=none" for ::1 at 2020-07-30 14:48:13 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/songs" for ::1 at 2020-07-30 14:48:20 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"joni", "artist_name"=>"mitchell", "artwork"=>"none"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 139)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song):
+  
+app/controllers/songs_controller.rb:51:in `song_params'
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-30 14:48:58 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"joni", "artist_name"=>"mitchell", "artwork"=>"none"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 126)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song):
+  
+app/controllers/songs_controller.rb:51:in `song_params'
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-30 14:50:25 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"joni", "artist_name"=>"mitchell"}, "songs"=>{"artwork"=>"none"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[36mSong Create (2.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name") VALUES ($1, $2) RETURNING "id"[0m  [["title", "joni"], ["artist_name", "mitchell"]]
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:16:in `create'
+Completed 201 Created in 25ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 2650)
+
+
+Started POST "/songs?song" for ::1 at 2020-07-31 07:37:20 -0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#create as */*
+  Parameters: {"song"=>nil}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 7.1ms | Allocations: 3468)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:37:45 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:38:01 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:38:06 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 137)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:38:19 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:38:24 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:14:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:38:46 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.7ms | Allocations: 3187)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:16:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:39:02 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:18:in `create'
+  [1m[36mSong Create (2.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "song10"], ["artist_name", "song10"], ["artwork", "song10"]]
+  ↳ app/controllers/songs_controller.rb:18:in `create'
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:18:in `create'
+Completed 201 Created in 22ms (Views: 0.6ms | ActiveRecord: 11.9ms | Allocations: 5781)
+
+
+Started POST "/songs" for ::1 at 2020-07-31 07:39:14 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.8ms | Allocations: 3194)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:16:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:40:22 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 3.4ms | Allocations: 3152)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/songs_controller.rb:16:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:42:41 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 692)
+
+
+  
+NoMethodError (undefined method `permit_all_parameters=' for #<ActionController::Parameters:0x00007f8e040aef58>):
+  
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for ::1 at 2020-07-31 07:43:05 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{"title"=>"song10", "artist_name"=>"song10", "artwork"=>"song10"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:17:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_name", "artwork") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "song10"], ["artist_name", "song10"], ["artwork", "song10"]]
+  ↳ app/controllers/songs_controller.rb:17:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:17:in `create'
+Completed 201 Created in 15ms (Views: 0.2ms | ActiveRecord: 4.4ms | Allocations: 5507)
+
+
