@@ -166,8 +166,10 @@ Your IA will send a zoom link for their office hours into the main Slack channel
 Structured Homework Time
 
 #### Nando
-Thursdays 8:30pm est - 10:00pm est
+Thursdays 8:30pm EST - 10:00pm EST
 
+#### Bruno
+Saturdays 5pm EST - 7pm EST
 
 
 ## Communication
