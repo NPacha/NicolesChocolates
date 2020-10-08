@@ -10,7 +10,11 @@
 * Additional Expectations
 * Group Work Formats
 
-
+## Before Class Each Day
+- `git add .`
+- `git commit -m 'test'`
+- `git push origin master`
+- `git pull upstream master`
 
 ## Class Lessons and Recordings
 ###### #class-lessons-recordings
@@ -150,8 +154,8 @@ All course recordings will be linked below as well as quick links to that days m
 
 ## Instructor Team
 * Lead Instructor: Madeline O'Moore
-* Lead Instructor: Magnardo Tavarez
-* Instructional Assistant: Arthur Bernier, Jr.
+* Lead Instructor: Arthur Bernier, Jr.
+* Instructional Assistant: Magnardo Tavarez
 * Instructional Assistant: Bruno Leonardo DaSilva
 
 
@@ -197,8 +201,8 @@ Sheets (CSS), and JavaScript.
 * Solving algorithmic challenges and analyzing the computational complexity of algorithms using Big O notation
 
 #### Unit Structure
-| Unit | Content | 
-|:---:|:-----------:|
+| Unit | Content | Languages/Frameworks | 
+|:---:|:-----------:|:-----------:|
 | Unit 1 | Front End Web Development | HTML/CSS/JS
 | Unit 2 | Full-Stack Development - Databases/Apis | Mongo/Mongoose/Express/Node
 | Unit 3 | Front-End Frameworks | React
@@ -227,6 +231,10 @@ Sheets (CSS), and JavaScript.
 
 <br>
 
+### Homework Submission
+- Homework must be submitted the Sunday before class begins
+- Homework feedback will be provided within 2 days of your homework submission
+
 ###### #hw-submission-procedure
 ### We will walk through this together the first time!
 * Using that week's homework folder on your forked version of Github, push your changes to your repository from your terminal by changing into your repository from your terminal and running the following commands:
@@ -234,6 +242,8 @@ Sheets (CSS), and JavaScript.
 * `git commit -m "current week homework”`
 * `git push`
 * Fill out this [Google Form](s) with your github link for that specific homework. It will be the same Google Form for each homework.
+
+
 
 ## What We Expect From You
 ### Graduation Requirements
@@ -283,7 +293,6 @@ Let's all agree to:
 ## Group Work Formats
 We will be using breakout rooms to get create more personalized learning environments. Make sure to get to know your classmates and use eachother as teachers!
 
-<br>
 <hr>
 
 ###### Licensing <br> 1. All content is licensed under a CC­BY­NC­SA 4.0 license.<br> 1. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
