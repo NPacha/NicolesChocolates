@@ -119,7 +119,7 @@ All course recordings will be linked below as well as quick links to that days m
 -->
 
 ## Course Meeting Details
-* **Course Dates**: October 13, 2020 -  April 14, 2020
+* **Course Dates**: October 13, 2020 -  April 14, 2021
 ### Class Meetings
 * Tuesdays & Wednesdays, 6:30 - 10:45 PM Eastern time
 * Saturdays, 10:00 AM - 6:00PM Eastern time
