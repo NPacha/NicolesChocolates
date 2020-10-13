@@ -1,3 +1,5 @@
+![Ga logo](../../../ga_cog.png)
+
 # Terminal Navigation
 
 ## Lesson Objectives
@@ -269,8 +271,8 @@ We are going to:
 #### Create Files/Directories
 
 * In Terminal, navigate to Desktop.
-* Make a directory `seir-flex-ada`
-* `cd` to `seir-flex-ada` and make a directory `w1d1_student_examples`
+* Make a directory `seir-ruth`
+* `cd` to `seir-ruth` and make a directory `w1d1_student_examples`
 * Go inside the directory
 * Make a file `first_code.js`
 
