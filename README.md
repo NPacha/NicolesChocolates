@@ -167,10 +167,7 @@ Structured Homework Time
 
 #### Nando
 Thursdays 8:30pm EST - 10:00pm EST
-
-#### Bruno
-Saturdays 5pm EST - 7pm EST
-
+Fridays 8:30pm EST - 10:00pm EST
 
 ## Communication
 ##### Send IL's and IA's a group message if:
@@ -187,8 +184,6 @@ Saturdays 5pm EST - 7pm EST
 **Remember we are here to help you! Please reach out with any questions :)**
 
 ## Course Overview
-Learn to code in JavaScript, the native language of the web used by developers the world over.
-
 * Coding webpages using Hypertext Markup Language (HTML), Cascading Style
 Sheets (CSS), and JavaScript.
 * Programming and computer science fundamentals, as well as software engineering best practices.
@@ -234,8 +229,8 @@ Sheets (CSS), and JavaScript.
 <br>
 
 ### Homework Submission
-- Homework must be submitted the Sunday before class begins
-- Homework feedback will be provided within 2 days of your homework submission
+- Homework must be submitted Tuesday before class begins
+- Homework feedback will be provided the following Saturday after submission
 
 ###### #hw-submission-procedure
 ### We will walk through this together the first time!
@@ -243,7 +238,7 @@ Sheets (CSS), and JavaScript.
 * `git add -A`
 * `git commit -m "current week homework”`
 * `git push`
-* Fill out this [Google Form](s) with your github link for that specific homework. It will be the same Google Form for each homework.
+* Fill out this [Google Form]() with your github link for that specific homework. It will be the same Google Form for each homework.
 
 
 
@@ -285,7 +280,6 @@ Let's all agree to:
 * Be on video during class
 
 ### How To Succeed in a Remote Environment
-
 * No distractions during class. This means no cell phones, children around.
 * Make sure to speak up and speak out about any problems you are having! Don't be afraid to ask questions during class! Someone else is probably having this same issue!
 * Carve out at least 10 hours outside of class a week for review and homework. Expect the next 6 months to be out of the norm for you. If you have to carve out a personal hour during a family vacation, you will have to do this!
