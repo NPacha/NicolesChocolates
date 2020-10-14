@@ -261,7 +261,7 @@ We are going to:
 
 * In Terminal, navigate to Desktop.
 * Make a directory `seir-ruth`
-* `cd` to `seir-ruth` and make a directory `w1d1_student_examples`
+* `cd` to `seir-ruth` and make a directory `w1d2`
 * Go inside the directory
 * Make a file `first_code.js`
 
