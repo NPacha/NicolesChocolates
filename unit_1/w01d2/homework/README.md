@@ -38,7 +38,7 @@ Answer the questions, write some code and submit the files via slack (see instru
 
 ## Submission Guidelines
 
-- Homework assigned on Wednesday & Saturday's must be submitted before the following Tuesday evening's class. However, We recommend that you submit your wednesday evening homework before Saturday to allow yourself ample time to complete Saturday's homework.
+- Homework assigned on Wednesday & Saturday's must be submitted before the following Tuesday evening's class. However, We recommend that you submit your Wednesday evening homework before Saturday to allow yourself ample time to complete Saturday's homework.
 - We will be learning how to submit homework this coming saturday. You will be able to submit this homework after Saturday's lesson.
 
 ### Resources
@@ -525,13 +525,8 @@ With every homework, we'll add a challenge section that is optional. These secti
 # Homework submission
 
 **For this homework only**
+- We will be reviewing how upload homework during this coming Saturday's class. Please wait to submit untill then!
 
-- Please create a direct message with your entire instructional team. 
-- Upload your homework file to this direct message when you have completed your homework!
-
-**After this class**
-<br>
-Going forward, you will be uploading your homework to Github via a homework repository you will create on Github. We will walk through how to set this repository up and how to use Github to submit your homework during coming **saturdays** class
 
 ---
 

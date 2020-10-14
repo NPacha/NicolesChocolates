@@ -229,7 +229,7 @@ Sheets (CSS), and JavaScript.
 <br>
 
 ### Homework Submission
-- Homework must be submitted Tuesday before class begins
+- All homework (homework assigned on both Wednesday and Saturday) must be submitted Tuesday before class begins
 - Homework feedback will be provided the following Saturday after submission
 
 ###### #hw-submission-procedure
@@ -238,7 +238,7 @@ Sheets (CSS), and JavaScript.
 * `git add -A`
 * `git commit -m "current week homework”`
 * `git push`
-* Fill out this [Google Form]() with your github link for that specific homework. It will be the same Google Form for each homework.
+* Fill out this [Google Form](https://forms.gle/4NPb21sHPtbvKSYD6) with your github link for that specific homework. It will be the same Google Form for each homework.
 
 
 
