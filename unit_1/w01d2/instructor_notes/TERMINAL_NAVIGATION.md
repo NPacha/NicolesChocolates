@@ -207,17 +207,6 @@ Chain more directories to the current path with the `/` separator
 
 	- `cd ../../auntie_directory`
 
-### Activity
-
-**Navigate the Labyrinth**
-
-* Navigate to the Labyrinth root directory
-* From the Labyrinth root directory, navigate to the `stairway`
-* From the `stairway`, navigate to the `parlor`
-* From the `parlor`, navigate to the `dining room`
-* From the `dining room`, navigate to the `escher room`
-* From the `escher room`, navigate to the Labyrinth root
-
 ### Activity (10 min)
 
 **Navigate the Labyrinth**
@@ -272,7 +261,7 @@ We are going to:
 
 * In Terminal, navigate to Desktop.
 * Make a directory `seir-ruth`
-* `cd` to `seir-ruth` and make a directory `w1d1_student_examples`
+* `cd` to `seir-ruth` and make a directory `w1d2`
 * Go inside the directory
 * Make a file `first_code.js`
 
