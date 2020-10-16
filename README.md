@@ -24,7 +24,7 @@ All course recordings will be linked below as well as quick links to that days m
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
 | w01d1 |[](./unit_1/w01d1/warm_up_exercise)| [Expectations, Culture, Success, Intro to Terminal](./unit_1/w01d1/instructor_notes)| [](./unit_1/w01d1/student_labs)|[](./unit_1/w01d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/Bf49RGyy5OxSw2USMOf_mIUn1YC9XpxaqsIECpMC9AzHGw-gkUHF_0FkMuaQ45Ty8_U7EiU673C_W8uJ.8u86-bMclcO9EX0N?continueMode=true)
-| w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)| [Recording]()
+| w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)| [Recording](https://generalassembly.zoom.us/rec/share/HCLjLDMUTwI3dw-1SIgADHwMEAAwVl9EjZUsgkQJCRA7yx6g-uaM6LJVeg907KTl.qjM0mxKTAHmwLMb5)
 
 <!--
 | w01d3 |[Setting Up For Success](./unit_1/w01d3/warm_up_exercise)| [Git and Github, CSS Lesson](./unit_1/w01d3/instructor_notes)| [Problem Solving](./unit_1/w01d3/student_labs)|[Github Practice and Resume Page](./unit_1/w01d3/homework)| [Morning Recording](https://generalassembly.zoom.us/rec/share/u9ZbCK_17UJJc6f1wkzUcZYNOq_lX6a81iIa_vMEmRvsLmAKZolzCFhOvyWWpqHN) [Afternoon Recording](https://generalassembly.zoom.us/rec/play/75wvcrj9rzI3G9KcswSDU_N-W9S5ffms0HNM-fAKxR62W3EBNgCvb-YbMbQf6_NEv7vFjHXH-x9titul?continueMode=true)
@@ -166,8 +166,8 @@ Your IA will send a zoom link for their office hours into the main Slack channel
 Structured Homework Time
 
 #### Nando
-Thursdays 8:30pm EST - 10:00pm EST
-Fridays 8:30pm EST - 10:00pm EST
+* Thursdays 8:30pm EST - 10:00pm EST
+* Fridays 8:30pm EST - 10:00pm EST
 
 ## Communication
 ##### Send IL's and IA's a group message if:
