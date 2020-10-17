@@ -13,8 +13,8 @@
 ## Before Class Each Day
 - `git add .`
 - `git commit -m 'test'`
-- `git push origin master`
-- `git pull upstream master`
+- `git push origin main`
+- `git pull upstream main`
 
 ## Class Lessons and Recordings
 ###### #class-lessons-recordings
