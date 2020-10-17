@@ -26,7 +26,7 @@ Let's take some time to make sure we all submitted hw correctly and we are able 
 
 - Homework submission will be a link to YOUR url of your copy of the class repo homework location
 
-![Group.png](Group.png)
+![Group.png](https://raw.git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Waverider/master/unit_1/w01d04/morning_exercise/Group.png?token=AAAD4CJUVRUGCFEJF6ANMVS7SRZDQ)
 
 
 ###  Daily workflow:
