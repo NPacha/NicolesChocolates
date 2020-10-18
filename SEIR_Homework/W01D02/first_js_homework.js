@@ -1,6 +1,6 @@
 // SECTION 1
 // 1. DRY stands for "Don't Repeat Yourself". We need to pay attention to this so that our code is easier to read, and is less prone to having many bugs. Some programming tools we have learned to create DRY code is for loops and while loops.
-// 2. const is used for variables that we know will not change in our program. let is the most current syntax used for declaring variables that are mutable. var is an outdated syntax used to declare variables that are mutable. 
+// 2. const is used for variables that we know will not change in our program and is block scoped. let is the most current syntax used for declaring variables that are mutable and is block scoped. var is an outdated syntax used to declare variables that are mutable, and it is globally scoped (will default the variable to this value and override others.) 
 // SECTION 2
 const a = 4;
   const b = 53;
