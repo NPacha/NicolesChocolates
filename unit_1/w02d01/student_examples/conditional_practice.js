@@ -63,3 +63,18 @@ if (isAwake){
     console.log('zzzzz');
 }
 
+const isPartyTonight = true;
+const miniGolfCoupon = true;
+const saleAtTheMall = true;
+
+
+if (isPartyTonight) {
+  console.log("I am going to party like it is 1999")
+} else if (miniGolfCoupon) {
+  console.log("Hole in one! Woo!")
+} else if (saleAtTheMall) {
+  console.log("When you buy more, you save more!")
+} else {
+  console.log('I love cooking cookies')
+}
+
