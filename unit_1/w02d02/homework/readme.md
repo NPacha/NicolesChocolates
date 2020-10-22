@@ -190,7 +190,7 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
 As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
 
-
+[some docs from MDN on For Of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 <hr>
 
 
