@@ -73,10 +73,11 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 //Index of Titanic
 let titanicIndex = favMovies.indexOf('Titanic');
 console.log(titanicIndex);
+
 //1.
 // favMovies.sort();
 // console.log(favMovies);
-//This method did permanently alter the array, it does mutate the array instead of copy it. 
+//This method did permanently alter the array, it does mutate the array instead of copy it. **Commented out for question 10, please see questions 10 for further explanation.
 
 //2. 
 favMovies.pop();
@@ -116,7 +117,7 @@ console.log(favMovies); //Slice did not permanently alter our array
 let slicedArray = favMovies.slice(9, 19);
 console.log(slicedArray);
 
-//10. COME BACK TO THIS QUESTION!!! 
+//10. 
 console.log(favMovies);
 
 //The value we get when we look for the index of something that is not in the array is -1. ***PLEASE NOTE: This only worked for me when I comment out the sort method in question #1. If I sort the array, because it permanently affects the array, I still see Fast and Furious in the array and I am able to find the index. 
