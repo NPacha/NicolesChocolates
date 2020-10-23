@@ -34,7 +34,7 @@
 //     }
 // } ;
 
-//MONKEY MIDDLE
+//MONKEY MIDDLE//
 for (let i = 0; i < myArray.length; i++){
     if (myArray[i] < 5) {
         console.log('little number');
@@ -44,6 +44,8 @@ for (let i = 0; i < myArray.length; i++){
         console.log('monkey');
     }
 }
+
+//WHAT'S IN YOUR CLOSET?//
 
 
 
