@@ -1,0 +1,3 @@
+//Verbal Questions//
+//1. The difference between a parameter and an argument is that a parameter is established during function declaration (an input of sorts that modifies the functions behavior), while an argument is established when you invoke, or call a function (uses specific data values).
+//2. Console.log prints the result of somethign within the function to the console, which most users will not be seeing. Return on the other hand, stops the function, and sends the value of your function stored within the computers memory (not on the console).
