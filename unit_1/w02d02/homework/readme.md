@@ -381,17 +381,8 @@ There were two parts to the hw, CSS review videos and JavaScript reps and code c
 
 ## Submission Guidelines
 
-- Must be submitted no later than Sunday evening.
-
-### To Submit Your Homework
-- Using that week's homework folder on your forked version of Github, push your changes to your repository from your terminal by changing into your repository from your terminal and running the following commands:
-
-```
-  git add .
-  git commit -m "current week homework”
-  git push origin master
-```
-- Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfDYDXHXu3Rh5baVaXrNttOuYBwwcGXfSwB1MMchQ2BjAUv1Q/viewform) with your github link for that specific homework. It will be the same Google Form for each homework.
+- Make an issue on the main repo and add a link to your fork.
+- Forget how to submit your homework? Check out the [homework submission page on the class wiki](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-RUTH/wiki/Homework-Submission) or ask an IA
 
 
 ---

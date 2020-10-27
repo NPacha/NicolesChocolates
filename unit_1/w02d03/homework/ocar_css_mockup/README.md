@@ -42,6 +42,12 @@ Your job will be to use Oscar's old website as a mockup and try to recreate it u
 1. It's fine to guess at the colors
 1. **The main thing we want you to focus on is the positioning/layout!**
 
+## Submission Guidelines
+
+- Make an issue on the main repo and add a link to your fork.
+- Forget how to submit your homework? Check out the [homework submission page on the class wiki](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-RUTH/wiki/Homework-Submission) or ask an IA
+
+
 ---
 
 *Copyright 2018, General Assembly Space. Licensed under [CC-BY-NC-SA, 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)*

@@ -260,7 +260,7 @@ Answer the questions inside your `solutions.js` code and submit your homework to
 
 ## Submission Guidelines
 
-- Answer the questions inside your `solutions.js` code and submit your homework to your fork. Submit the Github link to your homework folder for this week using this [Google Form](https://forms.gle/PLfWt2t5FjiRfurJA)
+- Make an issue on the main repo and add a link to your fork.
 - Forget how to submit your homework? Check out the [homework submission page on the class wiki](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-RUTH/wiki/Homework-Submission) or ask an IA
 
 ## Resources
