@@ -24,3 +24,96 @@ const sumArray = (array) => {
 }
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+//4. Prime Numbers 
+ const checkPrime = (num) => {
+     
+     //Get number that we need to divde our input up to (ex. 1.73)
+          let divider = Math.sqrt(num);
+          //Edge case
+          if (num === 1 || num === 2 || num === 3) {
+            return true;
+          } else {
+          //Loop over each number up until the divider
+          //Do not loop over 0 or 1, since all prime numbers are divisible by this
+          for (let i = 2; i <= divider; i++){
+            //If the number divided by the current number in our loop is a whole number (check using modulo 1)
+              if ((num/i) % 1 === 0  ){
+                  //This is not a prime number
+                  return false;
+              } else {
+                //This is a prime number
+                  return true;
+              }
+          }
+        }
+      }
+      
+ console.log(checkPrime(21));
+
+ //Step Two
+  // const printPrimes = (num) => {
+  //      for (let i = 0; i < num; i++){
+  //        if (checkPrime(i)=== true){
+  //          console.log(i);
+  //        }
+  //      }
+  //     }
+
+
+  // printPrimes(97);
+
+
+  //5. Rock Paper Scissors
+
+// Create array to hold computer choices
+const computerChoices = ['rock', 'paper', 'scissors'];
+  
+//Create array to hold user options
+const userChoices = ['rock', 'paper', 'scissors'];
+  
+//Create variable to hold user choice
+let userSelection = 'rock';
+
+//Create variable to hold computer choice
+let computerSelection = 0;
+
+//Create a function that will choose a random value for the computer. 
+let randomIndexNum = Math.floor(Math.random() * computerChoices.length);
+
+   const computerChooses = () => {
+       computerSelection = computerChoices[randomIndexNum];
+       }
+
+//Call the function 
+   computerChooses();
+
+   //Sanity check
+   console.log(computerSelection)
+
+//Create a function that will compare computer choice and user choice, then console log the result
+  const compareChoices = () => {
+      if (computerSelection === 'rock'){
+      if (userSelection === 'rock') {
+          console.log( `It's a tie! The computer chose ${computerSelection} and the player chose ${userSelection}.`)
+      } else if (userSelection === 'paper') {
+          console.log(`The user won! ${userSelection} beats ${computerSelection}.`)} else {console.log(`The computer won! ${computerSelection} beats ${userSelection}.`)}
+      } else if (computerSelection === 'paper'){
+          if (userSelection === 'paper'){
+              console.log(`It's a tie! The computer chose ${computerSelection} and the player chose ${userSelection}.`)
+          } else if (userSelection === 'rock'){
+              console.log(`The computer won! ${computerSelection} beats ${userSelection}.`)
+          } else {console.log(`The user won! ${userSelection} beats ${computerSelection}.`)}
+      } else if (computerSelection === 'scissors'){
+          if (userSelection === 'scissors'){
+            console.log(`It's a tie! The computer chose ${computerSelection} and the player chose ${userSelection}.`)
+          } else if (userSelection === 'paper'){
+            console.log(`The computer won! ${computerSelection} beats ${userSelection}.`)
+          } else {console.log(`The user won! ${userSelection} beats ${computerSelection}.`)}
+      }
+    
+    }
+
+    compareChoices();
+
+

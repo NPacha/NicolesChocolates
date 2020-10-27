@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+
+}
+
+#getaquote {
+    background: #003cdd;
+    height: 600px;
+    color: white;
+    text-align: left;
+}
+
+#calltoaction {
+    text-align: left;
+    position: absolute;
+    float: left;
+    display: block;
+    border: none;
+    left: 180px;
+    top: 100px;
+}
+
+h1 {
+    font-size: 60px;
+   
+}
+
+#quote {
+    background: white;
+    padding: 15px;
+    color: #003cdd;
+    border-radius: 4px;
+    border: none;
+}
+
+
+
+div {
+    
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#topics {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    color: grey;
+    
+    
+}
+
+h2 {
+    font-size: 16px;
+}
+
+#subtext {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#learnmore {
+    background: white;
+    padding: 10px 20px;
+    color: grey;
+    border-radius: 4px;
+    border: solid 1px lightgray;
+}
+
+
+
+#findplan {
+    height: 300px;
+    text-align: center;
+    
+}
+
+.findrightplan {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#foryou {
+    background:#003cdd;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 300px;
+    height: 50px;
+
+}
+
+#forbusiness {
+    background: white;
+    color: #003cdd;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    width: 300px;
+    height: 50px;
+
+}
+
+
+#footer {
+width: 100%;
+display: inline-flex;
+flex-direction: right;
+justify-content: stretch;
+border-top: solid 1px lightgrey;
+}
+
+
+ul {
+    
+    list-style-type: none;
+    flex-grow: 4;
+    padding-top: 40px;
+}
+
