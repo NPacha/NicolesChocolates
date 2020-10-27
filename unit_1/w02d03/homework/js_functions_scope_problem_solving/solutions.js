@@ -1,7 +1,9 @@
 //Verbal Questions//
 //1. The difference between a parameter and an argument is that a parameter is established during function declaration (an input of sorts that modifies the functions behavior), while an argument is established when you invoke, or call a function (uses specific data values).
 //2. Console.log prints the result of somethign within the function to the console, which most users will not be seeing. Return on the other hand, stops the function, and sends the value of your function stored within the computers memory (not on the console).
-//Palindrome
+
+
+//////////////////Palindrome///////////////////
 
 const checkPalindrome = (string) => {
     let lowerCase = string.toLowerCase();
@@ -14,7 +16,7 @@ console.log(checkPalindrome("Radar"));
 
 console.log(checkPalindrome("Borscht"));
 
-//3.Sum Array
+//////////////////Sum Array//////////////////
 const sumArray = (array) => {
     let sum = 0;
     for (let i = 0; i < array.length; i++){
@@ -25,46 +27,39 @@ const sumArray = (array) => {
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
-//4. Prime Numbers 
+////////////////////Prime Numbers////////////////////////// 
  const checkPrime = (num) => {
      
-     //Get number that we need to divde our input up to (ex. 1.73)
-          let divider = Math.sqrt(num);
-          //Edge case
-          if (num === 1 || num === 2 || num === 3) {
-            return true;
-          } else {
-          //Loop over each number up until the divider
-          //Do not loop over 0 or 1, since all prime numbers are divisible by this
+     //Get number that we need to divde our input up to ,rounded
+          let divider = Math.round(Math.sqrt(num));
+
           for (let i = 2; i <= divider; i++){
             //If the number divided by the current number in our loop is a whole number (check using modulo 1)
               if ((num/i) % 1 === 0  ){
                   //This is not a prime number
                   return false;
-              } else {
-                //This is a prime number
-                  return true;
-              }
+                  } 
+                }
+             //This is a prime number
+              return true;
           }
-        }
-      }
-      
- console.log(checkPrime(21));
+            
+ console.log(checkPrime(18));
 
  //Step Two
-  // const printPrimes = (num) => {
-  //      for (let i = 0; i < num; i++){
-  //        if (checkPrime(i)=== true){
-  //          console.log(i);
-  //        }
-  //      }
-  //     }
+  const printPrimes = (num) => {
+       for (let i = 0; i <= num; i++){
+         if (checkPrime(i)=== true){
+           console.log(i);
+         }
+       }
+      }
 
 
-  // printPrimes(97);
+  printPrimes(50);
 
 
-  //5. Rock Paper Scissors
+///////////////Rock Paper Scissors///////////////////
 
 // Create array to hold computer choices
 const computerChoices = ['rock', 'paper', 'scissors'];
