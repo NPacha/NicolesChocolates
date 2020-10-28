@@ -1,0 +1,46 @@
+body{
+    background-color: #d6d6e0;
+    margin: 0px 40px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 0px;
+    
+}
+img {
+    display: block;
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+main {
+    background-color: #eeeeee;
+    padding-bottom: 30px;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+section {
+    background-color: white;
+    margin: 10px 70px;
+}
+
+p{
+    padding: 0px 40px;
+    padding-bottom: 30px;
+}
+
+
+footer {
+
+    background-color: white;
+}
