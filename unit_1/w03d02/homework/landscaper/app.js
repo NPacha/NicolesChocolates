@@ -7,8 +7,7 @@ const pickTool = () => {
                 }
             }
             console.log(currentToolObj);
-
-        mowLawn();
+            
        }
 
              
@@ -72,27 +71,37 @@ const buyTool = () => {
 
 const winner = () => {
     if (landscaper.money >= winningAmount){
-        alert(`You win! You amazing business person you!`);
+         alert(`You win! You amazing business person you!`);
+         return true;
+        
     }
+    return false;
 }
 
 const mowLawn = () => {
     
-        let mowStart = prompt(`Day: ${day}. \n Tool you are using: ${currentToolObj.name} \n Amount of money you have: ${landscaper.money} \n Type 'go' to keep mowing and making money. \n`, `go`);
-        while (mowStart === 'go'){
-            landscaper.money += currentToolObj.earns;
+        let mowStart = prompt(`Day: ${day}. \n Tool you are using: ${currentToolObj.name} \n Amount of money you have: ${landscaper.money} \n Type 'go' to mow lawn and make money. \n Type 'another tool' to change tools`, `go/another tool`); 
+        if (mowStart === 'go'){
+            landscaper.money += currentToolObj.earns;  
             day++;
-            buyTool();
-            console.log(landscaper.money);
-            mowStart = prompt(`Day ${day}. \n Amount of Money Available:${landscaper.money} \n Type 'go' to keep mowing and making money. \n Type 'another tool' to change tools`, `go/another tool`);
-            if(mowStart === 'another tool'){
-                pickTool();
-            }  
-            winner(); 
+            console.log(landscaper.money);      
+        } else if (mowStart === 'another tool'){
+            pickTool();
+        }
             
-            }
          
     }
+
+const playGame = () => {
+    console.log('test');
+    console.log(winner());
+    pickTool();
+while (winner() === false) {
+    mowLawn();
+    winner();
+    buyTool();
+    }
+}
 
    
 
@@ -145,8 +154,7 @@ alert(`Okay ${playerName}, here\'s the deal. We need to mow some lawns and make 
 
 let result = prompt(`Day ${day}. Total dollars you have: ${landscaper.money}. \n Type 1 to pick tool to start mowing the lawn. \n`, `Type 1`)
 
-pickTool();
-mowLawn();
+playGame();
 
 
 
