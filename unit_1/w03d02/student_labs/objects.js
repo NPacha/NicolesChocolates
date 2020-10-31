@@ -73,7 +73,7 @@
 
 let hitOptions = [true, false];
 
-let randomHit = () => {
+const randomHit = () => {
     let hitOpponent = hitOptions[Math.floor(Math.random() * 2)];
     return hitOpponent;
 }
@@ -82,11 +82,12 @@ let randomHit = () => {
 const ogreFires = () => {
     if (randomHit() === true){
     adventurer.hitpoints = adventurer.hitpoints - ogre.damage;
-    console.log(`Adam was striked hitpoints left: ${adventurer.hitpoints}`)
-    } else {
+    console.log(`Adam was striked hitpoints left: ${adventurer.hitpoints}`) }
+    
         console.log ("Ogre missed")
-    }
+    
 }
+
 
 
 
@@ -106,8 +107,13 @@ const battle = () => {
         adamFires();
         }
     }
-console.log(randomHit());
-console.log(ogreFires());
+
+
+console.log(randomHit() + "here I am");
+console.log(ogreFires() + "here I am!");
+
+
+
 
 
 
@@ -157,7 +163,4 @@ console.log(ogreFires());
 // //Cat Brain Bender
 
 // console.log(combineCats(combineCats1, combineCats3));
-
-
-
 

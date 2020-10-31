@@ -1,166 +1,163 @@
-const pickTool = () => {
-    let pickedTool = prompt(`Tools Available: ${landscaper.toolsAvailable} \n Type name of tool you want to use`, `${landscaper.toolsAvailable}`);
-    for (let i = 0; i < tools.length; i++){
-                console.log(tools[i].name);
-                if (tools[i].name === pickedTool){
-                    currentToolObj = tools[i];
-                }
-            }
-            console.log(currentToolObj);
+// const pickTool = () => {
+//     let pickedTool = prompt(`Tools Available: ${landscaper.toolsAvailable} \n Type name of tool you want to use`, `${landscaper.toolsAvailable}`);
+//     for (let i = 0; i < tools.length; i++){
+//                 console.log(tools[i].name);
+//                 if (tools[i].name === pickedTool){
+//                     currentToolObj = tools[i];
+//                 }
+//             }
+//             console.log(currentToolObj);
             
-       }
+//        }
 
              
 
-const buyTool = () => {
-    console.log(landscaper.toolsAvailable.includes('scissors'));
-    if (landscaper.money >= 5 && landscaper.money < 25 && landscaper.toolsAvailable.includes('scissors') === false){
-        let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[1].name} for ${tools[1].price} dollars? Type 'yes' or 'no'`, `yes/no`);
-        if (addTool === 'yes'){
-            landscaper.money -= tools[1].price;
-            //Add new tool to the available tools
-            landscaper.toolsAvailable.push(tools[1].name);
-            console.log(landscaper);
-            pickTool();
-            mowLawn();
-        } else {
-            alert(`Okay, suit yourself!`);
-            mowLawn();
-        }
-    } else if (landscaper.money >= 25 && landscaper.money < 250 && landscaper.toolsAvailable.includes('push lawnmower') === false){
-        let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy a ${tools[2].name} for ${tools[2].price} dollars? Type 'yes' or 'no'`, `yes/no`);
-        if (addTool === 'yes'){
-            landscaper.money -= tools[2].price;
-            landscaper.toolsAvailable.push(tools[2].name);
-            console.log(landscaper);
-            pickTool();
-            mowLawn();
-        } else {
-            alert(`Okay, suit yourself!`);
-            mowLawn();
-        }
-    } else if(landscaper.money >= 250 && landscaper.money < 500 && landscaper.toolsAvailable.includes('new lawnmower') === false){
-        let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[3].name} for ${tools[3].price} dollars? Type 'yes' or 'no'`, `yes/no`);
-        if (addTool === 'yes'){
-            landscaper.money -= tools[3].price;
-            //Add new tool to the available tools
-            landscaper.toolsAvailable.push(tools[3].name);
-            console.log(landscaper);
-            pickTool();
-        } else {
-            alert(`Okay, suit yourself!`);
-            mowLawn();
-        }
+// const buyTool = () => {
+//     console.log(landscaper.toolsAvailable.includes('scissors'));
+//     if (landscaper.money >= 5 && landscaper.money < 25 && landscaper.toolsAvailable.includes('scissors') === false){
+//         let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[1].name} for ${tools[1].price} dollars? Type 'yes' or 'no'`, `yes/no`);
+//         if (addTool === 'yes'){
+//             landscaper.money -= tools[1].price;
+//             //Add new tool to the available tools
+//             landscaper.toolsAvailable.push(tools[1].name);
+//             console.log(landscaper);
+//             pickTool();
+//             mowLawn();
+//         } else {
+//             alert(`Okay, suit yourself!`);
+//             mowLawn();
+//         }
+//     } else if (landscaper.money >= 25 && landscaper.money < 250 && landscaper.toolsAvailable.includes('push lawnmower') === false){
+//         let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy a ${tools[2].name} for ${tools[2].price} dollars? Type 'yes' or 'no'`, `yes/no`);
+//         if (addTool === 'yes'){
+//             landscaper.money -= tools[2].price;
+//             landscaper.toolsAvailable.push(tools[2].name);
+//             console.log(landscaper);
+//             pickTool();
+//             mowLawn();
+//         } else {
+//             alert(`Okay, suit yourself!`);
+//             mowLawn();
+//         }
+//     } else if(landscaper.money >= 250 && landscaper.money < 500 && landscaper.toolsAvailable.includes('new lawnmower') === false){
+//         let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[3].name} for ${tools[3].price} dollars? Type 'yes' or 'no'`, `yes/no`);
+//         if (addTool === 'yes'){
+//             landscaper.money -= tools[3].price;
+//             //Add new tool to the available tools
+//             landscaper.toolsAvailable.push(tools[3].name);
+//             console.log(landscaper);
+//             pickTool();
+//         } else {
+//             alert(`Okay, suit yourself!`);
+//             mowLawn();
+//         }
         
-    } else if(landscaper.money >= 500 && landscaper.money < 1000 && landscaper.toolsAvailable.includes('students') === false){
-        let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[4].name} for ${tools[4].price} dollars? Type 'yes' or 'no'`, `yes/no`);
-        if (addTool === 'yes'){
-            landscaper.money -= tools[4].price;
-            //Add new tool to the available tools
-            landscaper.toolsAvailable.push(tools[4].name);
-            console.log(landscaper);
-            pickTool();
-        } else {
-            alert(`Okay, suit yourself!`);
-        }
+//     } else if(landscaper.money >= 500 && landscaper.money < 1000 && landscaper.toolsAvailable.includes('students') === false){
+//         let addTool = prompt(`You unlocked the ability to buy a new tool! Do you want to buy some ${tools[4].name} for ${tools[4].price} dollars? Type 'yes' or 'no'`, `yes/no`);
+//         if (addTool === 'yes'){
+//             landscaper.money -= tools[4].price;
+//             //Add new tool to the available tools
+//             landscaper.toolsAvailable.push(tools[4].name);
+//             console.log(landscaper);
+//             pickTool();
+//         } else {
+//             alert(`Okay, suit yourself!`);
+//         }
 
-    }
+//     }
     
 
-}
+// }
 
-const winner = () => {
-    if (landscaper.money >= winningAmount){
-         alert(`You win! You amazing business person you!`);
-         return true;
+// const winner = () => {
+//     if (landscaper.money >= winningAmount){
+//          alert(`You win! You amazing business person you!`);
+//          return true;
         
-    }
-    return false;
-}
+//     }
+//     return false;
+// }
 
-const mowLawn = () => {
+// const mowLawn = () => {
     
-        let mowStart = prompt(`Day: ${day}. \n Tool you are using: ${currentToolObj.name} \n Amount of money you have: ${landscaper.money} \n Type 'go' to mow lawn and make money. \n Type 'another tool' to change tools`, `go/another tool`); 
-        if (mowStart === 'go'){
-            landscaper.money += currentToolObj.earns;  
-            day++;
-            console.log(landscaper.money);      
-        } else if (mowStart === 'another tool'){
-            pickTool();
-        }
+//         let mowStart = prompt(`Day: ${day}. \n Tool you are using: ${currentToolObj.name} \n Amount of money you have: ${landscaper.money} \n Type 'go' to mow lawn and make money. \n Type 'another tool' to change tools`, `go/another tool`); 
+//         if (mowStart === 'go'){
+//             landscaper.money += currentToolObj.earns;  
+//             day++;
+//             console.log(landscaper.money);      
+//         } else if (mowStart === 'another tool'){
+//             pickTool();
+//         }
             
          
-    }
+//     }
 
-const playGame = () => {
-    console.log('test');
-    console.log(winner());
-    pickTool();
-while (winner() === false) {
-    mowLawn();
-    winner();
-    buyTool();
-    }
-}
+// const playGame = () => {
+//     pickTool();
+// while (winner() === false) {
+//     mowLawn();
+//     winner();
+//     buyTool();
+//     }
+// }
 
    
 
-//Declare an object to store information about the user
-let landscaper = {
-    name: null,
-    money: 0,
-    toolsAvailable: ['teeth'],
-}
+// //Declare an object to store information about the user
+// let landscaper = {
+//     name: null,
+//     money: 0,
+//     toolsAvailable: ['teeth'],
+// }
     
-//Declare an object to store information about the tools
-const tools = [
-             {  name: 'teeth',
-                price: 'free',
-                earns: 1
-            },
-            {   name: 'scissors',
-                price: 5,
-                earns: 5
-            },
+// //Declare an object to store information about the tools
+// const tools = [
+//              {  name: 'teeth',
+//                 price: 'free',
+//                 earns: 1
+//             },
+//             {   name: 'scissors',
+//                 price: 5,
+//                 earns: 5
+//             },
 
-            {   name: 'push lawnmower',
-                price: 25,
-                earns: 50
-            },
+//             {   name: 'push lawnmower',
+//                 price: 25,
+//                 earns: 50
+//             },
 
-           {    name: 'new lawnmower',
-                price: 250,
-                earns: 100
-            },
+//            {    name: 'new lawnmower',
+//                 price: 250,
+//                 earns: 100
+//             },
 
-            {   name: 'students',
-                price: 500,
-                earns: 250
-            }, 
-        ]
-//Declare a variable to store the amount of money needed to win the game
-const winningAmount = 1000;
-//Declare variable to store the current day we are on
-let day = 1;
+//             {   name: 'students',
+//                 price: 500,
+//                 earns: 250
+//             }, 
+//         ]
+// //Declare a variable to store the amount of money needed to win the game
+// const winningAmount = 1000;
+// //Declare variable to store the current day we are on
+// let day = 1;
 
-//Welcome Message
-const playerName = prompt("Hello Landscaper! Ready to get to work?", "Type name to get started");
+// //Welcome Message
+// const playerName = prompt("Hello Landscaper! Ready to get to work?", "Type name to get started");
 
-landscaper.name = playerName;
+// landscaper.name = playerName;
 
-let currentToolObj = null;
+// let currentToolObj = null;
 
-alert(`Okay ${playerName}, here\'s the deal. We need to mow some lawns and make some money. \n The more money you have, the better tools you can buy, the more money you can make! \n Right now, all you have is your ${landscaper.toolsAvailable}, and you have ${landscaper.money}. Lets get started! `);
+// alert(`Okay ${playerName}, here\'s the deal. We need to mow some lawns and make some money. \n The more money you have, the better tools you can buy, the more money you can make! \n Right now, all you have is your ${landscaper.toolsAvailable}, and you have ${landscaper.money}. Lets get started! `);
 
-let result = prompt(`Day ${day}. Total dollars you have: ${landscaper.money}. \n Type 1 to pick tool to start mowing the lawn. \n`, `Type 1`)
+// let result = prompt(`Day ${day}. Total dollars you have: ${landscaper.money}. \n Type 1 to pick tool to start mowing the lawn. \n`, `Type 1`)
 
-playGame();
-
-
+// playGame();
 
 
-
-
+const buyToolButton = document.querySelector('.buytool');
+buyToolButton.onClick(prompt('Hi, hello'));
+console.log(buyToolButton)
 
 
 
