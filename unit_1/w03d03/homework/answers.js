@@ -48,3 +48,25 @@
             // favMovies: ['asf','asdf']
 //     }
 // ]
+
+/////////////////TAKE IT EASY/////////////////
+//1.
+const rainbow = ['red', 'green', 'orange', 'yellow', 'purple', 'blue']
+
+//2.
+for (let i = 0; i < rainbow.length; i++){
+if(rainbow[i] === 'blue'){
+    console.log(rainbow[i]);
+}
+}
+
+//3.
+const Nicole = {
+    favFood: 'Italian',
+    hobbies: ['guitar', 'hiking', 'spending time with family'],
+    hometown: 'Denver',
+    favDataType: 'Objects of course'
+}
+//4.
+console.log(Nicole.hobbies)
+
