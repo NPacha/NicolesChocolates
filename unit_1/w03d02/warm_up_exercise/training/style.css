@@ -1,0 +1,18 @@
+div {
+    background-color: lightblue;
+}
+
+.background-pink {
+    background-color: lightpink;
+    display: inline-block;
+    width: 24.5%;
+}
+
+#background-yellow {
+    background-color: lightyellow;
+}
+/* 
+#background-yellow p {
+    background-color: limegreen;
+} */
+
