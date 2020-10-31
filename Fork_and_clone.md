@@ -11,7 +11,7 @@ How do I fork and clone a repository?
 
     ![forkandclone](https://media.git.generalassemb.ly/user/5694/files/48b96d80-d09f-11e9-93a4-e7a8ca755f5d)
 
-    - Double-check that you are using **your fork** and not _SEIR-Margaret_:
+    - Double-check that you are using **your fork** and not _The Original You Forked From_:
 
     <img width="650" alt="jrhorn424_meta" src="https://cloud.githubusercontent.com/assets/388761/10289547/e02c1dc6-6b6c-11e5-9c26-a33f09a891f8.png">
 1. Locate your SEIR folder on your computer after typing `pwd` you should see some output similar to 
