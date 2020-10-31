@@ -3,7 +3,7 @@
 How do I fork and clone a repository?
 =====================================
 
-1. Visit the repository on Github Enterprise. Fork the repository:
+1. Visit the repository on Github Enterprise or Github. Fork the repository:
     
     <img width="650" alt="ga-wdi-boston_meta" src="https://cloud.githubusercontent.com/assets/388761/10289480/724c1d56-6b6c-11e5-9c34-cf0138658d0c.png">
 
