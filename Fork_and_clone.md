@@ -14,9 +14,9 @@ How do I fork and clone a repository?
     - Double-check that you are using **your fork** and not _The Original You Forked From_:
 
     <img width="650" alt="jrhorn424_meta" src="https://cloud.githubusercontent.com/assets/388761/10289547/e02c1dc6-6b6c-11e5-9c26-a33f09a891f8.png">
-1. Locate your SEIR folder on your computer after typing `pwd` you should see some output similar to 
+1. Locate your code folder on your computer after typing `pwd` you should see some output similar to 
   ```bash
-   /Users/arthurbernier/SEIR
+   /Users/arthurbernier/code
   ```
 1. From the command line, clone your repository using the link copied from github enterprise (makes sure you are in your SEIR folder):
     ```
