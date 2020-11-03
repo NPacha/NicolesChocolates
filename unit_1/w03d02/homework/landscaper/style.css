@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: #6E8E47;
+}
+
+header {
+    padding: 5%;
+    background: url("https://i.imgur.com/z5jmdgj.jpg");
+    background-position: center bottom;
+    background-size: 100%;
+    border: solid 5px black;
+    margin: 50px;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    letter-spacing: .17em;
+}
+
+main {
+    border: solid 2px black;
+    width: 60%;
+    display: inline-block;
+    padding-bottom: 10%;
+    background: white;
+}

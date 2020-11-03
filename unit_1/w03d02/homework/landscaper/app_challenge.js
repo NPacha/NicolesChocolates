@@ -77,7 +77,7 @@ const winner = () => {
 }
 
 const mowLawn = () => {
-
+        
         buyTool();
         let mowStart = document.createElement('p');
         mowStart.innerHTML = `Day: ${day}. \n You earned: $${currentToolObj.earns}`;
