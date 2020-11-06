@@ -119,30 +119,121 @@ console.log(sumOfNums);
 // concatenate all the words using reduce
 
 const concatPanagram = panagram.reduce((acc, currentVal)=> {
-return  acc + ' ' + currentVal + ' ';
+  return acc + ' ' + currentVal + ' '
 },
-''
-)
-console.log(concatPanagram)
+'')
+
+
+console.log(concatPanagram);
+console.log(panagram);
 
 
 // Thought Questions
 
 // What happened to the original array?
+// The original array stays the same.
 
 // Some
 // Find out if some numbers are divisible by 7
+
+console.log(smallNums.some(num=> (num/7) % 1 === 0))
+
+const test = num => (num/7) % 1 === 0 ;
+
+console.log(nums.some(test));
+
 // Find out if some words have the letter a in them
+const hasA = (word) => {
+  for (let i = 0; i < word.length; i++){
+    console.log(word[i]);
+    if (word[i] === 'a') {
+      return true;
+    }
+
+  }
+  return false;
+}
+console.log(panagram.some(hasA));
+
+const panagramsHasA = (word) => {
+  for (let i = 0; i < word.length; i++){
+    console.log(word[i]);
+    if (word[i] === 'a'){
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(panagrams.some(panagramsHasA));
 
 
 // Sort
 // Try to sort without any arguments, do you get what you'd expect with the numbers array?
+console.log(smallNums.sort());
+console.log(nums.sort());
+//No, I do not get the result as I expected, because it is sorting based on the first place value within the number.
+
+
 // Sort the numbers in ascending order
+const smallNumsSort = smallNums.sort((num1, num2)=> {
+  return num1 - num2;
+})
+
+console.log(smallNumsSort);
+
+const numsSort = nums.sort((num1, num2)=> {
+  return num1 - num2;
+})
+console.log(numsSort);
+
+
 // Sort the numbers in descending order
+
+const smallNumsDescend = smallNums.sort((num1, num2)=> {
+  return num2- num1;
+})
+console.log(smallNumsDescend);
+
+const numsDescend = nums.sort((num1, num2)=>{
+  return num2 - num1;
+})
+
+console.log(numsDescend);
+
 // Sort the words in ascending order
+
+const panagramAscend = panagram.sort((word1, word2)=> {
+  return word1.length - word2.length
+})
+
+console.log(panagramAscend);
+
+const panagramsAscend = panagrams.sort((word1, word2) => {
+  return word1.length - word2.length
+})
+
+console.log(panagramsAscend);
+
 // Sort the words in descending order
+
+const panagramDescend = panagram.sort((word1, word2)=> {
+  return word2.length - word1.length
+})
+
+console.log(panagramDescend)
+
+const panagramsDescend = panagrams.sort((word1, word2)=> {
+  return word2.length - word1.length;
+})
+
+console.log(panagramsDescend);
+
 
 
 // Thought Questions
 
 // What happened to the original array?
+console.log(panagram);
+console.log(panagrams);
+//The original arrays are mutated!
