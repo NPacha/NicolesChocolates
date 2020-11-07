@@ -1,0 +1,120 @@
+# Character Creation and Building "Types"
+
+
+## Lesson Objectives
+
+1. Make a class inherit attributes from a "parent class"
+1. Create static properties for a class
+1. Create a factory
+
+
+## Make a class inherit attributes from a "parent class"
+
+Sometimes we want to have a "parent" class that will have some basic attributes that will be inherited by "child" classes. Here is our parent class. But what if we have a super hero amongst us that has all our human attributes and more?
+
+```javascript
+class Character {
+  constructor (name, age, eyes, hair, lovesCats = true, lovesDogs) {
+    this.legs = 2;
+    this.arms = 2;
+    this.name = name;
+    this.age = age;
+    this.eyes = eyes;
+    this.hair = hair;
+    this.lovesCats = lovesCats;
+    this.lovesDogs = lovesDogs || true;
+  }
+  greet (otherCharacter) {
+    console.log('hi ' + otherCharacter + '!');
+  }
+  classyGreeting (otherClassyCharacter) {
+    console.log('Howdy ' + otherClassyCharacter.name + '!');
+  }
+  setHair (hairColor) {
+    this.hair = hairColor;
+  }
+  smite () {
+    console.log('i smited thee.');
+  }
+ 
+}
+ const hobbit = new Character('Mr Baggins', 33, 'brown', 'black')
+console.log(hobbit);
+```
+We could just copy paste the above and add what we need, but that's not sticking to the principal of DRY. Instead we can `extend` our Character class for our Hobbit
+
+We can now add additional functionality:
+
+```javascript
+class Hobbit extends Character {
+  steal () {
+    console.log('lets get away!');
+  }
+}
+const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+console.log(frodo);
+frodo.smite();
+frodo.steal();
+```
+
+And we can override previous functionality:
+
+```javascript
+class Hobbit extends Character {
+  steal () {
+    console.log('lets get away!');
+  }
+  greet (otherCharacter) {
+    console.log(`Hello ${otherCharacter}`);
+  }
+}
+const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+frodo.greet('Bob');
+```
+
+We can even reference the parent class' method and extend its original functionality:
+
+```javascript
+class Hobbit extends Character {
+  steal () {
+    console.log('lets get away!');
+  }
+  greet (otherCharacter) {
+    console.log('Greetings ' + otherCharacter);
+  }
+  smite () {
+    super.smite();
+    this.steal();
+  }
+}
+const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+frodo.smite();
+```
+
+This is most useful on the constructor:
+
+```javascript
+class Hobbit extends Character {
+  constructor (name, age, eyes, hair) {
+    super(name, age, eyes, hair);
+    this.skills = ["thievery", "speed", "willpower"];
+  }
+  steal () {
+    console.log('lets get away!');
+  }
+  greet (otherCharacter) {
+    console.log('Greetings ' + otherCharacter);
+  }
+  smite () {
+    super.smite();
+    this.steal();
+  }
+}
+const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+console.log(frodo);
+```
+
+
+`super` is another special keyword/function. Try mispelling it - and you'll see it won't have the same functionality.
+
+# Make a Class of either Elves, Dwarves or Men be creative and share your class with the class.
