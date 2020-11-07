@@ -1,0 +1,68 @@
+* {
+    border: 1px solid gold;
+}
+
+body {
+    background-image: url("img/sailboat.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0%;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+nav {
+    background-color: black;
+    height: 200px;
+    margin-top: 400px;
+}
+
+nav a {
+    
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+hr {
+    color: lightgray;
+}
+
+/* make the three sections deisplay flex in a row so they line up side by side */
+section {
+    display: flex;
+    flex-direction: row
+    flex-direction: ;
+    width: 10%;
+}
+
+section img {
+    height: 10em;
+}
+
+#photocred {
+    font-style: italic;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
