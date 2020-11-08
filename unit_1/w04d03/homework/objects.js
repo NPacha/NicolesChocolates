@@ -11,8 +11,8 @@ class Hamster {
     eatFood(){ 
         console.log("nibble nibble")}
 
-    getPrice(hamObj){
-        return hamObj.price;
+    getPrice(){
+        return this.price;
     }
 
 }
@@ -57,7 +57,7 @@ class Person {
     buyHamster(hamObj){
         this.hamsters.push(hamObj);
         this.mood+= 10;
-        this.bankAccount -= getPrice(hamObj);
+        this.bankAccount -= hamObj.getPrice();
     }
 }
 
@@ -83,8 +83,8 @@ console.log(newHamster);
 newHamster.owner = newPerson.name;
 console.log(newHamster);
 //8.
-// newPerson.buyHamster(newHamster);
-// console.log(newPerson);
+newPerson.buyHamster(newHamster);
+console.log(newPerson);
 //9. 
 newPerson.ageUp(15);
 console.log(newPerson);
