@@ -1,7 +1,7 @@
 class Hamster {
-    constructor(owner = '', name, price = 15){
-        this.owner = owner;
+    constructor(name, owner = '', price = 15){
         this.name = name;
+        this.owner = owner;
         this.price = price;
     }
 
@@ -11,8 +11,8 @@ class Hamster {
     eatFood(){ 
         console.log("nibble nibble")}
 
-    getPrice(){
-        return this.price;
+    getPrice(hamObj){
+        return hamObj.price;
     }
 
 }
@@ -40,26 +40,58 @@ class Person {
     greet(){
         console.log(`Hello! I am ${this.name}.`)
     }
-    eat(){
-        this.weight++;
-        this.mood++;
+    eat(num){
+        this.weight+= num;
+        this.mood+= num;
     }
-    exercise(){
-        this.weight--
+    exercise(num){
+        this.weight-= num;
     }
-    ageUp(){
-        this.age++;
-        this.height++;
-        this.weight++;
-        this.mood--;
+    ageUp(num){
+        this.age += num;
+        this.height+= num;
+        this.weight+= num;
+        this.mood-= num;
         this.bankAccount += 10;
     }
-    buyHamster(){
-        this.hamsters.push(Hamster);
+    buyHamster(hamObj){
+        this.hamsters.push(hamObj);
         this.mood+= 10;
-        this.bankAccount = this.bankAccount - getPrice();
+        this.bankAccount -= getPrice(hamObj);
     }
 }
 
+//1.
 const newPerson = new Person('Timmy');
 console.log(newPerson);
+//2.
+newPerson.ageUp(5);
+console.log(newPerson);
+//3. 
+newPerson.eat(5);
+console.log(newPerson);
+//4. 
+newPerson.exercise(5);
+console.log(newPerson);
+//5.
+newPerson.ageUp(9);
+console.log(newPerson)
+//6.
+const newHamster = new Hamster('Gus');
+console.log(newHamster);
+//7.
+newHamster.owner = newPerson.name;
+console.log(newHamster);
+//8.
+// newPerson.buyHamster(newHamster);
+// console.log(newPerson);
+//9. 
+newPerson.ageUp(15);
+console.log(newPerson);
+//10.
+newPerson.eat(2);
+console.log(newPerson);
+//11.
+newPerson.exercise(2);
+console.log(newPerson);
+
