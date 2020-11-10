@@ -332,10 +332,10 @@ Minimum Functionality Required for this homework to be considered complete:
 1. You have a battleship that can attack an alien ship at least one time
     - Be sure to display this info somewhere - in the console or in an alert is fine
     - Remember, all ships should have: hitpoints(hull), damage points(firepower)
-1. You have _at least_ one alien ship that has hitpoints and damage points that can attack your ship at least one time  
+1. You have _at least_ one, but should have 6, alien ships that has hitpoints and damage points that can attack your ship at least one time  
     - Again, be sure to display this info somewhere - in the console or in an alert is fine
 1. The two ships battle until one is destroyed (i.e. has a hull <= 0) and a win/lose message is displayed
-1. Refer to the original [markdown](../instructor_notes/space_battle.md) for more details
+
 
 
 ## Submission Guidelines
