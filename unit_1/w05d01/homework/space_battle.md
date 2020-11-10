@@ -323,6 +323,7 @@ console.log('%c You have done ' + player.firepower + ' damage ', 'font-style: it
 </details>
 
 <hr>
+
 ## Technical Requirements
 Minimum Functionality Required for this homework to be considered complete:
 1. A game that loads by opening an html file in the browser, the game works through the Chrome console, with alerts, console.log messages and prompts
