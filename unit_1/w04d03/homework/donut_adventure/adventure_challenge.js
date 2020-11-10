@@ -1,21 +1,29 @@
 /////////////OUR HERO////////////////
 class Hero {
-    constructor(name, health = 100, weapons, catchPhrases){
+    constructor(name, health = 100, weapons){
         this.name = name;
         this.health = health;
         this.weapon = weapons || {
             sprinkleSpray: 5,
             sugarShock: 10
         };
-        this.catchPhrases = catchPhrases || ['i\'m fresher than day old pizza',
+        this.catchPhrases = ['i\'m fresher than day old pizza',
         'you can\'t count my calories']
     }
     talkSass(){
+        
         let randomIndex = Math.floor(Math.random() * this.catchPhrases.length);
-        console.log(this.catchPhrases[randomIndex])
+        let newElement = document.createElement('p');
+        newElement.innerHTML = ` ${this.catchPhrases[randomIndex]}  `
+        const parentDiv = document.getElementById('thering');
+        parentDiv.appendChild(newElement);
     }
     announceHealth(){
-        console.log(`Current Health: ${this.health}`)
+        let newElement= document.createElement('p');
+        newElement.innerHTML = `Current Health: ${this.health}`;
+        const parentDiv = document.getElementById('thering');
+        parentDiv.appendChild(newElement);
+        
     }
     fight(enemy){
         const weaponsAvail= (Object.keys(this.weapon));
@@ -64,22 +72,53 @@ class Enemy {
 const newEnemy = new Enemy('Pizza Rat');
 console.log(newEnemy);
 
-//////////WALKING DOWN THE STREEET///////////
-//1.
-newHero.talkSass();
-//2.
-newEnemy.talkSmack();
-//3.
-newHero.announceHealth();
-//4.
-newEnemy.announceHealth();
+
+////////////DOM//////////
+
+const talkSassButton = document.getElementById('talksass');
+talkSassButton.addEventListener('click', ()=> newHero.talkSass() );
+
+const talkSmackButton = document.getElementById('talksmack');
+talkSmackButton.addEventListener('click', ()=> newEnemy.talkSmack() );
+
+const healthDougieButton = document.getElementById('healthDoug');
+healthDougieButton.addEventListener('click', ()=> newHero.announceHealth() );
+
+const healthRatButton = document.getElementById('healthRat');
+healthRatButton.addEventListener('click', ()=> newEnemy.announceHealth() );
+
+const fightDougButton = document.getElementById('fightDoug');
+fightDougButton.addEventListener('click', ()=> newEnemy.fight(newHero));
+
+
+const fightRatButton = document.getElementById('fightRat');
+fightRatButton.addEventListener('click', ()=> newHero.fight(newEnemy));
+
+
+
+
 
 //////////FIGHT///////////////
-//1.
-newEnemy.fight(newHero);
-//2.
-newHero.fight(newEnemy);
-//3.
-newHero.announceHealth();
-newEnemy.announceHealth();
 
+// const winner = () => {
+//     if (newEnemy.health <= 0){
+//         console.log( `The winner is ${newHero.name}!!!!`)
+//         return true;
+//     }
+//     if (newHero.health <= 0) {
+//         console.log(`The winner is ${newEnemy.name}.... boo`)
+//         return true;
+//     }
+//     return false;
+// }
+
+
+
+// const playGame = () => {
+//    while (winner() === false){
+//        newHero.fight(newEnemy);
+//        newEnemy.fight(newHero);
+//    }
+// }
+
+// playGame();
