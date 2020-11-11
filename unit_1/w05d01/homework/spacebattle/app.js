@@ -26,7 +26,7 @@
     let randomDecimal = (min, max) => {
         return (Math.random() * (max - min) + min).toFixed(2);
     };
-
+    //Assigned variables for random hull, firepower, and accuracy to use when instantiating aliens
     let randomHull = randomNum(3,6);
     let randomFirePower = randomNum(2, 4);
     let randomAccuracy = parseFloat(randomDecimal(.6, .8));
