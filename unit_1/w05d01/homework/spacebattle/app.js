@@ -1,10 +1,4 @@
 
-//Six alien ships, attack one at a time. 
-//Build an alien class to create each alien?
-//Include fight method in class that checks outcome of battle
-//If outcome of battle is successful do something, if not do something else. 
-//Earth attacks first
-//Earth can only attack aliens in order (store the alient objects somewhere, and iterate?)
 
 //Create a class for Alien
 //Instantiate six aliens
@@ -26,32 +20,55 @@
     let randomDecimal = (min, max) => {
         return (Math.random() * (max - min) + min).toFixed(2);
     };
-    //Assigned variables for random hull, firepower, and accuracy to use when instantiating aliens
-    let randomHull = randomNum(3,6);
-    let randomFirePower = randomNum(2, 4);
-    let randomAccuracy = parseFloat(randomDecimal(.6, .8));
-    console.log(randomAccuracy);
-
+    
 
     class Alien{
-        constructor(name, hull, firepower, accuracy){
+        constructor(name){
             this.name = name;
-            this.hull = hull;
-            this.firepower = firepower;
-            this.accuracy = accuracy;
+            this.hull = randomNum(3,6);
+            this.firepower = randomNum(2, 4);
+            this.accuracy = parseFloat(randomDecimal(.6, .8));
         }
+        fight(spaceship){
+            if (Math.random() <= this.accuracy){
+                spaceship.hull -= this.firepower;
+                console.log(`The USS-Ruth has been hit! USSRuth Hull left: ${spaceship.hull}`)
+                
+            } else {
+                console.log(`Better luck next time alien! You missed!`)
+            }
+        }
+        checkWin(){
+                if (this.hull <= 0){
+                    console.log(`*********${this.name}'s ship is down!*********`)
+                    Aliens.shift(this);
+                    
+                } 
+               
+                
+            }
+        
+        
+        
 }
 
 
+ const alien1 = new Alien('Marlin');
+ const alien2 = new Alien('Joey');
+ const alien3 = new Alien('Luna');
+ const alien4 = new Alien('Crazy');
+ const alien5 = new Alien('Greeny');
+ const alien6 = new Alien('Slimey'); 
 
-
-
-
-
-
-   
-
-
+const Aliens = [];
+ Aliens.push(alien1) 
+ Aliens.push(alien2)
+ Aliens.push(alien3)
+ Aliens.push(alien4)
+ Aliens.push(alien5) 
+ Aliens.push(alien6)     
+ console.log(Aliens);     
+  
 
 
 //Create a class for the Earth ship
@@ -70,19 +87,52 @@
             //the ship has been destroyed. 
 
 class EarthShip {
-    constructor(name, hull = 20, firepower = 5, accuracy = .7){
-        this.name = 'USSR Ruth';
+    constructor(name = 'USSR Ruth', hull = 20, firepower = 5, accuracy = .7){
+        this.name = name;
         this.hull = hull;
         this.firepower = firepower;
         this.accuracy = accuracy;
     }
+    fight(alien){
+        if (Math.random() <= this.accuracy){
+        alien.hull -= this.firepower;
+        console.log(`${alien.name} was hit! Hull Left for ${alien.name}: ${alien.hull}`)
+        } else {
+            console.log(`Dangit Captain! We missed!`)
+        }
+    }
+    checkWin(){
+        if (this.hull <= 0){
+            console.log('*********************The Earth Ship has been destroyed! Game over!**************************************');
+            
+            }
+            return;
+        }
+    }
+
+
+const USSRuth = new EarthShip();
+
+
+
+
+const playGame = () => {
+   for (let i = 0; i <= Aliens.length; i++){
+       while (USSRuth.hull > 0){
+           USSRuth.fight(Aliens[i]);
+           Aliens[i].checkWin();
+           if (Aliens.length === 0){
+               return;
+           }
+           Aliens[i].fight(USSRuth);
+           USSRuth.checkWin(); }
+              
+   }
 }
 
+playGame();
 
 
-//User click fire, and then the fire method function is ran on the first alien. 
-//
+
 
     
-
-
