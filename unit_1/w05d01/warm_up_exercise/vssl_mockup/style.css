@@ -1,0 +1,48 @@
+/* ul flex container */
+body {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.first-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* flex-direction: column; */
+    padding: 0;
+}
+
+.first-list li {
+    padding: 20px;
+    /* border: 1px solid black; */
+    list-style: none;
+}
+
+.first-list .bold {
+    font-size: 25px;
+}
+
+#columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#columns section {
+    flex-basis: 30%;
+}
+
+#header-text {
+    background-image: url("./img/sailboat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
