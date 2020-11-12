@@ -50,7 +50,7 @@ A game round would look like this:
 
 #### Ship Properties
 
-* **hull** is the same as hitpoints. If hull reaches `0` or less, the ship is destroyed.
+* **hull** is the same as hitpoints. If the hull reaches `0` or less, the ship is destroyed.
 
 * **firepower** is the amount of damage done to the **hull** of the target with a successful hit.
 
@@ -107,7 +107,7 @@ Put together an `index.html` and `app.js`.
 
 To see a message that you've created using `console.log()`:
 
-1. Right click somewhere on the web page in the browser (two finger click on track pads) and choose "Inspect" from the dropdown that appears. ![](https://i.imgur.com/4wXah3M.png)
+1. Right-click somewhere on the web page in the browser (two-finger click on trackpads) and choose "Inspect" from the dropdown that appears. ![](https://i.imgur.com/4wXah3M.png)
 1. At the top of the pane that appears, choose "Console" ![](https://i.imgur.com/T51Jxtv.png)
 
 Now any messages that you send using `console.log()` will appear here (next to the blue carrot)
