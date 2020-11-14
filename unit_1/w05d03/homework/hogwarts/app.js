@@ -14,6 +14,14 @@ $(() => {
    $container.append($h1);
     //This text will not appear because even though we created the h1 element, we did not append it to anything yet. 
 
+const $h2 = $('<h2>').text('Nicole');
+$container.append($h2);
+const $h3 = $('<h3>').text('Hufflepuff');
+$container.append($h3);
+const $h4Pet = $('<h4>').addClass('dog').text('Miko');
+$container.append($h4Pet);
+const $h4Wand = $('<h4>').text('Harry Potter\'s Wand');
+$container.append($h4Wand);
 
 
 });
