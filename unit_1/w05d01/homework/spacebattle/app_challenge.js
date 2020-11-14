@@ -20,6 +20,10 @@
     let randomDecimal = (min, max) => {
         return (Math.random() * (max - min) + min).toFixed(2);
     };
+
+    const fireButton = document.getElementById('fire');
+    const retreat = document.getElementById('retreat');
+    const theRing = document.getElementById('thering');
     
 
     class Alien{
@@ -96,7 +100,9 @@ class EarthShip {
     fight(alien){
         if (Math.random() <= this.accuracy){
         alien.hull -= this.firepower;
-        console.log(`${alien.name} was hit! Hull Left for ${alien.name}: ${alien.hull}`)
+        let newHit = document.createElement('p');
+        newHit.innerHTML = `${alien.name} was hit! Hull Left for ${alien.name}: ${alien.hull}`;
+        theRing.appendChild(newHit);
         } else {
             console.log(`Dangit Captain! We missed!`)
         }
@@ -114,23 +120,37 @@ class EarthShip {
 const USSRuth = new EarthShip();
 
 
-const playGame = () => {
-   for (let i = 0; i <= Aliens.length; i++){
-       while (USSRuth.hull > 0){
-           USSRuth.fight(Aliens[i]);
-           Aliens[i].checkWin();
-           if (Aliens.length === 0){
-               return;
-           }
-           Aliens[i].fight(USSRuth);
-           USSRuth.checkWin(); }
+
+const earthShipFires = () => {
+    if (Math.random() <= USSRuth.accuracy){
+        Aliens[0].hull -= USSRuth.firepower;
+        let newHit = document.createElement('p');
+        newHit.innerHTML = `${Aliens[0].name} was hit! Hull Left for ${Aliens[0].name}: ${Aliens[0].hull}`;
+        theRing.appendChild(newHit);
+        Aliens[0].checkWin();
+        } else {
+            let miss = document.createElement('p');
+            miss.innerHTML = `Dangit Captain! We missed!`;
+            theRing.appendChild(miss);
+        }
+
+
+    }
+
+
+
+// const playGame = () => {
+//    for (let i = 0; i <= Aliens.length; i++){
+//        while (USSRuth.hull > 0){
+//            USSRuth.fight(Aliens[i]);
+//            Aliens[i].checkWin();
+//            if (Aliens.length === 0){
+//                return;
+//            }
+//            Aliens[i].fight(USSRuth);
+//            USSRuth.checkWin(); }
               
-   }
-}
+//    }
+// }
 
-playGame();
-
-
-
-
-    
+// playGame();
