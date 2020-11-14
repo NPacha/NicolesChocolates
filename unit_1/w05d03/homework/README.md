@@ -1,3 +1,6 @@
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly)
+
+---
 
 Title: jQuery Magic<br>
 Type: Homework<br>
@@ -288,4 +291,4 @@ Though your time at Hogwarts is nearly over, your journey of learning has just b
 
 ## Submission Guidelines
 
-- Submit your homework via your github fork (to the remote fork) and please don't forget to fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUPnan89JtgRPEbK7GK2yXfUG18y5zzq3szuiXsQ6Md_Julw/viewform)!
+- Submit your homework via your github fork (to the remote fork) and create an issue.
