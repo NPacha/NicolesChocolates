@@ -24,4 +24,15 @@ const $h4Wand = $('<h4>').text('Harry Potter\'s Wand');
 $container.append($h4Wand);
 
 
+/////////YEAR 3/////////
+const $ul = $('<ul>').attr('storage', 'trunk');
+$container.append($ul);
+const $li1 = $('<li>').text('butter beer');
+const $li2 = $('<li>').addClass('secret').text('invisibility cloak');
+const $li3 = $('<li>').addClass('secret').text('magic map');
+const $li4 = $('<li>').addClass('secret').text('time turner');
+const $li5 = $('<li>').addClass('dog').text('leash');
+const $li6 = $('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans');
+$ul.append($li1, $li2, $li3, $li4, $li5, $li6)
+
 });
