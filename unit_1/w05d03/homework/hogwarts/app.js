@@ -95,4 +95,12 @@ $li5.addClass('cabbage');
 
 $li5.removeClass('cabbage');
 
+/////////////YEAR 7//////////
+
+$h5.text('Fall 2018');
+$li0 = $('<li>').text('Butter beer').attr('value', 'trunk');
+$ul.prepend($li0);
+
+$ul.attr('storage', 'chest');
+
 });
