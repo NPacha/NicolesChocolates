@@ -75,10 +75,10 @@ $table.append($tr1, $tr2, $tr3, $tr4, $tr5)
 
 //////////YEAR 5////////
 
-$h4Wand.hide();
+$h4Wand.detach();
 $li1.remove();
 $h4Wand.text('Shiny new wand!');
-$h4Wand.show();
+$ul.before($h4Wand);
 $h4Wand.css('color', 'purple');
 $($h4Pet).detach();
 $h5.append($h4Pet);
@@ -86,7 +86,13 @@ $h5.append($h4Pet);
 $($h4Pet).detach();
 $h4Wand.before($h4Pet);
 
+/////////YEAR 6/////////
 
+$('.secret').hide('slow').delay('5000');
+$('.secret').show('slow');
 
+$li5.addClass('cabbage');
+
+$li5.removeClass('cabbage');
 
 });
