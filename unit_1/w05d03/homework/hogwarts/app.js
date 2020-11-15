@@ -73,6 +73,19 @@ $tr5.append($td9, $td10);
 
 $table.append($tr1, $tr2, $tr3, $tr4, $tr5)
 
+//////////YEAR 5////////
+
+$h4Wand.hide();
+$li1.remove();
+$h4Wand.text('Shiny new wand!');
+$h4Wand.show();
+$h4Wand.css('color', 'purple');
+$($h4Pet).detach();
+$h5.append($h4Pet);
+
+$($h4Pet).detach();
+$h4Wand.before($h4Pet);
+
 
 
 
