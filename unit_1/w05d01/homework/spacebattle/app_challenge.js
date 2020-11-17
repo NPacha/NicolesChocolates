@@ -40,10 +40,11 @@
         fight(spaceship){
             if (Math.random() <= this.accuracy){
                 spaceship.hull -= this.firepower;
-                console.log(`The USS-Ruth has been hit! USSRuth Hull left: ${spaceship.hull}`)
+                let $hit = $('<p>').text(`The USS-Ruth has been hit! USSRuth Hull left: ${spaceship.hull}`)
                 
+                $results.append($hit).delay(800);
             } else {
-                console.log(`Better luck next time alien! You missed!`)
+                let $alienMiss = $('<p>').text(`Better luck next time alien! You missed!`);
             }
         }
         checkWin(){
@@ -116,7 +117,7 @@ const Aliens = [];
         }
         checkWin(){
             if (this.hull <= 0){
-                console.log('*********************The Earth Ship has been destroyed! Game over!**************************************');
+                alert('*********************The Earth Ship has been destroyed! Game over!**************************************');
                 
                 }
                 return;
@@ -127,13 +128,14 @@ const Aliens = [];
     const $USSRuth = new EarthShip();
     console.log($USSRuth);
 
+    
+const $statsSection = $('#stats');
 
-    const $statsSection = $('#stats');
-    let $earthShipStats = $('<p>').text(`Hull: ${$USSRuth.hull}
+    let $earthShipStats = $('<p>').text(`Name: ${$USSRuth.name}
+    Hull: ${$USSRuth.hull}
     Accuracy: ${$USSRuth.accuracy}
     Firepower: ${$USSRuth.firepower}`)
     $statsSection.append($earthShipStats);
-
 
 
     const $alien1 = $('.alien1');
@@ -141,7 +143,8 @@ const Aliens = [];
     Hull: ${Aliens[0].hull}
     Accuracy: ${Aliens[0].accuracy}
     FirePower: ${Aliens[0].firepower}`)
-    $alien1.append($alien1Stats);
+    $alien1.append($alien1Stats)
+   
 
     const $alien2 = $('.alien2');
     let $alien2Stats = $('<p>').text(`${Aliens[1].name}
@@ -178,18 +181,20 @@ const Aliens = [];
     FirePower: ${Aliens[5].firepower}`)
     $alien6.append($alien6Stats)
 
- 
 
 
 
  
 const earthShipFires = () => {
+ 
     for (i = 0; i < Aliens.length; i++){
         if (Aliens[i].hull <= 0){
             continue;
         }
     if (Math.random() <= $USSRuth.accuracy){
+        
         Aliens[i].hull -= $USSRuth.firepower;
+        console.log(Aliens[i].hull);
         let $newHit = $('<p>');
         $newHit.text(`${Aliens[i].name} was hit! Hull Left for ${Aliens[i].name}: ${Aliens[i].hull}`);
         $results.append($newHit);
@@ -204,51 +209,11 @@ const earthShipFires = () => {
 
         return;
     }
-    
-
-
 
     }
 
     $fireButton.click(earthShipFires);
 
-
-
-
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const playGame = () => {
-//    for (let i = 0; i <= Aliens.length; i++){
-//        while (USSRuth.hull > 0){
-//            USSRuth.fight(Aliens[i]);
-//            Aliens[i].checkWin();
-//            if (Aliens.length === 0){
-//                return;
-//            }
-//            Aliens[i].fight(USSRuth);
-//            USSRuth.checkWin(); }
-              
-//    }
-// }
-
-// playGame();

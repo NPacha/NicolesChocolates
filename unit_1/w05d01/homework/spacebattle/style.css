@@ -20,17 +20,19 @@ h2 {
     height: 30vh;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 40px;
 } 
 
 #stats img{
-    width:170px;
+    width:20%;
 }
 
 .battleground {
     background-color: white;
-    height: 90vh;
+    height: 100%;;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 40px;
 }
 .alien-container{
     display: flex;
@@ -40,4 +42,7 @@ h2 {
 
 .alien-container div img{
     width: 100px;
+}
+#results{
+    padding-bottom: 50px;;
 }
