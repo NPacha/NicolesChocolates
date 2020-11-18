@@ -24,7 +24,6 @@
     };
 
     const $fireButton = $('#fire');
-    const $retreat = $('#retreat');
     const $results = $('#results');
   
    
@@ -40,25 +39,19 @@
         fight(spaceship){
             if (Math.random() <= this.accuracy){
                 spaceship.hull -= this.firepower;
-                let $hit = $('<p>').text(`The USS-Ruth has been hit! USSRuth Hull left: ${spaceship.hull}`)
+                console.log(`The USS-Ruth has been hit! USSRuth Hull left: ${spaceship.hull}`)
                 
-                $results.append($hit).delay(800);
             } else {
-                let $alienMiss = $('<p>').text(`Better luck next time alien! You missed!`);
+                console.log(`Better luck next time alien! You missed!`);
             }
         }
         checkWin(){
                 if (this.hull <= 0){
                     alert(`*********${this.name}'s ship is down!*********`)
-                    
-                    
+                            
                 } 
-               
-                
-            }
-        
-        
-        
+                  
+            }        
 }
 
 
@@ -129,7 +122,7 @@ const Aliens = [];
     console.log($USSRuth);
 
     
-const $statsSection = $('#stats');
+    const $statsSection = $('#stats');
 
     let $earthShipStats = $('<p>').text(`Name: ${$USSRuth.name}
     Hull: ${$USSRuth.hull}

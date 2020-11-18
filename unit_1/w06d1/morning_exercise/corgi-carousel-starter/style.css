@@ -34,9 +34,15 @@ body {
   box-shadow: 2px 2px #f2cd99;
 }
 .carousel-images img {
+  display: none;
   width: 100%;
   border-radius: 10px;
 }
+
+.carousel-images img:first-of-type{
+  display: block;
+}
+
 .carousel-button {
   align-self: center;
   background: #f2cd99;
@@ -52,3 +58,5 @@ body {
   box-shadow: 1px 1px #f2cd99;
   color: white;
 }
+
+
