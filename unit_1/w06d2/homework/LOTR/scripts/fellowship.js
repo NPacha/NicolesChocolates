@@ -180,8 +180,10 @@ const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
-      // const $children = $('The-Shire').children();
-      // console.log($children);
+      const $children = $('#The-Shire ul').children();
+      console.log($children);
+      $($children).detach();
+      $('#Rivendell').append($children);
 
 };
 
