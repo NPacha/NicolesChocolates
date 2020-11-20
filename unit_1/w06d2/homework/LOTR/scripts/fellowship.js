@@ -211,7 +211,7 @@ console.log('beautiful stranger')
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
-
+console.log('forge the fellowship')
   // 1. create a new div with an id 'the-fellowship'
   const $fellowshipDiv = $('<div>').attr('id', 'the-fellowship');
   // 2. add an h1 with the text 'The Fellowship' to this new div
@@ -238,10 +238,12 @@ $fellowshipDiv.append($fellowshipH1);
 // Chapter 9
 // ============
 const theBalrog = () => {
-
+console.log('the balrog')
   // 1. change the 'Gandalf' text to 'Gandalf the White'
-
   // 2. add a class "the-white" to this element
+  const $buddies = $('#the-fellowship ul .buddy');
+  const $gandalf = $buddies[0];
+  $($gandalf).text('Gandalf the White').addClass('the-white');
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
 
