@@ -1,0 +1,26 @@
+html{
+    font-size: 12px;
+}
+
+body {
+    font-family: Verdana;
+}
+
+.info-container{
+    background-color: azure;
+    border:1px solid grey;
+    margin-bottom: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name, .address {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 8rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: auto;
+}
