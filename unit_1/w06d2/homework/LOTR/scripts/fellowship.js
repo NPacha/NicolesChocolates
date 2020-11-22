@@ -325,11 +325,19 @@ $('#Mordor').append($gollum);
 // ============
 const thereAndBackAgain = () => {
 
+  console.log('There and back again')
+
   // 1. remove Gollum and the Ring from the DOM
+  const $gollum = $('#gollum')
+  $gollum.remove();
 
   // 2. remove all the baddies from the DOM
+  $('#Mordor ul').remove();
 
   // 3. Move all the hobbits back to the shire
+  const $allHobbits = $('.hobbit');
+  $allHobbits.detach();
+  $('#The-Shire').append($allHobbits);
 
 };
 
