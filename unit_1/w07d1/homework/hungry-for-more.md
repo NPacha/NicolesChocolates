@@ -3,11 +3,11 @@
 # DOM Interaction Labs
 Get some more practice with the DOM and interactivity by coming up with solutions for the following interactions. 
 
-It is your job to look at the mockup or prototype, create the appropriate HTML, CSS and JavaScript to create the interaction. Feel free to use jQuery!
+It is your job to look at the mockup or prototype and create the appropriate HTML, CSS and JavaScript to replicate the interaction. Feel free to use jQuery!
+
+**You will need to create a new folder for each interaction. You will have to create the html file, css file and js file for each lab on your own.**
 
 Start with psuedocode and then begin to write your actual code!
-
-You will need to create a new folder for each interaction. You will have to create the html file, css file and js file for each lab on your own.
 
 Have fun!
 
