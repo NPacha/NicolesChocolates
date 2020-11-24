@@ -4,11 +4,13 @@ console.log('I am linked');
     
 //Cache DOM Nodes
 const $add = $('#submit');
-const $inputContainer = $('#input-container')
+const $inputContainer = $('#input-container');
+const $input = $('input-box');
 
 //Event Handlers
 const addToDo = (event) => {
     event.preventDefault();
+    console.log($input.val());
     console.log(event.currentTarget)
     console.log(event.target)
 
@@ -16,7 +18,9 @@ const addToDo = (event) => {
 
 //Event Listener
 
-$inputContainer.on('submit', addToDo);
+$inputContainer.on('click', addToDo);
+
+// $add.on('click', addToDo)
 
 
 })
