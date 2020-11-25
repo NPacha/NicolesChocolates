@@ -3,18 +3,26 @@
 
 /* add color variables */
 :root {
-  --candy-pink: #E7717D;
-  --grey-ice-blue: #C2CAD0;
-  --total-black: #0B0C10;
-  --aqua-strike: #66FCF1;
-  --calm-teal: #45A29E;
+  --light-green: #C7D8BA; 
+  --dark-green: #41483D;
+  --violet-grey: #B99197;
+  --grey-pink: #D8B6BD;
+  --blush: #F0DCD9;
+  --sand: #F2F3E7;
+}
+
+body {
+    background: var(--grey-pink)
 }
 
 
 /* center the container and imply margins */
 #container {
   width: 90%;
+  height: 100vh;
   margin: auto;
+  background-color: white;
+  border-radius: 10px;
 }
 
 /* make the div with the id lists into a flex container */
@@ -26,7 +34,7 @@
 /* General style and a little bit responsive text  */
 body {
   text-align: center;
-  font-family: monospace;
+  font-family: 'Mukta', sans-serif;
 }
 
 h1 {
@@ -35,17 +43,48 @@ h1 {
 }
 
 h2{
-  font-size: 2vw;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+   
+    
+}
+
+li {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 30px 0px;
+    width: 100%
+}
+
+.completed {
+    color: white;
+    font-size: 1.3vw;
+    margin-top: 10px;
+    background-color: var(--light-green);  
+    height: 25px;
+    width: 40%;
+
 }
 
 /* Modernize buttons and input */
 
-button .completed {
+ button .completed {
   background-color: black;
   margin-bottom: 1em;
   padding: 1em 3em;
   border-radius: .5em;
-}
+} 
 
 button:focus {
   outline:0;
@@ -53,20 +92,26 @@ button:focus {
 }
 
 input {
+  font-size: 2vw;
   width: 300px;
-  padding: 1em;
+  padding: .5em;
+  margin-right: 10px;
 }
 
 input:focus {
   outline: none;
-  background: var(--grey-ice-blue);
+  background: var(--sand);
 }
 
 #lists button:hover, button:hover {
-  background: rgba(100, 100, 100, .2);
+  background: var(--violet-grey);
 }
 
-#lists button:focus {
+#completed button:hover, button:hover {
+    background: var(--dark-green);
+  }
+
+/* #lists button:focus {
   outline:0;
   animation: jello-horizontal 0.9s both;
 }
@@ -75,7 +120,7 @@ input:focus {
   background: inherit;
   border: 2px solid rgba(255,255,255, .5);
   color: rgba(255,255,255, .5);
-}
+} */
 
 
 /* make list containers flex */
