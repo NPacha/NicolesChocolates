@@ -1,0 +1,176 @@
+/**/
+/**/
+@keyframes moveInLeft {
+}
+
+@keyframes moveInRight {
+}
+
+@keyframes moveInBottom {
+}
+/**/
+*,
+*::after,
+*::before {
+}
+
+html {
+   
+   }
+
+body {
+   
+    }
+
+body {
+
+    }
+
+
+.header {
+
+    }
+    
+.header__logo-box {
+
+    }
+    
+.header__logo {
+   
+    }
+.header__text-box {
+
+}
+
+.heading-primary {
+
+    }
+.heading-primary--main {
+
+ }
+.heading-primary--sub {
+
+    }
+
+.heading-secondary {
+
+    }
+.heading-secondary:hover {
+
+    }
+
+.heading-tertiary {
+
+    }
+
+/**/
+
+.btn, .btn:link, .btn:visited {
+
+    }
+
+.btn:hover {
+
+  }
+.btn:hover::after {
+ 
+    }
+
+.btn:active, .btn:focus {
+
+    }
+
+.btn--white {
+
+}
+.btn--white::after {
+
+    }
+
+
+.btn::after {
+
+    }
+
+.btn--animated {
+
+    }
+
+
+/**/
+
+
+.navigation__checkbox {
+/**/
+   }
+
+.navigation__button {
+/**/
+}
+
+.navigation__background {
+/**/
+}
+
+.navigation__nav {
+/**/
+}
+
+.navigation__list {
+/**/
+}
+
+.navigation__item {
+/**/
+   }
+
+.navigation__link:link, .navigation__link:visited {
+/**/
+
+}
+.navigation__link:link span, .navigation__link:visited span {
+/**/
+}
+
+.navigation__link:hover, .navigation__link:active {
+/**/
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+   }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  }
+
+.navigation__icon {
+ = }
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+
+    }
+.navigation__icon::before, .navigation__icon::after {
+
+}
+.navigation__icon::before {
+    }
+.navigation__icon::after {
+    }
+
+.navigation__button:hover .navigation__icon::before {
+    }
+
+.navigation__button:hover .navigation__icon::after {
+    }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+   }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    }
+/**/
+.content-card{
+
+}
+
