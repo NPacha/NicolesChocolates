@@ -2,6 +2,8 @@
 
 # Project #1: The Game
 
+Fork this on github and clone yoour fork [bruno_example](https://github.com/Brunno-DaSilva/README)
+
 ## Attendance
 We will not be having instruction on project days, but we do expect you to be in class to work on your project and most importantly get help from your instructional team.
 
