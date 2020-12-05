@@ -3,7 +3,7 @@
 
 ### Key Project 1 Dates
 - Dec 5 - Project Approvals
-- Dec 7 - Dec 11 - Project Week! We will not meet during normal class times. You will be meeting with your squad at the times instructed by your Squad lead.
+- Dec 7 - Dec 11 - Project Week! We will meet during normal class times. You will be meeting with your squad at the times instructed by your Squad lead. Arthur, Nando or Bruno.
 - Dec 12 - Project Presentations
 
 ## Project Schedule
