@@ -20,15 +20,21 @@ body {
 *************************/
 .transform {
   background-color: thistle;
+  transform: skew(20deg) rotate(45deg) translate(100px) scale(2);
 }
 /*************************
 * Transition
 *************************/
 .transition {
   background: red;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  transform: translate(100px);
+
 }
 .transition:hover {
   background:  blue;
+  transform: translate(450px);
 }
 /*************************
 * Animation
@@ -36,6 +42,9 @@ body {
 .animation {
   background: black;
   position: relative;
+  animation-name: rainbow-move-change;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 
