@@ -2,11 +2,15 @@
 //Create an Alphabet Array
 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
 
+//Create a word box array to store the words
+const wordsBox = [];
+
 //Cache DOM nodes
 const $letters = $('.letters');
 const $wordBox = $('.words');
 const $input = $('input');
 const $addButton = $('#submit');
+const $shuffleButton = $('#shuffle');
 
 //Create a player class
 class Player {
@@ -28,20 +32,21 @@ class LettersBox {
         this.letters = [];
     }
     generateLetters() {
+        this.letters = [];
+        $letters.empty();
         for(let i = 1; i <= 7; i++){
             //Create random index variable to store random index
-            const randomIndex = Math.floor(Math.random()*alphabet.length-1);
-            this.letters.push(alphabet[randomIndex])
+            const randomIndex = Math.floor(Math.random()*(alphabet.length-1));
+            const $li = $('<li>').html(alphabet[randomIndex]);
+            $letters.append($li);
+            this.letters.push(alphabet[randomIndex]);
+            console.log(randomIndex);
         }
-        $letters.append(this.letters)
+        console.log(this.letters);
     }
     
 }
 const lettersBox = new LettersBox;
-
-
-//Create a word box array to store the words
-const wordsBox = [];
 
 
 //Create a score board object
@@ -53,7 +58,7 @@ const scoreBoard = {
 
 //Generate 7 random numbers
 lettersBox.generateLetters();
-console.log(lettersBox)
+
 
 //Event Handlers
 const addWord = () => {
@@ -72,6 +77,7 @@ const addWord = () => {
 
 //Add event listener for ADD button
 $addButton.on('click', ()=>{addWord()})
+$shuffleButton.on('click', ()=>{lettersBox.generateLetters()})
 
 
 

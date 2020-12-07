@@ -12,16 +12,18 @@
         <h1>Letter Scramble</h1>
     </header>
     <div class="instructions"></div>
-    <div class="letters"></div>
+    <div class="letters-container">
+        <ul class="letters"></ul>
+        <button type="button" name="button" id="shuffle">Shuffle Words</button>
+    </div>
     <div class="words-container">
         <h2 class="currentPlayer">
         <!-- Current Player goes here -->
         </h2>
-        <div class="words-container">
-            <ul class="words">
-            <!-- Words from input field goes here -->
-            </ul>
-        </div>
+        <ul class="words">
+        <!-- Words from input field goes here -->
+        </ul>
+        
     </div>
     <div class="input-container">
         <!-- Input and input button -->
@@ -29,7 +31,9 @@
         <input type="text" name="" value="" id="input-box">
         <button type="button" name="button" id="submit">ADD</button>
     </div>
-    <div class="timer"></div>
+    <div class="timer-container">
+        <button type="button" name="button" id="timer">Start Timer</button>
+    </div>
     <div class="scoreBoard"></div>
     <button class="instructions">Instructions</button>
 <script src="app.js"></script>
