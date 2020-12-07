@@ -5,11 +5,6 @@ const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M
 //Create a word box array to store the words
 const wordsBox = [];
 
-//Create a score board object
-const scoreBoard = {
-    player1Points: 0,
-    player2Points: 0
-}
 
 //Cache DOM nodes
 const $letters = $('.letters');
@@ -20,6 +15,7 @@ const $shuffleButton = $('#shuffle');
 const $scoreBoard = $('.scoreBoard');
 const $inputContainer = $('.input-container');
 
+
 //Create a player class
 class Player {
     constructor(name){
@@ -27,7 +23,20 @@ class Player {
         this.points = 0;
         this.wordsCreated = [];
     }
-    increaseScore(){
+    increaseScore(wordLength){
+        if(wordLength === 2){
+            this.points += 10;
+        }
+        if(wordLength === 3){
+            this.points += 20
+        }
+        if(wordLength === 4){
+            this.points += 30
+        }
+        if(wordLength >= 5){
+            this.points += 40
+        }
+
 
     }
     decreaseScore(){
@@ -38,6 +47,18 @@ class Player {
 const player1 = new Player('Player 1');
 const player2 = new Player('Player 2');
 console.log(player1, player2);
+
+//Define who is the current player
+let currentPlayer = player2;
+
+//Updates the score board with current point score
+const updateScoreBoard = () => {
+    $scoreBoard.empty();
+    const $scores = $('<p>').text(
+    `Player 1: ${player1.points}
+    Player 2: ${player2.points}`);
+    $scoreBoard.append($scores);
+}
 
 
 //Create a letters box class
@@ -73,11 +94,14 @@ const addWord = () => {
     $li.append($deleteButton);
     // $disputeButton.on('click', displayDictionary);
     // $deleteButton.on('click', deleteWord)
+    currentPlayer.increaseScore($input.val().length);
+    updateScoreBoard();
     $wordBox.append($li);
     $input.val('');
 
 }
 
+//EVENT LISTENERS && EVENT HANDLERS//
 //Add event listener for ADD button
 $addButton.on('click', ()=>{addWord()});
 $inputContainer.keypress((event) => {
@@ -101,16 +125,8 @@ lettersBox.generateLetters();
 //Create point scoreboard function
 //Create increase player score function
 
-const updateScoreBoard = () => {
-    const $scores = $('<p>').text(
-        `Player 1: ${scoreBoard.player1Points}
-        
-         Player 2: ${scoreBoard.player2Points}`);
-    $scoreBoard.append($scores);
-    console.log($scores);
 
-}
-updateScoreBoard();
+
 
 
 
