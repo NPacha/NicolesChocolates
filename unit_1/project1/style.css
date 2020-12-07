@@ -8,7 +8,7 @@ body {
     height: 200px;
 }
 
-.words-container {
+.words-container, .scoreBoard {
     border: solid 1px black;
     width: 200px;
     height: 200px;
