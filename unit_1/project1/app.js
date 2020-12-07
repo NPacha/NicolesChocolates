@@ -14,6 +14,7 @@ const $addButton = $('#submit');
 const $shuffleButton = $('#shuffle');
 const $scoreBoard = $('.scoreBoard');
 const $inputContainer = $('.input-container');
+const $timerButton = $('#timer');
 
 
 //Create a player class
@@ -101,6 +102,26 @@ const addWord = () => {
 
 }
 
+//Create 30 sec timer function 
+
+let timeLeft = 15;
+
+const timer = () => {
+    
+ 
+    const startTimer = () => {
+        if(timeLeft === -1){
+            clearTimeout(timerId);
+        } else {
+            $('.timer').html(timeLeft);
+            timeLeft--;
+        }
+    }
+    let timerId = setInterval(startTimer, 1000)
+   
+}
+
+
 //EVENT LISTENERS && EVENT HANDLERS//
 //Add event listener for ADD button
 $addButton.on('click', ()=>{addWord()});
@@ -111,6 +132,7 @@ $inputContainer.keypress((event) => {
     }
 });
 $shuffleButton.on('click', ()=>{lettersBox.generateLetters()});
+$timerButton.on('click', ()=>{timer()});
 
 
 //Add delete on click listner
