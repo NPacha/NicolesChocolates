@@ -8,7 +8,7 @@ body {
     height: 200px;
 }
 
-.playerWords {
+.words-container {
     border: solid 1px black;
     width: 200px;
     height: 200px;
