@@ -16,6 +16,9 @@ const $scoreBoard = $('.scoreBoard');
 const $inputContainer = $('.input-container');
 const $timerButton = $('#timer');
 const $switchPlayerButton = $('#switch-player');
+const $closeButton = $('#close');
+const $instructionsModal = $('#instructions');
+const $instructionsButton = $('.instructions');
 
 
 //Create a player class
@@ -75,7 +78,7 @@ class LettersBox {
     generateLetters() {
         this.letters = [];
         $letters.empty();
-        for(let i = 1; i <= 7; i++){
+        for(let i = 1; i <= 10; i++){
             //Create random index variable to store random index
             const randomIndex = Math.floor(Math.random()*(alphabet.length-1));
             const $li = $('<li>').html(alphabet[randomIndex]);
@@ -88,6 +91,49 @@ class LettersBox {
     
 }
 const lettersBox = new LettersBox;
+
+//CHECK WIN///
+
+const checkWin = () => {
+    if (player1.points >= 100){
+        alert(`${player1.name} has won with ${player1.points} points!`);
+        clearTimeout(timerId);
+       
+    }
+    if (player2.points >= 100){
+        alert(`${player2.name} has won with ${player2.points} points!`);
+        clearTimeout(timerId);
+    
+    }
+
+}
+
+/////TIMER/////
+//Create 30 sec timer function 
+
+let timeLeft = 30;
+
+
+const timer = () => {
+    
+ 
+    const startTimer = () => {
+        if(timeLeft === -1){
+            alert('Times up!');
+            clearTimeout(timerId);
+            
+        } else {
+            $('.timer').html(timeLeft);
+            timeLeft--;
+        }
+      
+    }
+    
+    
+    let timerId = setInterval(startTimer, 1000);
+}
+
+
 
 
 //Event Handlers
@@ -102,38 +148,35 @@ const addWord = () => {
     // $deleteButton.on('click', deleteWord)
     currentPlayer.increaseScore($input.val().length);
     updateScoreBoard();
+    checkWin();
     $wordBox.append($li);
     $input.val('');
 
 }
 
-/////TIMER/////
-//Create 30 sec timer function 
 
-let timeLeft = 15;
 
-const timer = () => {
-    
- 
-    const startTimer = () => {
-        if(timeLeft === -1){
-            clearTimeout(timerId);
-        } else {
-            $('.timer').html(timeLeft);
-            timeLeft--;
-        }
-    }
-    let timerId = setInterval(startTimer, 1000)
-   
-}
+
 
 const switchPlayer = () => {
+    lettersBox.generateLetters();
     $('.currentPlayer').empty();
+    $wordBox.empty();
     currentPlayer === player1? currentPlayer = player2: currentPlayer = player1
     let $currentPlayerName = $('<p>').html(currentPlayer.name);
     $('.currentPlayer').append($currentPlayerName);
+    timeLeft = 30;
+    $('.timer').html(timeLeft);
 }
 
+
+const closeModal = () => {
+    $instructionsModal.css('display', 'none');
+}
+
+const openModal =  () => {
+    $instructionsModal.css('display', 'block');
+}
 
 //EVENT LISTENERS && EVENT HANDLERS//
 //Add event listener for ADD button
@@ -148,7 +191,9 @@ $shuffleButton.on('click', ()=>{lettersBox.generateLetters()});
 $timerButton.on('click', ()=>{timer()});
 
 
-
+//Modal close button for instructions
+$closeButton.on('click', closeModal);
+$instructionsButton.on('click', openModal);
 
 //When switch player is clicked, player is updated
 $switchPlayerButton.on('click', ()=>{switchPlayer()});
@@ -162,9 +207,6 @@ $switchPlayerButton.on('click', ()=>{switchPlayer()});
 //Generate 7 random numbers
 lettersBox.generateLetters();
 
-
-//Create point scoreboard function
-//Create increase player score function
 
 
 
