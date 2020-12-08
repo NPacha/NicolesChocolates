@@ -15,6 +15,7 @@ const $shuffleButton = $('#shuffle');
 const $scoreBoard = $('.scoreBoard');
 const $inputContainer = $('.input-container');
 const $timerButton = $('#timer');
+const $switchPlayerButton = $('#switch-player');
 
 
 //Create a player class
@@ -47,10 +48,14 @@ class Player {
 
 const player1 = new Player('Player 1');
 const player2 = new Player('Player 2');
-console.log(player1, player2);
 
 //Define who is the current player
-let currentPlayer = player2;
+let currentPlayer = player1;
+//Append current player to words box
+let $currentPlayerName = $('<p>').html(currentPlayer.name);
+$('.currentPlayer').append($currentPlayerName);
+
+
 
 //Updates the score board with current point score
 const updateScoreBoard = () => {
@@ -102,6 +107,7 @@ const addWord = () => {
 
 }
 
+/////TIMER/////
 //Create 30 sec timer function 
 
 let timeLeft = 15;
@@ -121,6 +127,13 @@ const timer = () => {
    
 }
 
+const switchPlayer = () => {
+    $('.currentPlayer').empty();
+    currentPlayer === player1? currentPlayer = player2: currentPlayer = player1
+    let $currentPlayerName = $('<p>').html(currentPlayer.name);
+    $('.currentPlayer').append($currentPlayerName);
+}
+
 
 //EVENT LISTENERS && EVENT HANDLERS//
 //Add event listener for ADD button
@@ -133,6 +146,12 @@ $inputContainer.keypress((event) => {
 });
 $shuffleButton.on('click', ()=>{lettersBox.generateLetters()});
 $timerButton.on('click', ()=>{timer()});
+
+
+
+
+//When switch player is clicked, player is updated
+$switchPlayerButton.on('click', ()=>{switchPlayer()});
 
 
 //Add delete on click listner
