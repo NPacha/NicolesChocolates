@@ -16,6 +16,21 @@ app.get('/tip/:total/:tipPercent', (req, res)=> {
     res.send(`${totalTip}`);
 });
 
+///MAGIC 8 BALL///
+
+const answers = require('./magicball').answers;
+
+app.get('/magic/:question', (req, res)=>{
+    const random = Math.floor(Math.random()*answers.length);
+    const currentQuestion = req.params.question;
+    res.send(`${currentQuestion}? <h1>${answers[random]}</h1>`);
+})
+
+
+
+
+
+
 
 
 app.listen(PORT, ()=> {
