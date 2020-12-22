@@ -224,7 +224,6 @@ Remember, this is just JavaScript, so you can write as much JS logic as you want
 Feel free to choose what you want and if you want to implement something differently than the suggestion, go for it! It is hungry for more time!
 
 
-- Go back to todays lab and use cURL
 - render the tags as list items in an undordered list
 - input the tags, and add them to the tags array, figure out how to properly add multiple tags
 - override the amount input so that it defaults to a negative number
