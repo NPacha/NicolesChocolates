@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
+//Models
+const pokemon = require('./models/pokemon.js')
+
 //Index
 app.get('/', (req, res)=> {
     res.send(
@@ -9,6 +12,13 @@ app.get('/', (req, res)=> {
     )
 })
 
+
+//Show
+app.get('/pokemon', (req, res)=> {
+    res.send(
+        res.send(pokemon)
+    )
+})
 
 
 
