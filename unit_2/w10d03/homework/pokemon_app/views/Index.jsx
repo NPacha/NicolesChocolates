@@ -3,8 +3,8 @@ const Show = require('./Show.jsx');
 
 
 const myStyle = {
-    color: '#ffffff',
-    backgroundColor: '#000000',
+    color: 'darkgreen',
+    
   };
 
 class Index extends React.Component {
@@ -16,7 +16,7 @@ class Index extends React.Component {
 
                 </head>
                 <body>
-                    <h1>See All the Pokemon</h1>
+                    <h1 style={myStyle}>See All the Pokemon</h1>
                     <ul>
                         {
                             pokemon.map((pokemon, index)=> {
