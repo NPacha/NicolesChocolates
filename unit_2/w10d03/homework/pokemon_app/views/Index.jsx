@@ -1,9 +1,11 @@
+const React= require('react');
+const Show = require('./Show.jsx');
+
+
 const myStyle = {
     color: '#ffffff',
     backgroundColor: '#000000',
   };
-
-const React= require('react');
 
 class Index extends React.Component {
     render() {
@@ -20,7 +22,7 @@ class Index extends React.Component {
                             pokemon.map((pokemon, index)=> {
                                 return (
                                     <li>
-                                        {pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}
+                                        <a href={`/pokemon/${index}`}>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</a>
                                     </li>
                                 )
                             })
