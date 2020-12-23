@@ -11,12 +11,18 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
 
+app.get('/pokemon/:id', (req, res)=> {
+    res.send(req.params.id)
+})
+
 //Index
 app.get('/', (req, res)=> {
     res.send(
         `Welcome to the Pokemon App!`
     )
 })
+
+
 
 
 //Show
@@ -33,3 +39,4 @@ app.get('/pokemon', (req, res)=> {
 app.listen(PORT, ()=>{
     console.log('listening on port' + PORT)
 })
+
