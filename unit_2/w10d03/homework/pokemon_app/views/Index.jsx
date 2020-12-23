@@ -1,8 +1,13 @@
+const myStyle = {
+    color: '#ffffff',
+    backgroundColor: '#000000',
+  };
+
 const React= require('react');
 
 class Index extends React.Component {
     render() {
-        // const pokemon = this.props.pokemon;
+        const pokemon = this.props.pokemon;
         return (
             <html>
                 <head>
@@ -10,17 +15,17 @@ class Index extends React.Component {
                 </head>
                 <body>
                     <h1>See All the Pokemon</h1>
-                    {/* <ul>
+                    <ul>
                         {
                             pokemon.map((pokemon, index)=> {
                                 return (
                                     <li>
-
+                                        {pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}
                                     </li>
                                 )
                             })
                         }
-                    </ul> */}
+                    </ul>
                 </body>
             </html>
         )

@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 //Models
 const pokemon = require('./models/pokemon.js')
