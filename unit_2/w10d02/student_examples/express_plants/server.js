@@ -50,7 +50,7 @@ app.get('/add/:num1/:num2', (req, res)=>{
 })
 
 app.get('/even/:num', (req, res) => {
-    const num = parseInt(req.params.num);
+    const num = parseInt(req.params.num)
     const nextNum = num + 1;
     const isEven = num % 2 === 0;
 

@@ -11,9 +11,12 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 // look in a directory called public when you see a .js file or a .css file
 app.use(express.static("public"));
+// parse data from url encoded form request, req.body = data from the form
+app.use(express.urlencoded({extended: false}));
 
 // RESTFUL ROUTES
 // Controllers
+
 // Index
 app.get("/fruits", (req, res) => {
     // res.send(fruits);
@@ -21,6 +24,24 @@ app.get("/fruits", (req, res) => {
         fruits: fruits
     })
 });
+
+//NEW
+app.get('/fruits/new', (req, res)=> {
+    res.render('New')
+});
+
+//Create
+app.post('/fruits', (req, res)=> {
+    if (req.body.readyToEat === "on") {
+        req.body.readyToEat = true;
+    } else {
+        req.body.readyToEat= false;
+    }
+    //update model with this new fruit
+    fruits.push(req.body);
+    res.redirect('/fruits');
+})
+
 
 // Show
 app.get('/fruits/:indexOfFruitsArray', (req, res) => {
