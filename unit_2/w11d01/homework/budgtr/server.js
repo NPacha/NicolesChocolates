@@ -11,6 +11,8 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 //look in a directory called public when you see a .js file or a .css file
 app.use(express.static('public'));
+// parse data from url encoded form request, req.body = data from the form
+app.use(express.urlencoded({extended: false}));
 
 
 //RESTFUL ROUTES
@@ -24,12 +26,19 @@ app.get('/', (req, res)=> {
     })
 })
 
+//New 
+app.get('/new', (req, res)=> {
+    res.render('New')
+});
+
 //Show
 app.get('/:indexOfBudgetItems', (req, res)=> {
     res.render('Show', {
         budget: budget[req.params.indexOfBudgetItems]
     })
 });
+
+
 
 
 app.listen(PORT, ()=>{

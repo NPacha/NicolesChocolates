@@ -14,7 +14,7 @@ class Index extends React.Component {
                 </head>
                 <body>
                     <h1>Hello Adult Life</h1>
-                    
+                    <button> <a href={`/new`}> New Item </a> </button>
                         { budget.map((item, index)=> {
                             return (
                                 <table>  
