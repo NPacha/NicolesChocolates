@@ -12,12 +12,24 @@ app.engine('jsx', require('express-react-views').createEngine());
 //look in a directory called public when you see a .js file or a .css file
 app.use(express.static('public'));
 
+
+//RESTFUL ROUTES
+//Controllers
+
+
 //Index
 app.get('/', (req, res)=> {
     res.render('Index', {
         budget: budget
     })
 })
+
+//Show
+app.get('/:indexOfBudgetItems', (req, res)=> {
+    res.render('Show', {
+        budget: budget[req.params.indexOfBudgetItems]
+    })
+});
 
 
 app.listen(PORT, ()=>{

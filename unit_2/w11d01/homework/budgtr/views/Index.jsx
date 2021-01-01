@@ -20,7 +20,7 @@ class Index extends React.Component {
                                 <table>  
                                     <tr>
                                         <td>{item.date}</td>
-                                        <td> <a href={``}> {item.name} </a> </td>
+                                        <td> <a href={`/${index}`}> {item.name} </a> </td>
                                         <td>{item.amount}</td>
                                     </tr>    
                                 </table>
