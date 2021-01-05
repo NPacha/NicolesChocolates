@@ -6,6 +6,7 @@ class Index extends React.Component {
     render() {
        const budget = this.props.budget;
        let bankAccount = 0;
+    
   
        for (let i = 0; i < budget.length; i++){
            bankAccount += parseInt(budget[i].amount);
@@ -21,7 +22,14 @@ class Index extends React.Component {
                 </head>
                 <body>
                     <h1>Hello Adult Life</h1>
-                    <h3>Bank Account: {bankAccount}</h3>
+
+                    {   
+                         bankAccount < 0 ? 
+                         <h3 style={{backgroundColor: 'red'}}> Bank Account: {bankAccount}</h3> : <h3 style={{backgroundColor: 'green'}}> Bank Account: {bankAccount}</h3> 
+                    }
+                      
+                    
+                   
                     <button> <a href={`/new`}> New Item </a> </button>
                         { budget.map((item, index)=> {
                             return (
@@ -35,7 +43,7 @@ class Index extends React.Component {
                             )
                         })
                         
-
+                        
                         
                         }
                 
