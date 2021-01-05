@@ -4,7 +4,13 @@ const Layout= require('./Layout.jsx');
 
 class Index extends React.Component {
     render() {
-        const budget = this.props.budget;
+       const budget = this.props.budget;
+       let bankAccount = 0;
+       //Adding bank account totals
+    //    for (item of budget){
+    //        bankAccount += item.amount;
+    //    }
+
         return (
             <html>
                 <head>
@@ -14,6 +20,7 @@ class Index extends React.Component {
                 </head>
                 <body>
                     <h1>Hello Adult Life</h1>
+                    <h3>Bank Account: {bankAccount}</h3>
                     <button> <a href={`/new`}> New Item </a> </button>
                         { budget.map((item, index)=> {
                             return (
@@ -27,7 +34,7 @@ class Index extends React.Component {
                             )
                         })
                         
-                        
+
                         
                         }
                 

@@ -4,7 +4,9 @@ const React = require('react');
 class Show extends React.Component {
     render() {
         const budget = this.props.budget;
+        console.log('Show page '+ budget)
         return (
+        
             <html>
                 <head>
                     <link rel="stylesheet" href="/normalize.css"/>
@@ -13,7 +15,7 @@ class Show extends React.Component {
                 </head>
                 <body>
                     
-                    <div class="container">
+                    <div className="container">
                         <h1>{budget.name}</h1>
                         <button><a href={`/`}>Back</a></button>
                         <table>  

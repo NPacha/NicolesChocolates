@@ -12,7 +12,7 @@ class New extends React.Component {
                 <title>Hello Adult Life</title>
                 </head>
                 <body>
-                    <div class="container">
+                    <div className="container">
                         <h1>Add New Item</h1>
                         <form action="/" method="POST">
                             <input type="text" name="date" placeholder="date"/>

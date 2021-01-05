@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 const budget = require('./models/budget.js');
+
 
 // Middleware
 // Tell our server to use express react views as the view engine
@@ -24,12 +25,22 @@ app.get('/', (req, res)=> {
     res.render('Index', {
         budget: budget
     })
-})
+});
 
 //New 
 app.get('/new', (req, res)=> {
     res.render('New')
 });
+
+//Create 
+
+app.post('/', (req, res)=> {
+    //update model with new budget item
+    budget.push(req.body);
+    res.redirect('/');
+})
+
+
 
 //Show
 app.get('/:indexOfBudgetItems', (req, res)=> {
@@ -37,6 +48,8 @@ app.get('/:indexOfBudgetItems', (req, res)=> {
         budget: budget[req.params.indexOfBudgetItems]
     })
 });
+
+
 
 
 
