@@ -6,10 +6,11 @@ class Index extends React.Component {
     render() {
        const budget = this.props.budget;
        let bankAccount = 0;
-       //Adding bank account totals
-    //    for (item of budget){
-    //        bankAccount += item.amount;
-    //    }
+  
+       for (let i = 0; i < budget.length; i++){
+           bankAccount += parseInt(budget[i].amount);
+       }
+
 
         return (
             <html>
@@ -27,7 +28,7 @@ class Index extends React.Component {
                                 <table>  
                                     <tr>
                                         <td>{item.date}</td>
-                                        <td> <a href={`/${index}`}> {item.name} </a> </td>
+                                        <td> <a href={`/budget/${index}`}> {item.name} </a> </td>
                                         <td>{item.amount}</td>
                                     </tr>    
                                 </table>

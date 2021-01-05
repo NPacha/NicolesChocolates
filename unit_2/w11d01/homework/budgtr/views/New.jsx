@@ -14,7 +14,7 @@ class New extends React.Component {
                 <body>
                     <div className="container">
                         <h1>Add New Item</h1>
-                        <form action="/" method="POST">
+                        <form action="/budget" method="POST">
                             <input type="text" name="date" placeholder="date"/>
                             <input type="text" name="name" placeholder="name"/>
                             <input type="text" name="amount" placeholder="amount"/>

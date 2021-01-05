@@ -17,7 +17,7 @@ class Show extends React.Component {
                     
                     <div className="container">
                         <h1>{budget.name}</h1>
-                        <button><a href={`/`}>Back</a></button>
+                        <button><a href={`/budget`}>Back</a></button>
                         <table>  
                         <tr>
                             <th>date</th>
@@ -57,7 +57,7 @@ class Show extends React.Component {
                     
                 </body>
              
-            </html>
+        </html> 
         )
     }
 }

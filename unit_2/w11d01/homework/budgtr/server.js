@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const PORT = 4000;
-
 const budget = require('./models/budget.js');
 
 
@@ -21,7 +20,7 @@ app.use(express.urlencoded({extended: false}));
 
 
 //Index
-app.get('/', (req, res)=> {
+app.get('/budget', (req, res)=> {
     res.render('Index', {
         budget: budget
     })
@@ -32,22 +31,21 @@ app.get('/new', (req, res)=> {
     res.render('New')
 });
 
-//Create 
 
-app.post('/', (req, res)=> {
+//Create 
+app.post('/budget', (req, res)=> {
     //update model with new budget item
     budget.push(req.body);
-    res.redirect('/');
+    res.redirect('/budget');
 })
 
-
-
 //Show
-app.get('/:indexOfBudgetItems', (req, res)=> {
+app.get('/budget/:indexOfBudgetItems', (req, res)=> {
     res.render('Show', {
         budget: budget[req.params.indexOfBudgetItems]
     })
 });
+
 
 
 
