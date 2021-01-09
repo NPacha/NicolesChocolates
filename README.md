@@ -56,9 +56,9 @@ All course recordings will be linked below as well as quick links to that days m
 | w10d02 | | [Params & Routing](./unit_2/w10d02/instructor_notes)| [Express Calculator](./unit_2/w10d02/student_labs)|[Magic 8 Ball, Pass it Around](./unit_2/w10d02/homework)| [Recording](https://generalassembly.zoom.us/rec/share/rlGet-eEn1-0CAvB1KWhrx8aQkZ7puLxJQu3RRkoO9th12koQhThCOpYB4picU4.tyBCT2PgFdZmOeGo)
 | w10d03 |[Reverse String, Word Frequency](./unit_2/w10d03/warm_up_exercise)| [REST: Index and Show, MVC, EJS](./unit_2/w10d03/instructor_notes)| [Super Heroes, Fruits, Mars Missions](./unit_2/w10d03/student_labs)|[Poke Express](./unit_2/w10d03/homework) [Big O Notation](./unit_2/w10d03/homework)| [Morning Recording](https://generalassembly.zoom.us/rec/play/fDlSkRhUlYj-q7rHU8Gtu8FmhOpBdYPZ85ZA90j_OPzYSc3REkur4xRw7OkwPNY3YBz3Nw8BBXRTVRAP.XLIGAdxcvm_5cmQu?continueMode=true) [Afternoon Recording](https://generalassembly.zoom.us/rec/play/tXs5L4pGJ45InON3bKjKDq56qSkqQHq16d9XwLpYi8lla9GT3ODC7FOj_F2LOTJ26xcgvODGuVybONLk.nXG6Z0MQtfyX4dI8?continueMode=true)
 | w11d1 |[C.R.A.P.](./unit_2/w11d1/warm_up_exercise)| [REST: New, Create](./unit_2/w11d1/instructor_notes)| [Biscoff Bakery](./unit_2/w11d1/student_labs)|[](./unit_2/w10d1/homework)| [Recording](https://generalassembly.zoom.us/rec/share/5ogwZx5bTbm-YFqXFMJAWM30lGk9mFcmXSbKFQGiu6yPzvVqpIvSPM982WS7_vo9.TilLZeiCvTssmq1W)
-| w13d1 || | | [Recording](https://generalassembly.zoom.us/rec/share/t3Vv13NBoB-n0yDl5o7tEDDRB2ar1mElRhWQBBf-8yPRzaxTYxvdvbPHyTFRGjSY.OYUpfz0uJj3ZUKiL)
-| w13d2 || | | [Recording](https://generalassembly.zoom.us/rec/share/OA3-RSWcMgp0NIvJD9NCRLhsq8uLdl1_dDpl32VPGzISdRMjXJtNML8X_xSZpo_F.u0zKG865GP_m_84E)
-| w13d3 || | | [Morning Recording](https://generalassembly.zoom.us/rec/share/P2jT7iKS2cFkuCM0WLyq2m8LTWE-2C8CJrtRXBQTBuvb2K59lmNKO_2Y3JYx3sZO.W7K-5gMIno9_J7cx)
+| w13d1 || | | | [Recording](https://generalassembly.zoom.us/rec/share/t3Vv13NBoB-n0yDl5o7tEDDRB2ar1mElRhWQBBf-8yPRzaxTYxvdvbPHyTFRGjSY.OYUpfz0uJj3ZUKiL)
+| w13d2 || | | | [Recording](https://generalassembly.zoom.us/rec/share/OA3-RSWcMgp0NIvJD9NCRLhsq8uLdl1_dDpl32VPGzISdRMjXJtNML8X_xSZpo_F.u0zKG865GP_m_84E)
+| w13d3 || | | | [Morning Recording](https://generalassembly.zoom.us/rec/share/P2jT7iKS2cFkuCM0WLyq2m8LTWE-2C8CJrtRXBQTBuvb2K59lmNKO_2Y3JYx3sZO.W7K-5gMIno9_J7cx)
 
 
 
