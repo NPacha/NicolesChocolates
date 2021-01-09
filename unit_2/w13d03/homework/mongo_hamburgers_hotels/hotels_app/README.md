@@ -26,128 +26,162 @@ You are now starting a [boutique travel travel boutique](http://pushing-daisies.
 ### Set up
 
 **Inside this folder**
-- `touch app.js`
-- directory `models` should already be made and have a `seed.js` file
-- make sure to export the `seed.js` file in order to be able to import it
-- `touch models/hotel.js`
-- `npm init`
-- `npm install mongoose`
+![](https://www.dropbox.com/s/pwrl4scgmtqixzu/Screen%20Shot%202021-01-09%20at%205.57.38%20PM.png?dl=1)
 
-**Inside `app.js`**
-- require mongoose
-- configure mongoose Promise: `mongoose.Promise = global.Promise` * Optional - may or may not get a warning in terminal about this
-- configure mongoURI with db called `hotel` : const mongoURI  = 'mongodb://localhost:27017/hotel'
-- set mongoose connection: `const db = mongoose.connection`
-- connect to mongo with `db.on()`, show errors on fail, show disconnection:
+![](https://www.dropbox.com/s/v9osaazrq7s00et/Screen%20Shot%202021-01-09%20at%205.58.29%20PM.png?dl=1)
 
 ```js
-// *******************************************//
-// Everything provided to students in markdown start
-// *******************************************//
+require('dotenv').config()
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const PORT = 3000;
+const Schema = mongoose.Schema;
 
-// Dependencies
-const mongoose = require('mongoose')
-const db = mongoose.connection
 
-// Config
-const mongoURI = 'mongodb://localhost:27017/hotel'
+const articleSchema = new Schema({
+	title:  { type: String, required: true, unique: true }, //can say whether we want properties to be required or unique
+	author: { type: String, required: true },
+	body:   String,
+	comments: [{ body: String, commentDate: Date }], // can have arrays of objects with specific properties
+	publishDate: { type: Date, default: Date.now }, // can set defaults for properties
+	hidden: Boolean,
+	meta: { // can have properties that are objects
+		votes: Number,
+		favs:  Number
+	}
+}, {timestamps: true});
 
-// Models
-const Hotel = require('./models/hotel.js')
-const hotelSeed = require('./models/seed.js')
+const Article = mongoose.model('Article', articleSchema);
 
-// Connect to Mongo
-mongoose.connect(mongoURI, { useNewUrlParser: true },
-  () => console.log('Mongo running at', mongoURI)
-)
 
-// Error / success
-db.on('error', (err) => console.log(err.message + ' is Mongod not running?'))
-db.on('connected', () => console.log('mongo connected: ', mongoURI))
-db.on('disconnected', () => console.log('mongo disconnected'))
+// Middleware
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Hotel.create(hotelSeed, (err, data) => {
-//   if (err) console.log(err.message)
-//   console.log('added provided hotel data')
-// })
 
-// Hotel.collection.drop()
+// Mongoose Connection
+mongoose.connect(process.env.MONGO_URI, {
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useNewUrlParser: true
+})
 
-// Hotel.countDocuments({}, (err, data) => {
-//   if (err) console.log(err.message)
-//   console.log(`There are ${data} hotels in this database`)
-// })
+mongoose.connection.once('connected', ()=> {
+    console.log('Mongo connected the world is yours')
+})
 
-// *******************************************//
-// Everything provided to students end
-// *******************************************//
+// CRUD --- Create, Read, Update, Destroy
+// REST --- Representational State Transfer
+// INDUCES ------
+// INDEX ----- READ
+app.get('/articles', (req, res) => {
+    Article.find({}, (err, foundArticles) => {
+        if(!err){
+            res
+              .status(200)
+              .json(foundArticles);
+        } else {
+            res
+              .status(400)
+              .json(err)
+        }
+    })
+})
+
+
+
+// NEW -------- shows a form so the user can do the create function
+
+// DELete
+app.delete('/articles/:id', (req, res) => {
+	Article.findByIdAndDelete(req.params.id, (err, foundArticle) =>{
+		if(!err){
+			res
+				.status(200)
+				.json(foundArticle)
+		} else {
+			res
+				.status(400)
+				.json(err)
+		}
+  })
+})
+
+
+
+// Update
+app.put('/articles/:id', (req, res) => {
+	Article.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedArticle) =>{
+		if(!err){
+			res
+				.status(200)
+				.json(updatedArticle)
+		} else {
+			res
+				.status(400)
+				.json(err)
+		}
+  })
+})
+
+
+// CREATE
+
+app.post('/articles', (req, res) => {
+		console.log(req.body)
+    Article.create(req.body, (err, createdArticle) => {
+        if(!err){
+					res
+						.status(200)
+						.json(createdArticle)
+				} else {
+					res
+						.status(400)
+						.json(err)
+				}
+    })
+})
+
+
+// EDIT ----------- show a form so users can do the update functionality
+
+
+// SHOW
+
+app.get('/articles/:id', (req, res) => {
+	Article.findById(req.params.id, (err, foundArticle) =>{
+		if(!err){
+			res
+				.status(200)
+				.json(foundArticle)
+		} else {
+			res
+				.status(400)
+				.json(err)
+		}
+  })
+})
+
+
+
+app.listen(PORT, () => console.log('we in the building at ' + PORT))
+
 ```
 
 <hr>
 
-**Inside `models/hotel.js`**
+## SET UP A HOTEL SCHEMA
 
-- require mongoose
 - set up the hotel schema
-  - name type string, required true, unique true
-  - location type string
-  - rating type number, max value 5
-  - vacancies type boolean
-  - tags type array
-    - within the array  type string
-  - rooms
+- name type string, required true, unique true
+- location type string
+- rating type number, max value 5
+- vacancies type boolean
+- tags type array
+- within the array type string
+- rooms
 
-```
-  rooms     : [ { roomNumber: Number, size: String, price: Number, booked: Boolean  } ]
-```
- - set timestamps to true
-
-- use `module.exports` to export this `mongoose.model`
-
-**Back to `app.js`**
-- require `hotel.js` inside the models folder, set to a variable named `Hotel`
-
-- either run with `node app.js` or start nodemon (caution - every time you save the server will restart, possibly causing your commands to go through more times than you'd want)
- - Expected output:
-
- ```
-Mongo running at mongodb://localhost:27017/hotel
-Connection made!
-```
-
-#### Seed some Data
-
-- We have some starter data, starter data is often referred to as seed data. Let's load it into your mongo db
-- require `models/seed.js` as `hotelSeed` (still working inside your `app.js`)
-- Add the following below `db.on('open', ...`
-
-```
-Hotel.create( hotelSeed, ( err , data ) => {
-      if ( err ) console.log ( err.message )
-  console.log( "added provided hotel data" )
-  }
-);
-```
-
-- Once added, comment out or remove the above line or else your db will be populated with duplicates
-- **Remember** - when using nodemon, every time you save it'll restart the server and run everything you have
-
-- If you accidentally made duplicates, you can drop your whole database and start again
-  - add and run the following line once, comment out or remove when done
-```
-Hotel.collection.drop();
-```
-
-Check for the right number of hotels:
-
-```
-Hotel.count({} , (err , data)=> {
-   if ( err ) console.log( err.message );
-    console.log ( `There are ${data} hotels in this database` );
-});
-```
-
-There should be 12 hotels in the database.
 
 ### Using Mongoose to CRUD our data
 
@@ -156,41 +190,25 @@ There should be 12 hotels in the database.
 
 ### C
 
-- Create a hotel using the above schema
-  - add your mongoose command inside app.js. Once it works, comment it out.
+- Create a hotel using the above schema, Do it 13 Times
   - There should now be 13 hotels in the database.
 
 ### R
 - with each prompt, complete it, then comment it out
-  - let's find all our hotels and `console.log` them
-  - find all the hotels but only return the hotel name and `console.log` them
-  - find just your hotel using a search parameter that would only match your hotel
-  - find all the hotels that have vacancies, also exclude ratings.
+  - let's find all our hotels with our Index Route
+  - Find 1 hotel with the show route
 
 ### D
-- turns out Hotelicopter was an April Fool's prank! Let's delete that one from our database
+- Build the delete route
+- choose 1 hotel and delete it
 - Hilbert's Hotel is getting terrible ratings all it does is give everyone headaches and no room service. Let's just remove that one as well
 - The hotel in the `Colorado Rockies` has been closed for undisclosed reasons. Delete this hotel too
 
 ### U
-
- **Note** be sure to console log the updated document ([hint](https://davidburgos.blog/return-updated-document-mongoose/)
-
+- Build the Update Route
 - The Great Northern's rating is only a 3! Update that to be a 5
 - Motel Bambi is now fully booked, change the vacancies to false
 - Things are on the decline for the Motel in `'White Bay, Oregon'`, change the rating to 2
 
-## Hungry for More (choose any)
-- install express
-- create an app.get route that `res.send` all the hotels to the browsers to be viewed as json
-- create a route '/:id' that takes the hotel id as a parameter and then displays just the hotel with the matching id
-<br>
-
-- Don't need express for the following:
-  - update the prices of each of the rooms at Fawlty Towers
-  - find the hotel with an `indoor pool` as a tag
-  - The PR firm for the Hyperion Hotel has demanded that 'crime' is taken off as a keyword, remove that keyword
-
-
-## Wildly Ravenous For Even More
+## Hungry For Even More
 - Use JSX to make views of your data
