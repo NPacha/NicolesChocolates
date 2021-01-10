@@ -58,7 +58,7 @@ All course recordings will be linked below as well as quick links to that days m
 | w11d1 |[C.R.A.P.](./unit_2/w11d1/warm_up_exercise)| [REST: New, Create](./unit_2/w11d1/instructor_notes)| [Biscoff Bakery](./unit_2/w11d1/student_labs)|[](./unit_2/w10d1/homework)| [Recording](https://generalassembly.zoom.us/rec/share/5ogwZx5bTbm-YFqXFMJAWM30lGk9mFcmXSbKFQGiu6yPzvVqpIvSPM982WS7_vo9.TilLZeiCvTssmq1W)
 | w13d1 || | | | [Recording](https://generalassembly.zoom.us/rec/share/t3Vv13NBoB-n0yDl5o7tEDDRB2ar1mElRhWQBBf-8yPRzaxTYxvdvbPHyTFRGjSY.OYUpfz0uJj3ZUKiL)
 | w13d2 || | | | [Recording](https://generalassembly.zoom.us/rec/share/OA3-RSWcMgp0NIvJD9NCRLhsq8uLdl1_dDpl32VPGzISdRMjXJtNML8X_xSZpo_F.u0zKG865GP_m_84E)
-| w13d3 || | | | [Morning Recording](https://generalassembly.zoom.us/rec/share/P2jT7iKS2cFkuCM0WLyq2m8LTWE-2C8CJrtRXBQTBuvb2K59lmNKO_2Y3JYx3sZO.W7K-5gMIno9_J7cx)
+| w13d3 || | | | [Morning Recording](https://generalassembly.zoom.us/rec/share/P2jT7iKS2cFkuCM0WLyq2m8LTWE-2C8CJrtRXBQTBuvb2K59lmNKO_2Y3JYx3sZO.W7K-5gMIno9_J7cx) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/cYDAU4s9w7ipr8FqedwGeG3x-HVdGcOiNBD1O0eBjDzb28h2uUEGNeF_gJow_ZH4.kBsKoK_koB8pHCAP?startTime=1610221437000)
 
 
 
