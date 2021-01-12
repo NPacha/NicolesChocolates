@@ -25,8 +25,9 @@
 1. Create a directory for the app in `student_examples` called `fruits-jsx-mongoose` and `cd` into it
 1. `touch server.js`
 1. `npm init -y`
-1. `npm i express express-react-views react react-dom`
-1. Edit package.json to have `"main": "server.js",`
+1. `npm i express express-react-views react react-dom dotenv`
+1. Edit package.json to have `"dev": "nodemon server.js",`
+1. Make `.env file` with mongo details in it and require dotenv in server file
 
 ## Start express
 
@@ -123,7 +124,7 @@ app.post('/fruits/', (req, res)=>{
 const mongoose = require('mongoose');
 
 //... and then farther down the file
-mongoose.connect('mongodb://localhost:27017/basiccrud', { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.connection.once('open', ()=> {
     console.log('connected to mongo');
 });
