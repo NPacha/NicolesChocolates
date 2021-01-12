@@ -19,6 +19,7 @@ A two part hw to practice Mongodb basics and mongoose basics
 - Familiarity with node/npm packages
 - Familiarity with terminal
 - Familiarity with JavaScript Fundamentals
+- Familiarity with using CRUD with Express 
 
 ---
 
@@ -26,7 +27,12 @@ A two part hw to practice Mongodb basics and mongoose basics
 
 Tonight's homework is in two parts, first start with [Mongo Burgers](mongo_burgers/README.md) in the `mongo_burgers` folder
 
+#### Note: All you need is the Schema and Console.log 
+
+
 Then once you finish Mongo Burgers, move on to [Mongoose Hotels](hotels_app/README.md) in the `hotels_app` folder
+
+#### Note: You will be using Express to Create, Read, Update and Destroy the Hotels. 
 
 
 ## Technical Requirements
