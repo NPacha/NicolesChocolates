@@ -41,7 +41,9 @@ app.get('/NicolesChocolates', (req, res)=> {
             console.log(foundProducts)
             res
                 .status(200)
-                .json(foundProducts)
+                .render('Index', {
+                    products: foundProducts
+                })
         } else {
             res
                 .status(400)
@@ -50,9 +52,19 @@ app.get('/NicolesChocolates', (req, res)=> {
     })
 })
 
-// app.get('/NicolesChocolates/:id', (req, res)=> {
-//     res.send('Dark Chocolate with Chili')
-// })
+app.get('/NicolesChocolates/:id', (req, res)=> {
+    Product.findById(req.params.id, (err, foundProduct)=> {
+        if(!err){
+            res
+                .status(200)
+                .json(foundProduct)
+        } else {
+            res
+                .status(400)
+                .json(err)
+        }
+    })
+})
 
 
 //UPDATE
@@ -72,42 +84,6 @@ app.put('/NicolesChocolates/:id', (req, res)=> {
 })
 
 
-
-
-//SEEDING ROUTE
-app.get('/seed', async (req, res) => {
-const newProducts =
-    [
-    {
-        name: 'Dark Chocolate with Chilis',
-        description: 'Dark chocolate spiced with cayenne',
-        img: '',
-        price: 9,
-        qty: 15
-        }, {
-        name: 'Milk Raspberry',
-        description: 'Light milk chocolate topped with freeze dried raspeberries',
-        img: '',
-        price: 9,
-        qty: 10
-        }, {
-        name: 'Caramel Decadence',
-        description: 'Creamy caramel filled bittersweet chocolate topped with sea salt',
-        img: '',
-        price: 10,
-        qty: 20
-        }
-    ]
-
-    try {
-    const seedItems = await Product.create(newProducts)
-    res.send(seedItems)
-    } catch (err) {
-    res.send(err.message)
-    }
-})
-
-
 //DELETE
 app.delete('/NicolesChocolates/:id', (req, res)=> {
     Product.findByIdAndDelete(req.params.id, (err, foundProduct)=> {
@@ -122,6 +98,41 @@ app.delete('/NicolesChocolates/:id', (req, res)=> {
         }
     })
 })
+
+
+//SEEDING ROUTE
+app.get('/seed', async (req, res) => {
+    const newProducts =
+        [
+        {
+            name: 'Dark Chocolate with Chilis',
+            description: 'Dark chocolate spiced with cayenne',
+            img: '',
+            price: 9,
+            qty: 15
+            }, {
+            name: 'Milk Raspberry',
+            description: 'Light milk chocolate topped with freeze dried raspeberries',
+            img: '',
+            price: 9,
+            qty: 10
+            }, {
+            name: 'Caramel Decadence',
+            description: 'Creamy caramel filled bittersweet chocolate topped with sea salt',
+            img: '',
+            price: 10,
+            qty: 20
+            }
+        ]
+    
+        try {
+        const seedItems = await Product.create(newProducts)
+        res.send(seedItems)
+        } catch (err) {
+        res.send(err.message)
+        }
+    })
+    
 
 
 

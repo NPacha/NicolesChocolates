@@ -85,7 +85,7 @@ app.get('/fruits/:id', (req, res) => {
         } else {
             res
                 .status(400)
-                .send(err)
+                .send
         }
     })
 })
