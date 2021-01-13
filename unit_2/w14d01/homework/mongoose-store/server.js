@@ -109,6 +109,19 @@ const newProducts =
 
 
 //DELETE
+app.delete('/NicolesChocolates/:id', (req, res)=> {
+    Product.findByIdAndDelete(req.params.id, (err, foundProduct)=> {
+        if(!err){
+            res
+                .status(200)
+                .json(foundProduct)
+        } else {
+            res
+                .status(400)
+                .json(err)
+        }
+    })
+})
 
 
 
