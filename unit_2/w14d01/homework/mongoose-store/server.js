@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express(); //create an instance of express
 const PORT = 3000;
+const Product = require('./models/products');
 
 //Set up the body parser Middleware that allows us access to the req.body
 app.use(express.urlencoded({extended: true})); //parses forms
@@ -35,15 +36,76 @@ mongoose.connection.once('connected', ()=> console.log('Mongoose is ready'));
 //READ
 /*Index*/
 app.get('/NicolesChocolates', (req, res)=> {
-    res.send('Welcome to Nicoles Chocolate Store')
+    Product.find({}, (err, foundProducts) => {
+        if(!err){
+            console.log(foundProducts)
+            res
+                .status(200)
+                .json(foundProducts)
+        } else {
+            res
+                .status(400)
+                .send(err)
+        }
+    })
 })
 
-app.get('/NicolesChocolates/:id', (req, res)=> {
-    res.send('Dark Chocolate with Chili')
-})
+// app.get('/NicolesChocolates/:id', (req, res)=> {
+//     res.send('Dark Chocolate with Chili')
+// })
 
 
 //UPDATE
+
+app.put('/NicolesChocolates/:id', (req, res)=> {
+    Product.findByIdAndUpdate(req.params.id, req.body, { new: true}, (err, updatedProduct)=> {
+        if(!err){
+            res
+                .status(200)
+                .json(updatedProduct)
+        } else {
+            res
+                .status(400)
+                .json(err)
+        }
+    })
+})
+
+
+
+
+//SEEDING ROUTE
+app.get('/seed', async (req, res) => {
+const newProducts =
+    [
+    {
+        name: 'Dark Chocolate with Chilis',
+        description: 'Dark chocolate spiced with cayenne',
+        img: '',
+        price: 9,
+        qty: 15
+        }, {
+        name: 'Milk Raspberry',
+        description: 'Light milk chocolate topped with freeze dried raspeberries',
+        img: '',
+        price: 9,
+        qty: 10
+        }, {
+        name: 'Caramel Decadence',
+        description: 'Creamy caramel filled bittersweet chocolate topped with sea salt',
+        img: '',
+        price: 10,
+        qty: 20
+        }
+    ]
+
+    try {
+    const seedItems = await Product.create(newProducts)
+    res.send(seedItems)
+    } catch (err) {
+    res.send(err.message)
+    }
+})
 
 
 //DELETE

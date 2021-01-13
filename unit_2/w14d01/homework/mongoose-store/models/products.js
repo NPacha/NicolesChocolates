@@ -3,11 +3,11 @@ const {model, Schema} = require('mongoose');
 
 //Create  the product schema
 const productSchema = new Schema({
-    name: String,
+    name: { type: String, required: true },
     description: String,
     img: String,
-    price: Number,
-    qty: Number
+    price: { type: Number, min: 0 },
+    qty: { type: Number, min: 0}
 })
 
 //Create the model that will connect us to MongoDB
