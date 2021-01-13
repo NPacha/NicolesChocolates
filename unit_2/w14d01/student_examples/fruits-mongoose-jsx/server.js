@@ -73,6 +73,23 @@ app.get('/fruits', (req, res) => {
     })
 })
 
+/*Show*/
+app.get('/fruits/:id', (req, res) => {
+    Fruit.findById(req.params.id, (err, foundFruit) => {
+        if(!err){
+            res
+                .status(200)
+                .render('Show', {
+                    fruit: foundFruit
+                })
+        } else {
+            res
+                .status(400)
+                .send(err)
+        }
+    })
+})
+
 
 
 
