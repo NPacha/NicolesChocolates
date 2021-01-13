@@ -29,7 +29,7 @@ Edit/Update:
 Use the starter code in the student examples folder for today, or use your code from last class!
 
 ``` bash 
-student_examples/fruits-jsx-mongoose
+student_examples
 ```
 
 From your terminal 
