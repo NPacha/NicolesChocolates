@@ -2,6 +2,7 @@
 require('dotenv').config();//this processes the .env file
 const express = require('express');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override')
 const app = express(); //create an instance of express
 const PORT = 3000;
 const Product = require('./models/products');
@@ -13,6 +14,11 @@ app.use((req,res, next)=> {
     console.log(req.body)
     next()
 });
+app.use(methodOverride('_method')); //What is the purpose of this? Make sure to put it here, it needs req.body to work. Using method to capture query parameter, and the value is going to be whatever method we actually want to use. Needs to match query paramater. 
+
+
+//tell the computer to look in a directory called public when you see a .js file or a .css file
+app.use(express.static('public'));
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine()) //Gives us back a function that is able to parse the view files
@@ -31,6 +37,25 @@ mongoose.connection.once('connected', ()=> console.log('Mongoose is ready'));
 //CRUD Restful Routes
 
 //CREATE
+/*New Route*/
+app.get('/NicolesChocolates/new', (req, res)=> {
+    res.render('New');
+})
+
+/*Create Route*/
+app.post('/NicolesChocolates', (req, res) => {
+    Product.create(req.body, (failure, success) => {
+        if(!failure){
+            res
+                .status(200)
+                .redirect('/NicolesChocolates')
+        } else {
+            res
+                .status(400)
+                .send(failure)
+        }
+    })
+})
 
 
 //READ
@@ -40,7 +65,7 @@ app.get('/NicolesChocolates', (req, res)=> {
         if(!err){
             console.log(foundProducts)
             res
-                .status(200)
+                .status(200) 
                 .render('Index', {
                     products: foundProducts
                 })
@@ -52,12 +77,15 @@ app.get('/NicolesChocolates', (req, res)=> {
     })
 })
 
+//Show
 app.get('/NicolesChocolates/:id', (req, res)=> {
     Product.findById(req.params.id, (err, foundProduct)=> {
         if(!err){
             res
                 .status(200)
-                .json(foundProduct)
+                .render('Show', {
+                    product: foundProduct
+                })
         } else {
             res
                 .status(400)
@@ -65,6 +93,25 @@ app.get('/NicolesChocolates/:id', (req, res)=> {
         }
     })
 })
+
+//EDIT
+app.get('/NicolesChocolates/:id/edit', (req, res)=> {
+    Product.findById(req.params.id, (err, foundProduct) => {
+        if(!err){
+            res
+                .status(200)
+                .render('Edit', {
+                    product: foundProduct
+                })
+        } else {
+            res
+                .status(400)
+                .send(err)
+        }
+    })
+})
+
+
 
 
 //UPDATE
@@ -74,7 +121,7 @@ app.put('/NicolesChocolates/:id', (req, res)=> {
         if(!err){
             res
                 .status(200)
-                .json(updatedProduct)
+                .redirect('/NicolesChocolates')
         } else {
             res
                 .status(400)

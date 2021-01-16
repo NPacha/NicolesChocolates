@@ -1,23 +1,31 @@
 const React = require('react');
+const Layout = require('./layout/Layout.jsx');
+
 class Index extends React.Component {
   render() {
       
     return (
-        <div>
-            <h1>Chocolates Index Page</h1>
-            <ul>
-                {
-                    this.props.products.map((product, i)=>{
-                        return(
-                            <li>
-                                {product.name} <br/>{product.description}  <br/> <img src={product.img} alt=""/> <br/>{product.price} <br/>{product.qty}
-                            </li>
-                            
-                        )
-                    })
-                }
-            </ul>
-        </div>
+        <Layout>
+            
+                <ul class="chocolateContainer">
+                    {
+                        this.props.products.map((product, i)=>{
+                            return(
+                                
+                                    <li>
+                                        <img src={product.img} alt=""/> <br/>
+                                        <a href={`/NicolesChocolates/${product._id}`}>{product.name}</a> <br/>  
+                                        Price ${product.price} <br/>
+                                        Amount in Stock: {product.qty}
+                                        <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>
+                                    </li>
+                                
+                            )
+                        })
+                    }
+                </ul>
+            
+        </Layout>
     )
   }
 }

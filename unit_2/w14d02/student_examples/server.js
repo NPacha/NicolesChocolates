@@ -2,6 +2,7 @@
 require('dotenv').config(); // process.env
 const express = require('express');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override');
 const app = express();
 const PORT = 3000;
 const Fruit = require('./models/fruit');
@@ -9,10 +10,7 @@ const Fruit = require('./models/fruit');
 // Body Parser Middleware to give us access to req.body
 app.use(express.urlencoded({extended: true})); // form data
 app.use(express.json()); // raw json data
-app.use((req, res, next)=>{
- console.log(req.body)
- next();
-});
+app.use(methodOverride('_method')); //What is the purpose of this? Make sure to put it here, it needs req.body to work. Using method to capture query parameter, and the value is going to be whatever method we actually want to use. Needs to match query paramater. 
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
@@ -28,13 +26,12 @@ mongoose.connection.once('connected', () => console.log('Mongoose is all ready')
 
 // CREATE
 /* New Route */
-app.get('/fruits/new', (req, res, next)=> {
- console.log('ran on new');
- next()
-},
-(req, res) => {
-    res.render('New')
+app.get('/fruits/new', (req, res)=> {
+ res.render('New');
 })
+
+
+
 /* Create Route */
 app.post('/fruits', (req, res) => {
     req.body.readyToEat === 'on'?
@@ -44,7 +41,7 @@ app.post('/fruits', (req, res) => {
         if(!failure){
             res
               .status(200)
-              .send(success)
+              .redirect('/fruits')
         } else {
             res
               .status(400)
@@ -89,6 +86,57 @@ app.get('/fruits/:id', (req, res) => {
     })
 })
 
+//EDIT
+app.get('/fruits/:id/edit', (req, res)=>{
+    Fruit.findById(req.params.id, (err, foundFruit) => {
+        if(!err){
+            res
+              .status(200)
+              .render('Edit', {
+                  fruit: foundFruit
+              })
+        } else {
+            res 
+              .status(400)
+              .send(err)
+        }
+    })
+}
+)
+
+//DELETE
+
+app.delete('/fruits/:id', (req, res) => {
+    Fruit.findByIdAndDelete(req.params.id, (err) => {
+        if(!err){
+            res
+                .status(200)
+                .redirect('/fruits')
+        } else {
+            res
+                .status(400)
+                .send(err)
+        }
+    })
+})
+
+//UPDATE
+app.put('/fruits/:id', (req, res) => {
+    req.body.readyToEat === 'on'?
+    req.body.readyToEat = true:
+    req.body.readyToEat = false;
+    Fruit.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err) => {
+        if(!err){
+            res
+                .status(200)
+                .redirect('/fruits')
+        } else {
+            res
+                .status(400)
+                .send(err)
+        }
+    })
+})
 
 
 
