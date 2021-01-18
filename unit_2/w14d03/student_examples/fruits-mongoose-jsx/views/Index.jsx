@@ -5,7 +5,10 @@ const Button = require('./components/Button');
 class Index extends React.Component {
   render() {
     return (
-        <AppLayout title={'Fruits Index Page'}>
+        <AppLayout 
+            title={'Fruits Index Page'}
+            pageClass={'index'}
+            >
             <h1>Fruits index page</h1>
             <a href="/fruits/new"> Create A New Fruit </a>
             <ul>

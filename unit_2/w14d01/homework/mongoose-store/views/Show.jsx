@@ -1,5 +1,7 @@
 const React = require('react');
-const Layout = require('./layout/Layout.jsx')
+const Layout = require('./layout/Layout.jsx');
+const Button = require('./components/Button');
+const Buy = require('./components/Buy');
 
 
 class Show extends React.Component {
@@ -13,7 +15,10 @@ class Show extends React.Component {
                     <p id="productDescription">{`${this.props.product.description}`} </p>
                     <p> Price: ${`${this.props.product.price}`}</p>
                     <p> Amount left: {`${this.props.product.qty}`}</p>
+                    <Buy endpoint={`/NicolesChocolates/${this.props.product._id}/buy?_method=PUT`} name={this.props.product.name}/>
+                    <Button endpoint={`/NicolesChocolates/${this.props.product._id}?_method=DELETE`} name={this.props.product.name }/>
                 </div>
+                
             </Layout>
             
         )

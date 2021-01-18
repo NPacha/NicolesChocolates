@@ -1,6 +1,7 @@
 const React = require('react');
 const Layout = require('./layout/Layout.jsx');
 
+
 class Index extends React.Component {
   render() {
       
@@ -18,6 +19,7 @@ class Index extends React.Component {
                                         Price ${product.price} <br/>
                                         Amount in Stock: {product.qty}
                                         <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>
+                                       
                                     </li>
                                 
                             )

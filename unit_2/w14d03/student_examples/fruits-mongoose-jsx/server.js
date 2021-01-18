@@ -11,6 +11,7 @@ const Fruit = require('./models/fruit');
 app.use(express.urlencoded({extended: true})); // form data
 app.use(express.json()); // raw json data
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());

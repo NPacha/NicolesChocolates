@@ -10,10 +10,10 @@ const Product = require('./models/products');
 //Set up the body parser Middleware that allows us access to the req.body
 app.use(express.urlencoded({extended: true})); //parses forms
 app.use(express.json()); //parses raw json data
-app.use((req,res, next)=> {
-    console.log(req.body)
-    next()
-});
+// app.use((req,res, next)=> {
+//     console.log(req.body)
+//     next()
+// });
 app.use(methodOverride('_method')); //What is the purpose of this? Make sure to put it here, it needs req.body to work. Using method to capture query parameter, and the value is going to be whatever method we actually want to use. Needs to match query paramater. 
 
 
@@ -137,13 +137,33 @@ app.delete('/NicolesChocolates/:id', (req, res)=> {
         if(!err){
             res
                 .status(200)
-                .json(foundProduct)
+                .redirect('/NicolesChocolates')
         } else {
             res
                 .status(400)
                 .json(err)
         }
     })
+})
+
+//BUY ROUTE
+app.put('/NicolesChocolates/:id/buy', (req, res)=> {
+    Product.findByIdAndUpdate(req.params.id, req.body, { new: true}, (err, updatedProduct)=> {
+        if(!err){
+            updatedProduct.qty -= 1;
+            updatedProduct.save();
+            res
+                .status(200)
+                .redirect('/NicolesChocolates')
+                
+        } else {
+            res
+                .status(400)
+                .json(err)
+        }
+    })
+    
+    
 })
 
 
