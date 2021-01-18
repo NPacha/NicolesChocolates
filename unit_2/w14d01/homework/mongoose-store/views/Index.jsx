@@ -4,6 +4,13 @@ const Layout = require('./layout/Layout.jsx');
 
 class Index extends React.Component {
   render() {
+    const stockCheck = (currentProduct) => {
+        if (currentProduct.qty <= 0) {
+        return <p>Out Of Stock</p> }
+        else {
+            return <p>Amount in Stock: {currentProduct.qty}</p>
+        }
+    }
       
     return (
         <Layout>
@@ -17,7 +24,7 @@ class Index extends React.Component {
                                         <img src={product.img} alt=""/> <br/>
                                         <a href={`/NicolesChocolates/${product._id}`}>{product.name}</a> <br/>  
                                         Price ${product.price} <br/>
-                                        Amount in Stock: {product.qty}
+                                        { stockCheck(product) }
                                         <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>
                                        
                                     </li>

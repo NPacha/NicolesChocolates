@@ -6,6 +6,14 @@ const Buy = require('./components/Buy');
 
 class Show extends React.Component {
     render(){
+        const stockCheck = () => {
+            if (this.props.product.qty <= 0) {
+            return <p>Out Of Stock</p> }
+            else {
+                return <Buy endpoint={`/NicolesChocolates/${this.props.product._id}/buy?_method=PUT`} name={this.props.product.name}/>
+            }
+        }
+
         return(
             <Layout>
                 <a href={`/NicolesChocolates`}>Back to Home Page</a>
@@ -15,7 +23,7 @@ class Show extends React.Component {
                     <p id="productDescription">{`${this.props.product.description}`} </p>
                     <p> Price: ${`${this.props.product.price}`}</p>
                     <p> Amount left: {`${this.props.product.qty}`}</p>
-                    <Buy endpoint={`/NicolesChocolates/${this.props.product._id}/buy?_method=PUT`} name={this.props.product.name}/>
+                    { stockCheck() }
                     <Button endpoint={`/NicolesChocolates/${this.props.product._id}?_method=DELETE`} name={this.props.product.name }/>
                 </div>
                 
