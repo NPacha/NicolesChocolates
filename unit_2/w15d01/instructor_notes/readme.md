@@ -543,7 +543,7 @@ const addNicole = event => {
 ```
 
 ## Lets code this out and talk about what changed.
-1. We used Our Custom Hook to handle the Inputs for Winnie, Bob, thomas and george
+1. We used Our Custom Hook to handle the Inputs for German, Kellie, Allegra, and Nicole.
 1. We also used state to create updatable arrays with Use State Hook
 1. We Rendered 4 Lists That are bound to each of our `list` state variables
 1. We made a Function that handles adding a task to each users list.
