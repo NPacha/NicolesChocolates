@@ -4,7 +4,7 @@ class Buy extends React.Component {
     render(){
         return(
             <form action={this.props.endpoint} method="POST">
-                <input type="submit" value={`Buy ${this.props.name}`}></input>
+                <input type="submit" value={`Buy ${this.props.name}`} className="buyButton"></input>
             </form>
         )
     }

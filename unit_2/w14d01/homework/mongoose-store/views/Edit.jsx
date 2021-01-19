@@ -6,6 +6,7 @@ class Edit extends React.Component {
     render(){
         return (
             <Layout>
+                <a href={`/NicolesChocolates`}>Back to Home Page</a>
                 <Form
                     endpoint={`/NicolesChocolates/${this.props.product._id}?_method=PUT`}
                     buttonText={`Edit the ${this.props.product.name}`}

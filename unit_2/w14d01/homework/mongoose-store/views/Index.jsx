@@ -22,7 +22,8 @@ class Index extends React.Component {
                                 
                                     <li>
                                         <img src={product.img} alt=""/> <br/>
-                                        <a href={`/NicolesChocolates/${product._id}`}>{product.name}</a> <br/>  
+                                        
+                                        <a href={`/NicolesChocolates/${product._id}`} className="chocolateName">{product.name}</a><br/>  
                                         Price ${product.price} <br/>
                                         { stockCheck(product) }
                                         <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>

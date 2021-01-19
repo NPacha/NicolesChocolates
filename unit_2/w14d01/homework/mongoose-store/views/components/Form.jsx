@@ -3,7 +3,7 @@ const React = require('react');
 class Form extends React.Component {
     render(){
         return(
-            <form action={this.props.endpoint} method="POST">
+            <form action={this.props.endpoint} method="POST" className="form">
                 Name: <input
                         type="text"
                         name="name"
@@ -24,7 +24,7 @@ class Form extends React.Component {
                             type="text"
                             name="price"
                             value={this.props.product? this.props.product.price : ''}/> <br/>
-                <input type="submit" value={this.props.buttonText}/>
+                <input type="submit" value={this.props.buttonText} className="submitButton"/>
             </form>
 
         )

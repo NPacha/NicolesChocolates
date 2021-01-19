@@ -128,3 +128,91 @@ footer ul {
     margin: 0;
     padding: 0;
 }
+
+/* DELETE && BUY BUTTON */
+
+.deleteButton, .buyButton{
+    height: 40px;
+    width: 100%;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    background-color: #fffaf0;
+    align-items: center;
+    margin: 10px;
+}
+
+.deleteButton:hover, .buyButton:hover {
+    cursor: pointer;
+    background-color:black;
+    color:#fffaf0;
+}
+
+/*FORM*/
+
+.form {
+  
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    letter-spacing: 1.5px;
+    
+}
+
+.form input{
+    margin: 3px;
+}
+
+.submitButton {
+    height: 40px;
+    width: 30%;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    background-color: #fffaf0;
+    align-items: center;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+    background-color:black;
+    color:#fffaf0;
+}
+
+/*Chocolate Pop Up*/
+
+
+.chocolateName {
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+.chocolateName::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.chocolateName:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
