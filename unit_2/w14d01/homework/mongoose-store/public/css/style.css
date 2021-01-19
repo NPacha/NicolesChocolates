@@ -187,6 +187,8 @@ footer ul {
 /*Chocolate Pop Up*/
 
 
+/* 
+
 .chocolateName {
     padding: 10px;
     position: relative;
@@ -207,6 +209,31 @@ footer ul {
 }
 
 .chocolateName:hover::before {
+    opacity: 1;
+} */
+
+
+.test {
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    
+}
+
+.test::before {
+    content: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.test:hover::before {
     opacity: 1;
 }
 

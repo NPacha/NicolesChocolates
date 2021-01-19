@@ -19,8 +19,8 @@ class Index extends React.Component {
                     {
                         this.props.products.map((product, i)=>{
                             return(
-                                
-                                    <li>
+                                    
+                                    <li className="test">
                                         <img src={product.img} alt=""/> <br/>
                                         
                                         <a href={`/NicolesChocolates/${product._id}`} className="chocolateName">{product.name}</a><br/>  
@@ -29,6 +29,7 @@ class Index extends React.Component {
                                         <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>
                                        
                                     </li>
+                                    
                                 
                             )
                         })
