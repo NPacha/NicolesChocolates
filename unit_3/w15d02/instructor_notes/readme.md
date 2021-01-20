@@ -2,7 +2,7 @@
 
 ## Lets Code
 1. open up your terminal
-1. run ```sudo npm i -g big-poppa-code-react-starter```
+1. cd into student examples for today
 1. then run ```lets-code```
 1. Listen to my instructions
 
