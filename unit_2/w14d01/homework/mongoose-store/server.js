@@ -7,6 +7,7 @@ const app = express(); //create an instance of express
 const PORT = 3000;
 const Product = require('./models/products');
 
+
 //Set up the body parser Middleware that allows us access to the req.body
 app.use(express.urlencoded({extended: true})); //parses forms
 app.use(express.json()); //parses raw json data
@@ -94,6 +95,9 @@ app.get('/NicolesChocolates/:id', (req, res)=> {
     })
 })
 
+
+
+
 //EDIT
 app.get('/NicolesChocolates/:id/edit', (req, res)=> {
     Product.findById(req.params.id, (err, foundProduct) => {
@@ -162,6 +166,12 @@ app.put('/NicolesChocolates/:id/buy', (req, res)=> {
                 .json(err)
         }
     })
+    // User.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedUser)=> {
+    //     if(!err){
+    //         console.log(req.body.name)
+    //         updatedUser.shoppingCart.push(req.body.name)
+    //     }
+    // })
     
     
 })

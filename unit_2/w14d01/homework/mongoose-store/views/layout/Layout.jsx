@@ -5,7 +5,7 @@ class Layout extends React.Component {
         return (
             <html>
                 <head>
-                    <title>Nicoles Chocolates</title>
+                    <title>Nicole's Chocolates</title>
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&display=swap" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"></link>
@@ -15,7 +15,7 @@ class Layout extends React.Component {
                 <body>
                     <h1>
                         <div class="storeNameContainer">
-                            <p>Nicoles</p> 
+                            <p>Nicole's</p> 
                             <p id="subtext">Fine Chocolates</p>
                         </div>
                         <ul class="header">

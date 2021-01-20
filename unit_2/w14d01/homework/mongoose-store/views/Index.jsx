@@ -27,7 +27,7 @@ class Index extends React.Component {
                                         Price ${product.price} <br/>
                                         { stockCheck(product) }
                                         <a href={`/NicolesChocolates/${product._id}/edit`}>Update</a>
-                                       
+                            
                                     </li>
                                     
                                 
