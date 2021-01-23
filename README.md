@@ -63,6 +63,11 @@ All course recordings will be linked below as well as quick links to that days m
 | w14d2 ||[Full Crud Review 2](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w14d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/Gf1ve_-pxYViZ6QuoDVt3MGzZJ-VjT7WykTOlKMu-z2b257JVeFp3nq40CEougG2.6PyNpSmPpcJZ4wIL)
 | w14d3 ||[Full Crud Review 3 + Gulp and Child Process](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w14d01)| | | [Morning Recording](https://generalassembly.zoom.us/rec/share/rfPqEnFwS83Vd6bRL2_NXrN9O_IoYYX8xAGMsIh6GrZ5BxZQ3Rc5KA9CC-DlGoy_.l11NvS9OgNSK5qI2) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/GbuKqePEEJtgkWK0f15XouAEw-Q1Rx0rYg1TIjpD0k0_NXTAk7CzUu3XOPswvvqn.RQEayr7DC4OxqvCc)
 
+## Unit 3
+| Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
+|:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
+| w15d1 ||[Getting Started with React](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w15d01)| | | [Recording](https://generalassembly.zoom.us/rec/share/7Bmojs6xitFHeaCphNFIDP8v67IEbAlze35wH6wXU_wNK8gz_FZYXijSnk6ehZkx.eo4poeM9XYqfLMx4)
+| w15d2 ||[Getting Started with React UseState](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/Y1qwHTNUzPmUH8t7PjC2tcqT1DoJoSkYe5p6nIQVE-tjSR8mv9cdsoJPYYtzxWYB._xvWX0gCGyUex3MD)
 
 
 <!--
