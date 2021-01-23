@@ -1,6 +1,6 @@
 [![General Assembly Logo](/ga_cog.png)](https://generalassemb.ly)
 
-# React Groceries & HFB
+# React Groceries
 
 Build an app that let's you make a list of groceries to buy. **Due date February 2nd**
 
@@ -28,7 +28,6 @@ Build an app that let's you make a list of groceries to buy. **Due date February
 ## Deliverables
 
 - A grocery app that allows users to make a grocery list. Remember to `git add` and `git commit` every time you get a part of the app working!
-- Your forked Happy Fun Ball Repo demonstrating a knowledge of git branching and merging.
 
 ## Technical Requirements
 
@@ -53,7 +52,7 @@ Build an app that let's you make a list of groceries to buy. **Due date February
 
 ## Submission Guidelines
 
-- React Groceries and Happy Fun Ball Must be submitted no later than before the start of next class.
+- React Groceries Must be submitted no later than **February 2nd**.
 - Your app must run without syntax errors
 
 ## Hungry for more
