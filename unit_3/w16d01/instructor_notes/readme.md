@@ -220,7 +220,7 @@ function App() {
 
 We can look at our React dev tools and now see that our products are being stored in the `App` component's `state`.
 
-![app state](./images/state.png)
+![app state](https://www.dropbox.com/s/vvn9k1s323anv2e/toolsstate.png?dl=1)
 
 Let's put the first product in there for rendering. We have to wrap any JS we want to render in curlies `{}`.
 
