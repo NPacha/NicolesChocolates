@@ -27,48 +27,15 @@ You can either:
 **Choose**
 - a repository name
 - public (let your instructors help you if you get stuck, you can always change this later)
-- initialize with a README
-- `Add .gitignore` scroll down and choose Node
-- license - optional
+- dont initialize with a README
+- dont add a gitignore
+- dont add a license
 
 Press the `Create Repository` button when you're ready!
 
-## Clone Your New Repository to Your Computer
-**In Terminal**
-- navigate OUTSIDE the class repository
-- check you are not already in a git repository
-	- **GOOD** - 
-	
-	![not a repo](https://i.imgur.com/9wxsCNd.png)
-	
-	- **BAD**  - 
-	
-	find a new location for your project!
-	
-	
-	![already a repo](https://i.imgur.com/dAxjl7t.png)
-
-**On Github**
-- click the `Clone or Download` button
-- check if you are grabbing the right url for `https` or `ssh`
-- click the clipboard button
-
-![clone or download](https://i.imgur.com/zeWKOXk.png)
-
-**In Terminal**
-type `git clone` and then paste the URL that you copied from github
-
-Should look something like this
-
-![clone command in terminal](https://i.imgur.com/u43zNsF.png)
-
-- **Important!** Don't forget to cd into your new directory/repo!
-- `ls -a` - you should see your `README.md` and `.gitignore` that you created on github
-
-
 ## Basic App
 
-Use a basic Lets Code App with the Big Poppa Code React Starter (We'll use the basic one now)
+in our command line Use a basic Lets Code App with the Big Poppa Code React Starter (We'll use the basic one now)
 
 - `lets-code`
 - select get-started
@@ -79,7 +46,7 @@ Use a basic Lets Code App with the Big Poppa Code React Starter (We'll use the b
 
 Check out `package.json` make sure everything looks as expected
 
-![package.json](https://i.imgur.com/T1cwlmY.png)
+![package.json](https://www.dropbox.com/s/lu5w3nhazrmp3oi/Screen%20Shot%202021-01-27%20at%204.50.57%20PM.png?dl=1)
 
 <hr>
 
@@ -152,9 +119,9 @@ In order for heroku to work, you can't have `node_modules` in your repo.  Instea
 
 Just use your connection string as your mongoURI.
 
-Be sure to add .env and a .gitignore to exclude your .env file from your git repository.
+Be sure to that there is a  .env and a .gitignore to exclude your .env file from your git repository.
 
-Add mongoURI to your .env file.
+Add MONGODB_URI to your .env file.
 
 <hr>
 
