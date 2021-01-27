@@ -12,15 +12,10 @@
 1. Update code for heroku & mongolab
 1. Push git to heroku
 
-## New Github Repository
+## New Github Enterprise Repository
 
-This is going to be a porfolio piece so you'll want it hosted on regular [github](https://github.com/).
-
-You can either: 
-- Use your repo from your last unit project
-- Make a new repo! Click the + on the upper right navigation bar (instructions below)
-
-![new repo](https://i.imgur.com/Y3IF2lF.png)
+ [github enterprise](https://git.generalassemb.ly/new).
+Once your ready we'll also push this up to regular github also by adding an additional push location 
 
 <br>
 
@@ -38,11 +33,12 @@ Press the `Create Repository` button when you're ready!
 in our command line Use a basic Lets Code App with the Big Poppa Code React Starter (We'll use the basic one now)
 
 - `lets-code`
-- select get-started
+- select `get-started`
 - name your project `deployment-test`
 - once done cd into `deployment-test` and `git init`
 - open your .env file and add your MONGO_URI string
 - open your server.js file and make sure your app properly imports this.
+- dont forget to require dotenv and run .config() at the top of your server.js file `require('dotenv').config()`
 
 Check out `package.json` make sure everything looks as expected
 
@@ -66,8 +62,9 @@ Check out `package.json` make sure everything looks as expected
 ## git add/git commit
 - `git add .`
 - `git commit -m 'first commit'`
-- `git push origin master`
-- `git push --set-upstream origin master` (if needed)
+- `git branch -M main`
+- `git push origin main`
+- `git push --set-upstream origin main` (if needed)
 
 Check this step carefully! Make sure `node_modules` are **NOT** on github!! If they made it to github, that means they are not being ignored by `.gitignore`. If you don't properly ignore them now you'll have massive headaches with heroku later!
 
