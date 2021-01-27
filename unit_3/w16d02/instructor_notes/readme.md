@@ -50,6 +50,12 @@ Check out `package.json` make sure everything looks as expected
 
 [You should always specify a Node.js version that matches the runtime you're developing and testing with](https://devcenter.heroku.com/articles/nodejs-support). Without setting this, Heroku will 'guess' a version Node.js for you. One big gotcha is that some newer/updated npm packages just won't run on an older version of Node.js and vice versa.
 
+# Add MongoDB Locally
+Just use your connection string as your mongoURI.
+
+Be sure to that there is a  .env and a .gitignore to exclude your .env file from your git repository.
+
+Add MONGODB_URI to your .env file.
 
 
 ## Test your app
@@ -114,11 +120,7 @@ In order for heroku to work, you can't have `node_modules` in your repo.  Instea
 
 ## Attach MongoDB Atlas
 
-Just use your connection string as your mongoURI.
-
-Be sure to that there is a  .env and a .gitignore to exclude your .env file from your git repository.
-
-Add MONGODB_URI to your .env file.
+navigate to your heroku dashboard select your app and go to settings and select `reveal config vars` 
 
 <hr>
 
