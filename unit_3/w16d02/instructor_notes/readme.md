@@ -65,13 +65,17 @@ Should look something like this
 - **Important!** Don't forget to cd into your new directory/repo!
 - `ls -a` - you should see your `README.md` and `.gitignore` that you created on github
 
-## Basic Express App
 
-Let's build a basic express app
+## Basic App
 
-- `touch server.js`
-- `npm init -y`
-- `npm install express mongoose method-override`
+Use a basic Lets Code App with the Big Poppa Code React Starter (We'll use the basic one now)
+
+- `lets-code`
+- select get-started
+- name your project `deployment-test`
+- once done cd into `deployment-test` and `git init`
+- open your .env file and add your MONGO_URI string
+- open your server.js file and make sure your app properly imports this.
 
 Check out `package.json` make sure everything looks as expected
 
@@ -83,92 +87,6 @@ Check out `package.json` make sure everything looks as expected
 
 [You should always specify a Node.js version that matches the runtime you're developing and testing with](https://devcenter.heroku.com/articles/nodejs-support). Without setting this, Heroku will 'guess' a version Node.js for you. One big gotcha is that some newer/updated npm packages just won't run on an older version of Node.js and vice versa.
 
-So let's set the correct version:
-
-**In Terminal**
-
-```bash
-node --version
-```
-The line returned is the version, currently, I have `v10.11.0`, but you should set it to whatever your version is.
-
-In package.json, you can add `engines` anywhere, just make sure you don't break the JSON format. In this example we are putting it between the auto-generated version and description fields. Don't forget double quotes and a `,`
-
-```json
-  "version": "1.0.0",
-  "engines": {
-    "node": "10.11.0"
-  },
-  "description": "",
-```
-
-**in server.js**
-
-```js
-//___________________
-//Dependencies
-//___________________
-const express = require('express');
-const methodOverride  = require('method-override');
-const mongoose = require ('mongoose');
-const app = express ();
-const db = mongoose.connection;
-//___________________
-//Port
-//___________________
-// Allow use of Heroku's port or your own local port, depending on the environment
-const PORT = process.env.PORT || 3000;
-
-//___________________
-//Database
-//___________________
-// How to connect to the database either via heroku or locally
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/'+ `YOUR DATABASE NAME`;
-
-// Connect to Mongo
-mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true});
-
-// Error / success
-db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
-db.on('disconnected', () => console.log('mongo disconnected'));
-
-// open the connection to mongo
-db.on('open' , ()=>{});
-
-//___________________
-//Middleware
-//___________________
-
-//use public folder for static assets
-app.use(express.static('public'));
-
-// populates req.body with parsed info from forms - if no data from forms will return an empty object {}
-app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
-app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
-
-//use method override
-app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
-
-
-//___________________
-// Routes
-//___________________
-//localhost:3000 
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
-
-//___________________
-//Listener
-//___________________
-app.listen(PORT, () => console.log( 'Listening on port:', PORT));
-
-```
-
-
-
-<hr>
 
 
 ## Test your app
@@ -271,7 +189,6 @@ Wait 1 minute then type `heroku open`. You should have your deployed app open up
 #### Heroku Can't Figure Out Your Language
 
 - the hidden folder `.git` and `package.json` MUST be on the same level in your directory (the root)
-- if it is a Rails app, `.git` and `GemFile` MUST be on the same level in your directory (the root)
 - move your files up to `.git` accordingly
 
 <hr>
@@ -391,8 +308,11 @@ If that fails,
 
 <hr>
 
+# Now start working on the Taco Lab in this directory
+1. As you work on it commit and push to github and when your done push to heroku
+1. Before pushing make sure that your commit history doesn't contain your .env so you don't pusblish your atlas password
 
-# NOW WHAT
+# NOW WHAT ( Hungry for more deploy these )
 1. Deploy Jeopardy HW
 1. Deploy React Groceries
 1. Deploy Unit 2 Project
