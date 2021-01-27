@@ -9,8 +9,8 @@
 1. Get started with Heroku
 1. Create app on heroku
 1. Attach MongoDB Atlas
-1. Update code for heroku & mongolab
-1. Push git to heroku
+1. Update code for heroku & mongodbAtlas
+1. git push to heroku for deployment
 
 ## New Github Enterprise Repository
 
