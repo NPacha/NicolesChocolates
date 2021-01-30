@@ -1,15 +1,34 @@
 import React, { useState } from 'react';
-import Home from './Home';
+import groceryData from '../data';
+import GroceryItem from './GroceryList';
+import Form from './Form';
+
 export default function App(props) {
-	const [name, updateName] = useState('Arthur');
+	const [groceries, setGroceries] = useState(groceryData);
+
+	const handleChange = event => {
+		setGroceries({
+			...groceries,
+			...{}
+		});
+	};
+
 	return (
-		<div className="Page-wrapper">
-			<h2>Ruth App</h2>
-			<button onClick={e => updateName(e.target.value)} value={name + 's'}>
-				Change
-			</button>
-			<h2>{name}</h2>
-			<Home />
-		</div>
+		<>
+			<div className="Page-wrapper">
+				<h1>Grocery List</h1>
+				{groceries.map(product => {
+					return (
+						<GroceryItem
+							key={`${product.item}${product.brand}`}
+							product={product}
+						/>
+					);
+				})}
+			</div>
+			<div className="form">
+				<Form groceries={groceries} />
+			</div>
+		</>
 	);
 }
