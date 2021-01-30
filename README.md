@@ -69,6 +69,8 @@ All course recordings will be linked below as well as quick links to that days m
 | w15d1 ||[Getting Started with React](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w15d01)| | | [Recording](https://generalassembly.zoom.us/rec/share/7Bmojs6xitFHeaCphNFIDP8v67IEbAlze35wH6wXU_wNK8gz_FZYXijSnk6ehZkx.eo4poeM9XYqfLMx4)
 | w15d2 ||[Getting Started with React UseState](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/Y1qwHTNUzPmUH8t7PjC2tcqT1DoJoSkYe5p6nIQVE-tjSR8mv9cdsoJPYYtzxWYB._xvWX0gCGyUex3MD)
 | w15d3 ||[React UseEffect, AJAX, ASYNC AWAIT, FETCH](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d03)| | | [Morning Recording](https://generalassembly.zoom.us/rec/share/H0XYBYNee8l64YTzZKLzDqrl7Q13mqG-1iTfehu83UOM-viQ0JnCzLIiYIpbQm_N.jHMLVR6X1m7f_uNb) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/tCrfv5B7Y2rRFfVqdfv3gjNoa6mJTNDZ6BefRCIk-g8wWWxXXcjNoItpV4z9IacS.ndHj7iycCVSvRyGF?startTime=1611431935000)
+| w16d1 ||[React State Review](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d01)| | | [Recording](https://generalassembly.zoom.us/rec/share/pe1OATmp_C2pnedY2EcdyxdIcjsUV-yeExrk-bK8vMQoW1V0UeJrSkSN4Ws91g2Y.eqyhsZ_epH5aITam?startTime=1611703867000)
+| w16d2 ||[React Taco and Heroku](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/ELNyxrmvWjfTieXtHqP5EPEUd4ykxySLVjd_0Ek31ONUVoWLJN-znBEM1luTXnot.L6fjgz0NPOs5OL5E?startTime=1611789950000)
 
 
 <!--
