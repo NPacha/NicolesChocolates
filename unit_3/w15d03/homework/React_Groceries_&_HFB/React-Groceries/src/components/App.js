@@ -6,12 +6,7 @@ import Form from './Form';
 export default function App(props) {
 	const [groceries, setGroceries] = useState(groceryData);
 
-	const handleChange = event => {
-		setGroceries({
-			...groceries,
-			...{}
-		});
-	};
+
 
 	return (
 		<>
