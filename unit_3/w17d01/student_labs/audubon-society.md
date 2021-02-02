@@ -7,7 +7,7 @@ Your local Audubon Society has reached out to you to help them put together an o
 They want members of the public to go out and take photos of birds and submit them to their website. The best bird photo will honored with a premium Audubon Society membership!
 
 ## Deliverables
-- Create a React app and set up your files, add in your birds (if using CRA, make sure to remove .git because we're already in the class repo!)
+- Create a React app and set up your files, add in your birds 
 
 - Users should be able to **Create** a new bird (species, image and person who submitted the image)
 - Users should be able to **Read** a list of submitted members' birds
