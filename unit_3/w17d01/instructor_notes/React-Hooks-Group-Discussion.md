@@ -4,7 +4,7 @@ For a long time React developers lamented the need to bind event handlers and al
 
 ### Setup
 
--   Create a new react app using `lets-code` and choosing project 3 starter, feel free to use your fruits app as an example of how to update.
+-   Create a new react app using `lets-code` and choosing get-started, feel free to use your fruits app as an example of how to update.
 - name the project hooks_practice
 -   cd into the new folder, hooks_practice
 -   run npm run dev
@@ -13,7 +13,7 @@ For a long time React developers lamented the need to bind event handlers and al
 
 To avoid some common frustrations when getting started with hooks, remember two things:
 
--   Only calls hooks from the top level of functional components
+-   Only call hooks from the top level of functional components
 
 -   Never call hooks in loops, conditionals and standard functions
 
@@ -265,75 +265,6 @@ export default Samplejr;
 ```
 
 As you see the provider provides the greet state to the children of Sample, so now we can bring in greet using the useContext hook and be able to use that state. This is particular useful in deeply nested components.
-
-### useReducer
-
-What if we need nested components to be able to trigger changes to state of their parent components, in the past we'd use state managements libraries like Redux but the useReducer hook brings much of that functionality right into React. Essentially the way this works is the hook will create a piece of state and a reducer. A reducer is a function that does anything you want and in the returned value becomes the new state.
-
-Make your sample.js look like this:
-
-```jsx
-import React from 'react';
-import { OurContext } from './context';
-import Samplejr from './samplejr';
-
-const Sample = (props) => {
-    const greetReducer = (state, action) => {
-        switch (action) {
-            case 'happy':
-                return 'I am feeling happy';
-                break;
-
-            case 'sad':
-                return 'Feeling sad';
-                break;
-
-            case 'goodbye':
-                return 'Time to say goodbye';
-                break;
-        }
-    };
-
-    const [greet, reduceGreet] = React.useReducer(
-        greetReducer,
-        "Hello, I'm using React Hooks"
-    );
-
-    return (
-        <OurContext.Provider value={[greet, reduceGreet]}>
-            <Samplejr />
-        </OurContext.Provider>
-    );
-};
-
-export default Sample;
-```
-
-make your samplejr.js look like This
-
-```jsx
-import React from 'react';
-import { OurContext } from './context';
-
-const Samplejr = (props) => {
-    const [greet, reduceGreet] = React.useContext(OurContext);
-
-    return (
-        <>
-            <h1>{greet} </h1>
-            <button onClick={() => reduceGreet('happy')}>Happy</button>
-
-            <button onClick={() => reduceGreet('sad')}>sad</button>
-
-            <button onClick={() => reduceGreet('goodbye')}>goodbye</button>
-        </>
-    );
-};
-
-export default Samplejr;
-```
-
-So the great thing about a reducer it allows to take steps before setting the new state and combined with context makes it very easy to pass to deep component trees. In this example, when you click a button the reducer is called passing the action (happy, sad, goodbye) and changes the state different based on which action is chosen.
 
 ### Conclusion
 
