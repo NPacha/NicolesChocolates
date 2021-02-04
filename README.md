@@ -172,21 +172,21 @@ All course recordings will be linked below as well as quick links to that days m
 
 
 ## Instructor Team
-* Lead Instructor: Madeline O'Moore
 * Lead Instructor: Arthur Bernier, Jr.
-* Instructional Assistant: Magnardo Tavarez
-* Instructional Assistant: Bruno Leonardo DaSilva
+* In Class Instructional Assistant: Magnardo Tavarez (Tuesday, Wednesday, Thursday for Office Hours)
+* In Class Instructional Assistant: Bruno DaSilva / Ayla Ex (Saturday)
+* Homework Grader: Michael Merlo
 
 
 ## Office Hours
 Your IA will send a zoom link for their office hours into the main Slack channel 5 minutes prior to their hours. This process is subject to change as the course evolves :)
 
-#### Arthur/Madeline
-Structured Homework Time
+#### Arthur
+* [__Mondays 7:00 PM EST - 8:30pm EST__](https://generalassembly.zoom.us/j/4821395708?pwd=NlF2NlVRUkZDUDNGRXNqN1d0WEhPUT09)
 
 #### Nando
 * Thursdays 8:30pm EST - 10:00pm EST
-* Fridays 8:30pm EST - 10:00pm EST
+
 
 ## Communication
 ##### Send IL's and IA's a group message if:
