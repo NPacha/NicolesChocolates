@@ -85,17 +85,23 @@ You will be sharing your app and your code.  Be prepared to answer questions fro
 ## Meetings with instructors
 
 **By Tuesday**<br>
-Your group will meet with your dedicated project instructor for 15 minutes to get your app idea approved. Be sure to write out what features you will need to build in order to meet MVP and some stretch goal ideas.
+Your will submit your written project idea to your instructor. Your instructor will inform you if your idea does in fact meet MVP
+You will answer the following questions?
+1. My app is called...
+1. The name of my App's Model is ....
+1. My app will include the following stretch goal ( 3rd Party Api, 2 Models, Related Model, React Router,  CSS Framework )
+1. Wireframe. please see wireframe lesson and use Draw.io or handwritten wireframe to map out your project.
+1. If you can not think of an idea answer the above questions and Extend Either React Bookmarks, React OMDB Movies, or React Blog to the MVP.
 
 ## How to Submit Your Project
-Your project is due on Wed, Jan 6 at 10:00 am ET. You will present your project and show your code to classmates and instructors.
+Your project is due on Sat, Feb 20 at 10:00 am ET. You will present your project and show your code to classmates and instructors.
 
-:heavy_check_mark: Add your group project to [this google sheet](https://docs.google.com/spreadsheets/d/1plSh5tOSHCIt1_LAYQaUxe2KsN8zKoIaecrBfg45a0Q/edit?usp=sharing).  Note that this is the order you will be presenting.
+:heavy_check_mark: Add your roject to [this google sheet](https://docs.google.com/spreadsheets/d/1plSh5tOSHCIt1_LAYQaUxe2KsN8zKoIaecrBfg45a0Q/edit?usp=sharing).  Note that this is the order you will be presenting.
 
 ## Where to go for help during project week
 1. Seek out help online
 2. Seek out help with your classmates
-3. Seek out help with our class TA during the normal hours
+3. Seek out help with our class TA and IAs during the normal hours
 
 ## Etc.
 
