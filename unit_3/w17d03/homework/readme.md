@@ -27,7 +27,7 @@ For this project, you will be making another full CRUD app using the technologie
     - Authorization
       - Include sign up/login functionality, with encrypted passwords & an authorization flow
     - Pull from a third party API - either client side with AJAX or server-side with an NPM
-      - NPMs that work with an API: Twitter, Yelp, etc.  Remember the `request` module can make API calls server side to any URL.  
+      - NPMs that work with an API: Twitter, Yelp, etc.  Remember the `axios` module can make API calls server side to any URL.  
     - Have two models
       - Have two separate models that don't have to be related
     - Have related models
