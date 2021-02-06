@@ -173,8 +173,9 @@ All course recordings will be linked below as well as quick links to that days m
 
 ## Instructor Team
 * Lead Instructor: Arthur Bernier, Jr.
-* In Class Instructional Assistant: Magnardo Tavarez (Tuesday, Wednesday, Thursday for Office Hours)
-* In Class Instructional Assistant: Bruno DaSilva / Ayla Ex (Saturday)
+* Lead Instructional Associate: Magnardo Tavarez (Tuesday, Wednesday, Thursday for Office Hours)
+* Instructional Associates: Bruno DaSilva / Ayla Ex (Saturday)
+* Teaching Assistant: Evan James (Friday and Sunday)
 * Homework Grader: Michael Merlo
 
 
@@ -187,6 +188,9 @@ Your IA will send a zoom link for their office hours into the main Slack channel
 #### Nando
 * Thursdays 8:30pm EST - 10:00pm EST
 
+#### Evan
+* Fridays 8:30pm EST - 10:00pm EST
+* Sundays TBD
 
 ## Communication
 ##### Send IL's and IA's a group message if:
