@@ -19,7 +19,7 @@
 1. Dont forget how arrays work, make sure you create a state variable to store your list of movies from the API request.
 
 
-# Jog Our Memory (everything below is from the original markdown, they are not the instructions for how to get to mvp, you must solve for the mvp on your own)
+# Jog Our Memory (everything below is from the original markdown, they are not the instructions for how to get to mvp, you must solve for the mvp on your own, Final Code from the previous class is at the bottom of the markdown)
 
 ## API Keys
 
