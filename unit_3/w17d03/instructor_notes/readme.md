@@ -3,6 +3,15 @@
 ![MERN-stack-1](https://media.git.generalassemb.ly/user/15881/files/72724900-67eb-11eb-9814-9038c7d8ac64)
 
 
+# Professional SRC Folder Structure
+
+1. Pages - For Page Level Components
+1. Components - For Pieces of Pages and Reusable Components
+1. SCSS - For Sass StyleSheets
+1. Router- For React Router Files
+
+![](https://media.git.generalassemb.ly/user/15881/files/5e801480-67f6-11eb-94f5-ba9b4caa9fbf)
+
 # Agenda
 
 1. We will build a Blog Application that will allow us to Create a new Blog, See A List of Blogs We Created, Update an Individual Blog, Delete the Blog Bost
