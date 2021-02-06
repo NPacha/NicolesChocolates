@@ -3,6 +3,11 @@
 ![MERN-stack-1](https://media.git.generalassemb.ly/user/15881/files/72724900-67eb-11eb-9814-9038c7d8ac64)
 
 
+# To Get Started
+1. Reinstall `npm i -g big-poppa-code-react-starter`
+1. run `lets-code` choose `project-starter`
+1. If you have issues with lets-code just clone https://git.generalassemb.ly/arthurbernierjr/w17-d03-starter
+
 # Professional SRC Folder Structure
 
 1. Pages - For Page Level Components
