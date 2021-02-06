@@ -1,4 +1,4 @@
-# Assesment (If you cheat and look at this ahead of time lol your gonna be really mad in the morning.... lol)
+# Assesment
 
 ## MVP
 
