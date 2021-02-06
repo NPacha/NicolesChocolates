@@ -2,6 +2,7 @@
 
 ![MERN-stack-1](https://media.git.generalassemb.ly/user/15881/files/72724900-67eb-11eb-9814-9038c7d8ac64)
 
+![](https://www.dropbox.com/s/hgt6kbjb7nh06ki/React-Architecture.png?dl=1)
 
 # To Get Started
 1. Reinstall `npm i -g big-poppa-code-react-starter`
