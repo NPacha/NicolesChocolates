@@ -71,7 +71,7 @@ Finally, we would have to use map again to create the navigational links!
 
 ```js
 {state.data.map((post,index) => {
-    return <Route path={`/${post.title}`} render={() => <BlogPost content={post} />} />
+    return <Route path={`/${post.title}`} component={() => <BlogPost content={post} />} />
 })}
 ```
 
