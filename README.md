@@ -64,16 +64,18 @@ All course recordings will be linked below as well as quick links to that days m
 | w14d3 ||[Full Crud Review 3 + Gulp and Child Process](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w14d01)| | | [Morning Recording](https://generalassembly.zoom.us/rec/share/rfPqEnFwS83Vd6bRL2_NXrN9O_IoYYX8xAGMsIh6GrZ5BxZQ3Rc5KA9CC-DlGoy_.l11NvS9OgNSK5qI2) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/GbuKqePEEJtgkWK0f15XouAEw-Q1Rx0rYg1TIjpD0k0_NXTAk7CzUu3XOPswvvqn.RQEayr7DC4OxqvCc)
 
 ## Unit 3
-| Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
-|:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
-| w15d1 ||[Getting Started with React](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w15d01)| | | [Recording](https://generalassembly.zoom.us/rec/share/7Bmojs6xitFHeaCphNFIDP8v67IEbAlze35wH6wXU_wNK8gz_FZYXijSnk6ehZkx.eo4poeM9XYqfLMx4)
-| w15d2 ||[Getting Started with React UseState](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/Y1qwHTNUzPmUH8t7PjC2tcqT1DoJoSkYe5p6nIQVE-tjSR8mv9cdsoJPYYtzxWYB._xvWX0gCGyUex3MD)
-| w15d3 ||[React UseEffect, AJAX, ASYNC AWAIT, FETCH](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d03)| | | [Morning Recording](https://generalassembly.zoom.us/rec/share/H0XYBYNee8l64YTzZKLzDqrl7Q13mqG-1iTfehu83UOM-viQ0JnCzLIiYIpbQm_N.jHMLVR6X1m7f_uNb) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/tCrfv5B7Y2rRFfVqdfv3gjNoa6mJTNDZ6BefRCIk-g8wWWxXXcjNoItpV4z9IacS.ndHj7iycCVSvRyGF?startTime=1611431935000)
-| w16d1 ||[React State Review](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d01)| | | [Recording](https://generalassembly.zoom.us/rec/share/pe1OATmp_C2pnedY2EcdyxdIcjsUV-yeExrk-bK8vMQoW1V0UeJrSkSN4Ws91g2Y.eqyhsZ_epH5aITam?startTime=1611703867000)
-| w16d2 ||[React Taco and Heroku](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d02)| | | [Recording](https://generalassembly.zoom.us/rec/share/ELNyxrmvWjfTieXtHqP5EPEUd4ykxySLVjd_0Ek31ONUVoWLJN-znBEM1luTXnot.L6fjgz0NPOs5OL5E?startTime=1611789950000)
-| w16d3 ||[React Likes and React Wireframe](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d03)| | | [Recording 1](https://generalassembly.zoom.us/rec/share/psNKjogSa-pdDAoFAzwPrADGyuVcKboeqjRhSnrGwp5m9ijNLq3RvKps727HnjTN.JpwGVt-e-VQYgJZE)[Recording 2](https://generalassembly.zoom.us/rec/share/XsAb6rDulB4mHmeqVYfPSKj0JMCSH7uzLc-sURCYo2Cre6SLabTWL75g20IA_oUs.2Of2baSvhBk16kLV)
-
-
+| Day | Lectures | Pushed Code |Recording |
+|:---:|:-----------:|:-------:|:-----------:|
+| w15d1 |[Getting Started with React](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_2/w15d01)| | [Recording](https://generalassembly.zoom.us/rec/share/7Bmojs6xitFHeaCphNFIDP8v67IEbAlze35wH6wXU_wNK8gz_FZYXijSnk6ehZkx.eo4poeM9XYqfLMx4)
+| w15d2 |[Getting Started with React UseState](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d02)| | [Recording](https://generalassembly.zoom.us/rec/share/Y1qwHTNUzPmUH8t7PjC2tcqT1DoJoSkYe5p6nIQVE-tjSR8mv9cdsoJPYYtzxWYB._xvWX0gCGyUex3MD)
+| w15d3 |[React UseEffect, AJAX, ASYNC AWAIT, FETCH](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w15d03)| | [Morning Recording](https://generalassembly.zoom.us/rec/share/H0XYBYNee8l64YTzZKLzDqrl7Q13mqG-1iTfehu83UOM-viQ0JnCzLIiYIpbQm_N.jHMLVR6X1m7f_uNb) <br/> [__Afternoon Recording__](https://generalassembly.zoom.us/rec/share/tCrfv5B7Y2rRFfVqdfv3gjNoa6mJTNDZ6BefRCIk-g8wWWxXXcjNoItpV4z9IacS.ndHj7iycCVSvRyGF?startTime=1611431935000)
+| w16d1 |[React State Review](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d01)| | [Recording](https://generalassembly.zoom.us/rec/share/pe1OATmp_C2pnedY2EcdyxdIcjsUV-yeExrk-bK8vMQoW1V0UeJrSkSN4Ws91g2Y.eqyhsZ_epH5aITam?startTime=1611703867000)
+| w16d2 |[React Taco and Heroku](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d02)| | [Recording](https://generalassembly.zoom.us/rec/share/ELNyxrmvWjfTieXtHqP5EPEUd4ykxySLVjd_0Ek31ONUVoWLJN-znBEM1luTXnot.L6fjgz0NPOs5OL5E?startTime=1611789950000)
+| w16d3 |[React Likes and React Wireframe](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w16d03)| | [Recording 1](https://generalassembly.zoom.us/rec/share/psNKjogSa-pdDAoFAzwPrADGyuVcKboeqjRhSnrGwp5m9ijNLq3RvKps727HnjTN.JpwGVt-e-VQYgJZE) <br> [Recording 2](https://generalassembly.zoom.us/rec/share/XsAb6rDulB4mHmeqVYfPSKj0JMCSH7uzLc-sURCYo2Cre6SLabTWL75g20IA_oUs.2Of2baSvhBk16kLV)
+| w17d1 |[React Hooks Continued + Full Stack](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w17d01)| | [Recording](https://generalassembly.zoom.us/rec/share/pFRLvtOvPcrPINeg0Wfsjmi5Pyes52InKGYo1Kv1ulKWaEI5rvADS9QZur4qBi-y.r63hWraiASEKtgpU?startTime=1612308460000)
+| w17d2 |[React Router](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w17d02)| | [Recording](https://generalassembly.zoom.us/rec/share/p-pfO8ddUm63wi6yKsCfxR0Es83Te2EzhDBPuVPSAuJQLNvTfILHFOT3Vw72fkCR.hsU7QDcitf-orcdi?startTime=1612394881000)
+| w17d3 |[React Blog and project annnouncement](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w17d03)| [code](https://git.generalassemb.ly/arthurbernierjr/blog-ruth-example) | [Recording 1](https://generalassembly.zoom.us/rec/share/RNqEsVlZRoayBM-Y5gikMML-SFdvi5_XPPiVq9rxwYPsJcZU2WTsLg4vVkxt9gRi.jqNuh-X1aO_PMhme)<br>[Recording 2](https://generalassembly.zoom.us/rec/share/CTeFcPmfEzj3ROdWHqgHTkTL3SiFpblUpdNBTfw85geeo3nm3uUEsXvsx8cdcz3Q.3M_-552Db9-T1lOV)
+| w18d1 |[React Blog Continued props.match.params, AppRouter](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w18d01)| [code](https://git.generalassemb.ly/arthurbernierjr/blog-ruth-example) | [Recording](https://generalassembly.zoom.us/rec/share/xeashN_L6wfH8mP3nLgOrsh8_54iXvHG1-3hT1KJuyb0TPmLUcU6-GON_roPTWXa.qUWyfd4nNgaK7SXU)
 <!--
 | w10d1 |[C.R.A.P.](./unit_2/w10d1/warm_up_exercise)| [REST: New, Create](./unit_2/w10d1/instructor_notes)| [Biscoff Bakery](./unit_2/w10d1/student_labs)|[](./unit_2/w10d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/vpZ5I-2r_Wo3GNDEsgSDVqcvW9S5Kqus0yMZ_PMEmR3nWyEKYFP3Z-ESarOjwZ8p_pWpMZWMIHXzKyeS?startTime=1586903397000&_x_zm_rtaid=U9vdxIZ-R1ekInT5uRczuQ.1587001419471.4b5758cc47aeddcd45e54e920e8d557e&_x_zm_rhtaid=113)
 | w10d2 |[Big O Notation](./unit_2/w10d2/warm_up_exercise)| [cURL, Static Assets](./unit_2/w10d2/instructor_notes)| [Express CLI App](./unit_2/w10d2/student_labs)|[Budgtr](./unit_2/w10d2/homework)| [Recording](https://generalassembly.zoom.us/rec/share/wPVaP5Pe7kdIQqPk81H_UfAxEIr5eaa82iYZ_aFZzUhUTOLecQNNCKBdpnUa6Zk_)
@@ -171,21 +173,25 @@ All course recordings will be linked below as well as quick links to that days m
 
 
 ## Instructor Team
-* Lead Instructor: Madeline O'Moore
 * Lead Instructor: Arthur Bernier, Jr.
-* Instructional Assistant: Magnardo Tavarez
-* Instructional Assistant: Bruno Leonardo DaSilva
+* Lead Instructional Associate: Magnardo Tavarez (Tuesday, Wednesday, Thursday for Office Hours)
+* Instructional Associates: Bruno DaSilva / Ayla Ex (Saturday)
+* Teaching Assistant: Evan James (Friday and Sunday)
+* Homework Grader: Michael Merlo
 
 
 ## Office Hours
 Your IA will send a zoom link for their office hours into the main Slack channel 5 minutes prior to their hours. This process is subject to change as the course evolves :)
 
-#### Arthur/Madeline
-Structured Homework Time
+#### Arthur
+* [__Mondays 7:00 PM EST - 8:30pm EST__](https://generalassembly.zoom.us/j/4821395708?pwd=NlF2NlVRUkZDUDNGRXNqN1d0WEhPUT09)
 
 #### Nando
 * Thursdays 8:30pm EST - 10:00pm EST
+
+#### Evan
 * Fridays 8:30pm EST - 10:00pm EST
+* Sundays TBD
 
 ## Communication
 ##### Send IL's and IA's a group message if:
