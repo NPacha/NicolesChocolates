@@ -16,7 +16,7 @@ _During this lesson, students will be:_
 
 ![explorers](https://www.thewrap.com/wp-content/uploads/2016/05/explorersmovie.jpg)
 
-You will each get a Ruby method to explore. Your job is to look in the Ruby documentation to read about the method, come up with an explanation of what it is, and show an example of it in use.
+Each group will get a Ruby method to explore. Your job is to look in the Ruby documentation to read about the method, come up with an explanation of what it is, and show an example of it in use.
 
 You'll have until Tuesday to research and prepare with your group. You will then take turns sharing your screen and presenting your findings to the class. When you are not presenting, it's your job to listen, learn, take notes, and ask questions about what the other groups present.
 
