@@ -1,6 +1,5 @@
 Title: Ruby II - Exploring Methods and Enumerables<br>
 Type: Exploration & Presentation<br>
-Duration: 1 hr<br>
 Creators: Karolin Rafalski, Kristyn Bryan <br>
 Topics: Ruby methods<br>
 <hr>
