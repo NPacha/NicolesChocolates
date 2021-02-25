@@ -93,7 +93,8 @@ IF NOT
 
 
 # Where we ended this week in class
-<hr>
+<hr/>
+
 ## Install a gem
 
 Gems are like NPM packages for Ruby, but they're installed globally, as opposed to multiple times for each application that you build
