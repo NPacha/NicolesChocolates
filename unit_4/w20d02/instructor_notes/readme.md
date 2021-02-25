@@ -91,6 +91,9 @@ IF NOT
 	* (replace `.bash_profile` with `.zshrc` if you're using zsh)
 1. Run `ruby -v` and confirm ruby version _now in use by the system_ is `2.7.0p301` or somesuch
 
+
+# Where we ended this week in class
+<hr>
 ## Install a gem
 
 Gems are like NPM packages for Ruby, but they're installed globally, as opposed to multiple times for each application that you build
