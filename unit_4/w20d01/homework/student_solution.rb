@@ -40,3 +40,12 @@ p nums.min
 p nums.max
 p nums.reject {|num| num%3 == 0}
 p nums.select {|num| num%5 == 0}
+
+#Color Array
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+p colors.sample
+p colors.reverse
+
+colors.each do |item|
+    puts item.capitalize()
+end
