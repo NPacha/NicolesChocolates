@@ -49,3 +49,19 @@ p colors.reverse
 colors.each do |item|
     puts item.capitalize()
 end
+
+#Methods
+def find_area height, width
+    p height * width
+end
+
+find_area(5, 20)
+
+nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+def multiply_each_by_five arr
+    arr.each do |item|
+        p item * 5
+    end
+end
+
+    multiply_each_by_five(nums)
