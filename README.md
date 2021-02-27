@@ -76,6 +76,15 @@ All course recordings will be linked below as well as quick links to that days m
 | w17d2 |[React Router](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w17d02)| | [Recording](https://generalassembly.zoom.us/rec/share/p-pfO8ddUm63wi6yKsCfxR0Es83Te2EzhDBPuVPSAuJQLNvTfILHFOT3Vw72fkCR.hsU7QDcitf-orcdi?startTime=1612394881000)
 | w17d3 |[React Blog and project annnouncement](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w17d03)| [code](https://git.generalassemb.ly/arthurbernierjr/blog-ruth-example) | [Recording 1](https://generalassembly.zoom.us/rec/share/RNqEsVlZRoayBM-Y5gikMML-SFdvi5_XPPiVq9rxwYPsJcZU2WTsLg4vVkxt9gRi.jqNuh-X1aO_PMhme)<br>[Recording 2](https://generalassembly.zoom.us/rec/share/CTeFcPmfEzj3ROdWHqgHTkTL3SiFpblUpdNBTfw85geeo3nm3uUEsXvsx8cdcz3Q.3M_-552Db9-T1lOV)
 | w18d1 |[React Blog Continued props.match.params, AppRouter](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_3/w18d01)| [code](https://git.generalassemb.ly/arthurbernierjr/blog-ruth-example) | [Recording](https://generalassembly.zoom.us/rec/share/xeashN_L6wfH8mP3nLgOrsh8_54iXvHG1-3hT1KJuyb0TPmLUcU6-GON_roPTWXa.qUWyfd4nNgaK7SXU)
+
+## Unit 4
+| Day | Lectures | Pushed Code |Recording |
+|:---:|:-----------:|:-------:|:-----------:|
+| w20d1 |[Intro to Ruby](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d01)| [code](https://repl.it/@ArthurBernier/StarkClearcutCharacter#main.rb) | [Recording](https://generalassembly.zoom.us/rec/share/A7YJdxBXTnrbjdB7RaAWppB1MiiVyLo0g-8JlpKmMt8AR2Iy4FAmOreEIWEmTOg7.rWH-pqxq_H2vZotk)
+| w20d2 |[Install Fest Ruby PSQL](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d02)| no code | [Recording](https://generalassembly.zoom.us/rec/share/Z7Ie5ueQhOXfTW4MgffU4CKCGvzQuTTZoYPVYkA3uIbmerHv3a99vJmoRQaSzEBe.u508cPt62i2gtHPz)
+| w20d3 |[SQL INTRO annd Happy Fun Ball](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d03)| no code | [Recording](https://generalassembly.zoom.us/rec/share/M4ttsI1Wz0h0OPTkjAToWp2e-3RUzFrkA28wX8y8Tzmvl5wHbDsjJCcderYodU_t.6IKWbtIrrA7a6_v4)
+
+
 <!--
 | w10d1 |[C.R.A.P.](./unit_2/w10d1/warm_up_exercise)| [REST: New, Create](./unit_2/w10d1/instructor_notes)| [Biscoff Bakery](./unit_2/w10d1/student_labs)|[](./unit_2/w10d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/vpZ5I-2r_Wo3GNDEsgSDVqcvW9S5Kqus0yMZ_PMEmR3nWyEKYFP3Z-ESarOjwZ8p_pWpMZWMIHXzKyeS?startTime=1586903397000&_x_zm_rtaid=U9vdxIZ-R1ekInT5uRczuQ.1587001419471.4b5758cc47aeddcd45e54e920e8d557e&_x_zm_rhtaid=113)
 | w10d2 |[Big O Notation](./unit_2/w10d2/warm_up_exercise)| [cURL, Static Assets](./unit_2/w10d2/instructor_notes)| [Express CLI App](./unit_2/w10d2/student_labs)|[Budgtr](./unit_2/w10d2/homework)| [Recording](https://generalassembly.zoom.us/rec/share/wPVaP5Pe7kdIQqPk81H_UfAxEIr5eaa82iYZ_aFZzUhUTOLecQNNCKBdpnUa6Zk_)
