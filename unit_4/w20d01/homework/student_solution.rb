@@ -110,6 +110,19 @@ if n%3 == 0 || n%5 == 0
         end
     end
 
-
 p total
+
+#Primes
+
+
+def check_prime num
+    return false if num <= 1
+    (2..Math.sqrt(num)).none? |i|
+    (num % i).zero?
+end
+
+    check_prime(15);
+
+
+
 
