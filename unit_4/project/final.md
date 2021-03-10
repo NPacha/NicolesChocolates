@@ -104,7 +104,7 @@ Your final project should be an app that
 
 ALSO, remember: a **technical demonstration** of your app which:
 
-* Is ~5-10 minutes in length (use 1-3 minutes to show off your portfolio then switch over and talk about your app)
+* Is ~5-10 minutes in length
 * Shows off the features of the app (be sure to talk about the new thing you taught yourself)
 * Explains the technical details
 * Explains the technical challenges
