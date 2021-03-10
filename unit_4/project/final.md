@@ -7,7 +7,7 @@
 **Saturday, March 20th through Saturday, April 10th Final Project***
 ** Saturday April 10th through Wednesday, April 14th Portfolio***
 
-There are no full day classes during project weeks, but we do expect you to be working on your project daily and be available during the usual class times (10AM - 6PM Eastern).
+There are no full day classes during project weeks, but we do expect you to be working on your project daily and be available during the usual class times .
 
 - During these weeks, there is no required attendance outside of
 - **Outcomes**  Unless otherwise announced.
