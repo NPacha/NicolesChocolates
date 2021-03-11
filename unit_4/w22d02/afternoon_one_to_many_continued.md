@@ -8,7 +8,7 @@ Type: Lesson  <br>
 Duration: 1.5 hrs  <br>
 Creator: Thom Page  <br>
 Adapted for React: Karolin Rafalski  <br>
-Topics: Rails 5 API, One-to-many relationships, CORS, fetch, Chart.js
+Topics: Rails 6 API, One-to-many relationships, CORS, fetch, Chart.js
 
 ---
 
