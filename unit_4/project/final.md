@@ -198,7 +198,7 @@ In just a few weeks time you'll be on your own. Debugging is a very important sk
 # Examples
 [__Covid 19 Dashboard__](https://covid19-dashboard-frontend-app.herokuapp.com/) <br>
 [__Herbery__](https://theherbery.netlify.app/) <br>
-[__Phaser__](https://github.com/clarkcj15/ph3-proj4) <br>
+[__Phaser__](https://clarkcj15.github.io/ph3-proj4/) <br>
 [__Pillya__](https://pillya.herokuapp.com/) <br>
 [__Rembereats__](https://remembereats.herokuapp.com/) <br>
 [__Final Project__](https://final-project-social-med-2021.web.app) <br>
