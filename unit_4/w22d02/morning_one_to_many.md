@@ -7,7 +7,7 @@ Title: Science App - one to many <br>
 Type: Lesson <br>
 Duration: 1.5 hrs <br>
 Creator: Thom Page <br>
-Topics: Rails 5 API, One-to-many relationships<br>
+Topics: Rails 6 API, One-to-many relationships<br>
 
 ---
 
