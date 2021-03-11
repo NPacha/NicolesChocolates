@@ -201,7 +201,6 @@ In just a few weeks time you'll be on your own. Debugging is a very important sk
 [__Phaser__](https://clarkcj15.github.io/ph3-proj4/) <br>
 [__Pillya__](https://pillya.herokuapp.com/) <br>
 [__Rembereats__](https://remembereats.herokuapp.com/) <br>
-[__Final Project__](https://final-project-social-med-2021.web.app) <br>
 [__Happy Cabbage__](https://happycabbageclient.herokuapp.com/) <br>
 [__DND Encounter__](https://dnd-encounters-2021.herokuapp.com/) <br>
 [__Laughmap__](http://laughmap.herokuapp.com/) <br>
