@@ -194,3 +194,18 @@ In just a few weeks time you'll be on your own. Debugging is a very important sk
 - Use git branching for features, especially if you're trying something new or "going down a rabbit hole". Only merge to Dev when your code is working. Only merge Dev to Master when your code is production ready.
 - Reflect on where you are each day (comfort zone, learning zone, panic zone). Maybe keep a dev journal.
 - &hearts; BREATHE &hearts; SLEEP &hearts; EAT &hearts; CODE &hearts;
+
+# Examples
+[__Covid 19 Dashboard__](https://covid19-dashboard-frontend-app.herokuapp.com/) <br>
+[__Herbery__](https://theherbery.netlify.app/) <br>
+[__Phaser__](https://github.com/clarkcj15/ph3-proj4) <br>
+[__Pillya__](https://pillya.herokuapp.com/) <br>
+[__Rembereats__](https://remembereats.herokuapp.com/) <br>
+[__Final Project__](https://final-project-social-med-2021.web.app) <br>
+[__Happy Cabbage__](https://happycabbageclient.herokuapp.com/) <br>
+[__DND Encounter__](https://dnd-encounters-2021.herokuapp.com/) <br>
+[__Laughmap__](http://laughmap.herokuapp.com/) <br>
+[__Ticking Clock__](https://tickingclock.herokuapp.com/) <br>
+[__Justins Ecommerce__](https://justins-ecommerce1.herokuapp.com/) <br>
+[__Race to Success__](https://race-to-success.web.app/) <br>
+
