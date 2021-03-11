@@ -9,10 +9,11 @@
 
 There are no full day classes during project weeks, but we do expect you to be working on your project daily and be available during the usual class times .
 
-- During these weeks, there is no required attendance outside of
+During these weeks, there is no required attendance outside of:
+
 - **Outcomes**  Unless otherwise announced.
-- ** 30 Minute Checkins Tuesdays, Wed, and Thursday **
-- Your Pushed Commits to your repo are your attendance, you have to push to your repo at minimum on every class day, and we suggest daily
+- ** 30 Minute Checkins Tues, Wed, Thurs at the start of class**
+- Your Pushed Commits to your repo are your attendance, You have to psush to your repo every class day(at minimum), and we recommend daily commits.
 
 *Failure to make an attendance check will result in an unexcused absence for both morning and afternoon for that day. Failure to respond to instructors in reasonable time, when contacted during normal class hours can result in an absence for both the morning and afternoon of that day*
 
@@ -45,7 +46,7 @@ Your final project should be an app that
 #### MVP - minimum viable product
 
 * A **git repository (or repositories) hosted on Github**, with a link to your hosted project,  and frequent commits dating back to the **very beginning** of the project. Commit early, commit often
-* At **least** one Github commit per day
+* At **least** one Github commit per class day
 * **Be deployed online** and accessible to the public
 * Have a **link to your hosted working app** in the `README.md` file in  each of your Github repos
 * Due to the open-ended nature of this final project, each project will have their own additional MVPs that are agreed upon by the instructional team
@@ -112,8 +113,9 @@ ALSO, remember: a **technical demonstration** of your app which:
 
 <hr>
 
-## Project due date is April 10th @ 10am ET
+## Final Project due date is April 10th @ 10am ET
 
+## Portfolio Project due date is April 14th @ 6:30pm ET
 
 ## Meetings with instructors
 _Your instructor will contact you to setup a meeting time if you request to.  
@@ -179,8 +181,8 @@ _Your instructor will contact you to setup a meeting time if you request to.
 
 1. Seek out help online
 2. Seek out help with your classmates
-3. Seek out help with our class TA
-4. Seek out help with your instructor
+3. Seek out help with our class IA's
+4. Seek out help with your Instructor
 
 
 In just a few weeks time you'll be on your own. Debugging is a very important skill to have and practice. Getting help from an instructor should no longer be your first or second course of action. If you get really stuck and do need to consult an instructor, be prepared to explain the problem and what you've done to try to solve it. We recommend checking out the rubric here: [How to Ask for Help](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Arete/wiki/How-To-Ask-A-Question)
