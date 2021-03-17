@@ -85,6 +85,26 @@ All course recordings will be linked below as well as quick links to that days m
 | w20d3 |[SQL INTRO annd Happy Fun Ball](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d03)| no code | [Recording](https://generalassembly.zoom.us/rec/share/M4ttsI1Wz0h0OPTkjAToWp2e-3RUzFrkA28wX8y8Tzmvl5wHbDsjJCcderYodU_t.6IKWbtIrrA7a6_v4)
 ## Final Recordings
 ```
+Topic: Ruby
+Start Time : Mar 2, 2021 06:28 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/smRqGhcwqS5_dnYSQ13doEaWs6JrWl8XtVycTfDzfmCSoZXKzroqL2xnNGaFYwmg.zUo6CYTgT2zOKLBd
+
+
+Topic: Ruby
+Start Time : Mar 3, 2021 06:28 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/u219eOh-q17fHOAAxIdT162R5r3giLwG7o6sYZY8PF7U1LIDkLaZW8yMbx0xoK2W.UXvLP-K7GPMo1OhT
+
+Topic: SEIR FLEX ZOOM Classroom
+Start Time : Mar 6, 2021 09:59 AM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/7HZZWJFysxJ9_5QxBLVXUt_6fcV9V-j87sJxwleV2J26jeVmGZ70GwlTfOEYOSSc.8WtW0ZUFNEBkTecF
+
+
 Topic: Rails Controllers
 Start Time : Mar 9, 2021 06:30 PM
 
