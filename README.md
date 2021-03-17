@@ -258,7 +258,35 @@ Sheets (CSS), and JavaScript.
 | Unit 5 | Week 25 • July 28 - August 1 | Capstone Project + Student Choice Lecture (Mock Interviews)
 | Unit 5 | Week 26 • August 4 - August 8 | Capstone Project + (Mock Interviews), Presentations and Celebration! -->
 
+## Final Recordings
+```
+Topic: Rails Controllers
+Start Time : Mar 9, 2021 06:30 PM
 
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/WYXDFAdGpDEe0T_sCK8sbKUhGqsVW3YnzutQ5Yf4X2jVNTXZGOkz3A086y--iYfF.Z7cUV0doGarzpmYn
+
+Topic: Ruby on Rails with Scaffolding and One to Many
+Start Time : Mar 10, 2021 06:29 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/Su0Sm6YVtEqKCIxSQfRHB0tSRqr5G5xm6xz1KwJP7sgNAtPkWGe0U9RufuK3QERY.z7bG-_078CE-XKzl
+
+Topic: Ruby on Rails + Chart.js Morning
+Start Time : Mar 13, 2021 09:58 AM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/t7CSMQlrFjHcNQSpyLxXSGK6_5yMtoN-nfIBtwpAHdrXjqGE9q18HxYM4CPTYtWq.SKitPM5ZPk8iAaDY
+
+
+Topic: Ruby on Rails + Chart.js Afternoon
+Start Time : Mar 13, 2021 02:45 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/5GmjOhoPC6ePF5zTnKBy4mgKnToqeVupoWmzstDKqVBrfHyr_JG_2SsypngxNo10.PoA10aYos6j8GeYc
+
+
+```
 <br>
 
 ### Homework Submission
