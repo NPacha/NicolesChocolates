@@ -83,7 +83,55 @@ All course recordings will be linked below as well as quick links to that days m
 | w20d1 |[Intro to Ruby](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d01)| [code](https://repl.it/@ArthurBernier/StarkClearcutCharacter#main.rb) | [Recording](https://generalassembly.zoom.us/rec/share/A7YJdxBXTnrbjdB7RaAWppB1MiiVyLo0g-8JlpKmMt8AR2Iy4FAmOreEIWEmTOg7.rWH-pqxq_H2vZotk)
 | w20d2 |[Install Fest Ruby PSQL](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d02)| no code | [Recording](https://generalassembly.zoom.us/rec/share/Z7Ie5ueQhOXfTW4MgffU4CKCGvzQuTTZoYPVYkA3uIbmerHv3a99vJmoRQaSzEBe.u508cPt62i2gtHPz)
 | w20d3 |[SQL INTRO annd Happy Fun Ball](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Ruth/tree/master/unit_4/w20d03)| no code | [Recording](https://generalassembly.zoom.us/rec/share/M4ttsI1Wz0h0OPTkjAToWp2e-3RUzFrkA28wX8y8Tzmvl5wHbDsjJCcderYodU_t.6IKWbtIrrA7a6_v4)
+## Final Recordings
+```
+Topic: Ruby
+Start Time : Mar 2, 2021 06:28 PM
 
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/smRqGhcwqS5_dnYSQ13doEaWs6JrWl8XtVycTfDzfmCSoZXKzroqL2xnNGaFYwmg.zUo6CYTgT2zOKLBd
+
+
+Topic: Ruby
+Start Time : Mar 3, 2021 06:28 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/u219eOh-q17fHOAAxIdT162R5r3giLwG7o6sYZY8PF7U1LIDkLaZW8yMbx0xoK2W.UXvLP-K7GPMo1OhT
+
+Topic: SEIR FLEX ZOOM Classroom
+Start Time : Mar 6, 2021 09:59 AM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/7HZZWJFysxJ9_5QxBLVXUt_6fcV9V-j87sJxwleV2J26jeVmGZ70GwlTfOEYOSSc.8WtW0ZUFNEBkTecF
+
+
+Topic: Rails Controllers
+Start Time : Mar 9, 2021 06:30 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/WYXDFAdGpDEe0T_sCK8sbKUhGqsVW3YnzutQ5Yf4X2jVNTXZGOkz3A086y--iYfF.Z7cUV0doGarzpmYn
+
+Topic: Ruby on Rails with Scaffolding and One to Many
+Start Time : Mar 10, 2021 06:29 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/Su0Sm6YVtEqKCIxSQfRHB0tSRqr5G5xm6xz1KwJP7sgNAtPkWGe0U9RufuK3QERY.z7bG-_078CE-XKzl
+
+Topic: Ruby on Rails + Chart.js Morning
+Start Time : Mar 13, 2021 09:58 AM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/t7CSMQlrFjHcNQSpyLxXSGK6_5yMtoN-nfIBtwpAHdrXjqGE9q18HxYM4CPTYtWq.SKitPM5ZPk8iAaDY
+
+
+Topic: Ruby on Rails + Chart.js Afternoon
+Start Time : Mar 13, 2021 02:45 PM
+
+Meeting Recording:
+https://generalassembly.zoom.us/rec/share/5GmjOhoPC6ePF5zTnKBy4mgKnToqeVupoWmzstDKqVBrfHyr_JG_2SsypngxNo10.PoA10aYos6j8GeYc
+
+
+```
 
 <!--
 | w10d1 |[C.R.A.P.](./unit_2/w10d1/warm_up_exercise)| [REST: New, Create](./unit_2/w10d1/instructor_notes)| [Biscoff Bakery](./unit_2/w10d1/student_labs)|[](./unit_2/w10d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/vpZ5I-2r_Wo3GNDEsgSDVqcvW9S5Kqus0yMZ_PMEmR3nWyEKYFP3Z-ESarOjwZ8p_pWpMZWMIHXzKyeS?startTime=1586903397000&_x_zm_rtaid=U9vdxIZ-R1ekInT5uRczuQ.1587001419471.4b5758cc47aeddcd45e54e920e8d557e&_x_zm_rhtaid=113)
