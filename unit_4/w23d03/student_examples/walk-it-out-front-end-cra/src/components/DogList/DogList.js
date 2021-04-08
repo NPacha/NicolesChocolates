@@ -9,7 +9,11 @@ const DogList = (props) => {
   useEffect(() => {
     // Need to wrap this in an async function to use await inside:
     async function fetchData() {
-      const response = await axios.get("http://localhost:3001/api/dogs");
+      const response = await axios.get("http://localhost:3001/dogs", {
+        headers: {
+          Authorization: 'Bearer ' + localStorage.getItem('token')
+        }
+      });
       setDogs(response.data);
     }
     fetchData();

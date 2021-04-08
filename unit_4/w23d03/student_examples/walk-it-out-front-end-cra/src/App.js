@@ -42,12 +42,12 @@ const App = () => {
   const handleSignUp = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/users/signup", {
+      const response = await axios.post("http://localhost:3001/register", {
         email: state.email,
         password: state.password,
       });
       console.log(response);
-      localStorage.token = response.data.token;
+      localStorage.setItem('token', response.data.token);
       setIsLoggedIn(true);
     } catch (err) {
       console.log(err);
@@ -57,11 +57,11 @@ const App = () => {
   const handleLogIn = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/users/login", {
+      const response = await axios.post("http://localhost:3001/login", {
         email: state.email,
         password: state.password,
       });
-      localStorage.token = response.data.token;
+      localStorage.setItem('token', response.data.token);
       setIsLoggedIn(true);
     } catch (error) {
       console.log(error);
